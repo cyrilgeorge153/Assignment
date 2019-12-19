@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52022" started-at="2019-12-19T17:39:38 IST" finished-at="2019-12-19T17:40:30 IST">
+  <suite name="Default suite" duration-ms="24263" started-at="2019-12-19T13:09:40Z" finished-at="2019-12-19T13:10:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52022" started-at="2019-12-19T17:39:38 IST" finished-at="2019-12-19T17:40:30 IST">
+    <test name="Default test" duration-ms="24263" started-at="2019-12-19T13:09:40Z" finished-at="2019-12-19T13:10:04Z">
       <class name="com.qa.testcases.AssignmentTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AssignmentTest@67205a84]" name="setUp" is-config="true" duration-ms="22394" started-at="2019-12-19T17:39:38 IST" finished-at="2019-12-19T17:40:00 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AssignmentTest@685cb137]" name="setUp" is-config="true" duration-ms="23699" started-at="2019-12-19T13:09:40Z" finished-at="2019-12-19T13:10:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyImageTest()[pri:1, instance:com.qa.testcases.AssignmentTest@67205a84]" name="verifyImageTest" duration-ms="362" started-at="2019-12-19T17:40:00 IST" finished-at="2019-12-19T17:40:01 IST">
+        <test-method status="PASS" signature="verifyTwitterShareTest()[pri:3, instance:com.qa.testcases.AssignmentTest@685cb137]" name="verifyTwitterShareTest" duration-ms="393" started-at="2019-12-19T13:10:04Z" finished-at="2019-12-19T13:10:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyImageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AssignmentTest@67205a84]" name="tearDown" is-config="true" duration-ms="550" started-at="2019-12-19T17:40:01 IST" finished-at="2019-12-19T17:40:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AssignmentTest@67205a84]" name="setUp" is-config="true" duration-ms="25992" started-at="2019-12-19T17:40:01 IST" finished-at="2019-12-19T17:40:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyFbShareTest()[pri:2, instance:com.qa.testcases.AssignmentTest@67205a84]" name="verifyFbShareTest" duration-ms="337" started-at="2019-12-19T17:40:27 IST" finished-at="2019-12-19T17:40:28 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFbShareTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AssignmentTest@67205a84]" name="tearDown" is-config="true" duration-ms="2336" started-at="2019-12-19T17:40:28 IST" finished-at="2019-12-19T17:40:30 IST">
+        </test-method> <!-- verifyTwitterShareTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AssignmentTest@685cb137]" name="tearDown" is-config="true" duration-ms="130" started-at="2019-12-19T13:10:04Z" finished-at="2019-12-19T13:10:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

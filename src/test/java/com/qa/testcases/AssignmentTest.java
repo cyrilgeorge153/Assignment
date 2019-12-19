@@ -39,23 +39,23 @@ public class AssignmentTest extends BaseClass {
 	}
 
 //	@Test(priority = 0)
-	public void clickToursTest() throws IOException
-	{
-		db.verifyImage();
-		db.verifyFbShare();
-		db.verifyTwitterShare();
-		db.verifyPininterestShare();
-		db.verifyNormalShare();
-		db.verifyShowMap();
-		db.verifyInclusions();
-		db.verifyExclusions();
-		db.verifyWriteReview();
-		db.verifyChangeDate();
-		db.clickBookNow();
-		db.verifyPersonalDetails();
-		db.verifyBookingDate();
-		db.verifyTotalAmount();
-	}
+//	public void clickToursTest() throws IOException
+//	{
+//		db.verifyImage();
+//		db.verifyFbShare();
+//		db.verifyTwitterShare();
+//		db.verifyPininterestShare();
+//		db.verifyNormalShare();
+//		db.verifyShowMap();
+//		db.verifyInclusions();
+//		db.verifyExclusions();
+//		db.verifyWriteReview();
+//		db.verifyChangeDate();
+//		db.clickBookNow();
+//		db.verifyPersonalDetails();
+//		db.verifyBookingDate();
+//		db.verifyTotalAmount();
+//	}
 	
 	@Test(priority = 1)
 	public void verifyImageTest() throws IOException
@@ -63,81 +63,81 @@ public class AssignmentTest extends BaseClass {
 		db.verifyImage();
 	}
 	
-	@Test(priority = 2)
-	public void verifyFbShareTest() throws IOException
-	{
-		db.verifyFbShare();
-	}
+//	@Test(priority = 2)
+//	public void verifyFbShareTest() throws IOException
+//	{
+//		db.verifyFbShare();
+//	}
 	
-	@Test(priority = 3)
-	public void verifyTwitterShareTest() throws IOException
-	{
-		db.verifyTwitterShare();
-	}
-	
-	@Test(priority = 4)
-	public void verifyPininterestShareTest() throws IOException
-	{
-		db.verifyPininterestShare();
-	}
-	
-	@Test(priority = 5)
-	public void verifyNormalShareTest() throws IOException
-	{
-		db.verifyNormalShare();
-	}
-	
-	@Test(priority = 6)
-	public void verifyShowMapTest() throws IOException
-	{
-		db.verifyShowMap();
-	}
-	
-	@Test(priority = 7)
-	public void verifyInclusionsTest() throws IOException
-	{
-		db.verifyInclusions();
-	}
-	
-	@Test(priority = 8)
-	public void verifyExclusionsTest() throws IOException
-	{
-		db.verifyExclusions();
-	}
-	
-	@Test(priority = 9)
-	public void verifyWriteReviewTest() throws IOException
-	{
-		db.verifyWriteReview();
-	}
-	
-	@Test(priority = 10)
-	public void verifyChangeDateTest() throws IOException
-	{
-		db.verifyChangeDate();
-	}
-	
-	@Test(priority = 11)
-	public void clickBookNowTest() throws IOException
-	{
-		db.clickBookNow();
-	}
-	
-	@Test(priority = 12)
-	public void verifyPersonalDetailsTest() throws IOException
-	{
-		db.verifyPersonalDetails();
-	}
-	
-	@Test(priority = 13)
-	public void verifyBookingDateTest() throws IOException
-	{
-		db.verifyBookingDate();
-	}
-	
-	@Test(priority = 14)
-	public void verifyTotalAmountTest() throws IOException
-	{
-		db.verifyTotalAmount();
-	}
+//	@Test(priority = 3)
+//	public void verifyTwitterShareTest() throws IOException
+//	{
+//		db.verifyTwitterShare();
+//	}
+//	
+//	@Test(priority = 4)
+//	public void verifyPininterestShareTest() throws IOException
+//	{
+//		db.verifyPininterestShare();
+//	}
+//	
+//	@Test(priority = 5)
+//	public void verifyNormalShareTest() throws IOException
+//	{
+//		db.verifyNormalShare();
+//	}
+//	
+//	@Test(priority = 6)
+//	public void verifyShowMapTest() throws IOException
+//	{
+//		db.verifyShowMap();
+//	}
+//	
+//	@Test(priority = 7)
+//	public void verifyInclusionsTest() throws IOException
+//	{
+//		db.verifyInclusions();
+//	}
+//	
+//	@Test(priority = 8)
+//	public void verifyExclusionsTest() throws IOException
+//	{
+//		db.verifyExclusions();
+//	}
+//	
+//	@Test(priority = 9)
+//	public void verifyWriteReviewTest() throws IOException
+//	{
+//		db.verifyWriteReview();
+//	}
+//	
+//	@Test(priority = 10)
+//	public void verifyChangeDateTest() throws IOException
+//	{
+//		db.verifyChangeDate();
+//	}
+//	
+//	@Test(priority = 11)
+//	public void clickBookNowTest() throws IOException
+//	{
+//		db.clickBookNow();
+//	}
+//	
+//	@Test(priority = 12)
+//	public void verifyPersonalDetailsTest() throws IOException
+//	{
+//		db.verifyPersonalDetails();
+//	}
+//	
+//	@Test(priority = 13)
+//	public void verifyBookingDateTest() throws IOException
+//	{
+//		db.verifyBookingDate();
+//	}
+//	
+//	@Test(priority = 14)
+//	public void verifyTotalAmountTest() throws IOException
+//	{
+//		db.verifyTotalAmount();
+//	}
 }

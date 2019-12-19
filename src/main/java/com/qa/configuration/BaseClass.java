@@ -64,6 +64,8 @@ public class BaseClass {
 			}
 			else if(browser.equalsIgnoreCase("headless")) 
 			{
+				WebDriverManager.chromedriver().clearPreferences();
+				WebDriverManager.chromedriver().setup();  
 				options = new ChromeOptions();
 				options.addArguments("window-size=1400,800");// to drive headless mode
 				options.addArguments("headless");// to drive headless mode
