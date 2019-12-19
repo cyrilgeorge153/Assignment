@@ -5,9 +5,11 @@
     <classes>
       <class name="com.qa.testcases.AssignmentTest">
         <methods>
+          <include name="verifyPersonalDetailsTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyImageTest"/>
+          <include name="verifyTotalAmountTest"/>
+          <include name="verifyBookingDateTest"/>
         </methods>
       </class> <!-- com.qa.testcases.AssignmentTest -->
     </classes>

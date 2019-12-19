@@ -21,6 +21,7 @@ public class DashboardPage extends BaseClass {
 	@FindBy(xpath = "//a[contains(@class,'text-center tours')]")
 	WebElement tours;
 	
+//	@FindBy(css = ".btn.btn-primary.btn-block")
 	@FindBy(xpath = "//div[@class='col-md-2 col-xs-12']//button[@class='btn btn-primary btn-block'][contains(text(),'Search')]")
 	WebElement search;
 	
@@ -171,7 +172,8 @@ public class DashboardPage extends BaseClass {
 	
 	public void clickSearch()
 	{
-		search.click();
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", search);
 	}
 	
 	public void clickDetails()
