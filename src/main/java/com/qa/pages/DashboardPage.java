@@ -2,151 +2,164 @@
  * 
  */
 package com.qa.pages;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.qa.configuration.BaseClass;
-
 /**
  * @author CYRIL
  *
  */
 public class DashboardPage extends BaseClass {
-	
 	public DashboardPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-
 	@FindBy(xpath = "//a[contains(@class,'text-center tours')]")
-	@CacheLookup
 	WebElement tours;
 	
 	@FindBy(xpath = "//div[@class='col-md-2 col-xs-12']//button[@class='btn btn-primary btn-block'][contains(text(),'Search')]")
-	@CacheLookup
 	WebElement search;
 	
 	@FindBy(xpath = "//div[@class='content-wrapper']//div[1]//div[1]//div[2]//div[1]//div[3]//div[1]//div[2]//a[1]")
-	@CacheLookup
 	WebElement details;
 	
 	@FindBy(xpath = "//div[@class='slick-slide slick-current slick-active']//img")
-	@CacheLookup
 	WebElement img;
 	
 	@FindBy(xpath = "//div[@class='st-btn st-first']//span[@class='st-label'][contains(text(),'Share')]")
-	@CacheLookup
 	WebElement fbShare;
 	
 	@FindBy(xpath = "//span[contains(text(),'Tweet')]")
-	@CacheLookup
 	WebElement twitterShare;
 	
 	@FindBy(xpath = "//span[contains(text(),'Pin')]")
-	@CacheLookup
 	WebElement pininterestShare;
 	
 	@FindBy(xpath = "//div[contains(@class,'blog-media mt-10')]//div[4]")
-	@CacheLookup
 	WebElement mailShare;
 	
 	@FindBy(xpath = "//div[contains(@class,'blog-media mt-10')]//div[5]//img[1]")
-	@CacheLookup
 	WebElement whatsappShare;
 	
 	@FindBy(xpath = "//div[contains(@class,'blog-media mt-10')]//div[6]//img[1]")
-	@CacheLookup
 	WebElement linkedinShare;
 	
 	@FindBy(xpath = "//div[contains(@class,'blog-media mt-10')]//div[6]//img[1]")
-	@CacheLookup
 	WebElement normalShare;
 	
 	@FindBy(xpath = "//span[contains(text(),'Show on Map')]")
-	@CacheLookup
 	WebElement showMap;
 	
 	@FindBy(xpath = "//h4[contains(text(),'Inclusions')]")
-	@CacheLookup
 	WebElement inclusions;
 	
-	@FindBy(xpath = "//li[contains(text(),'Return Ferry Tickets')]")
-	@CacheLookup
-	WebElement rft;
+	@FindBy(xpath = "//h4[contains(text(),'Exclusions')]")
+	WebElement exclusions;
 	
-	@FindBy(xpath = "//li[contains(text(),'Bike equipment')]")
-	@CacheLookup
-	WebElement bikeEqpmt;
+	@FindBy(css = "button[class='writeReview btn btn-primary btn-block mb-10']")
+	WebElement review;
 	
-	@FindBy(xpath = "//li[contains(text(),'Complimentary Breakfast')]")
-	@CacheLookup
-	WebElement complimentBrkfst;
+	@FindBy(css = ".btn.btn-block.btn-success.btn-sm.loader.mt-5.date")
+	WebElement changedate;
 	
-	@FindBy(xpath = "//li[contains(text(),'Central Air/Heat')]")
-	@CacheLookup
-	WebElement cAH ;
+	@FindBy(css = "button[class='btn btn-secondary btn-block mt-20 btn-action btn-lg loader']")
+	WebElement booknow;
 	
-	@FindBy(xpath = "//li[contains(text(),'Guides / Assistance')]")
-	@CacheLookup
-	WebElement guidesAssistance;
+	@FindBy(css = ".form-control.form-bg-light")
+	WebElement firstname;
 	
-	@FindBy(xpath = "//li[contains(text(),'Dinner')]")
-	@CacheLookup
-	WebElement dinner;
+	@FindBy(xpath = "//div[@class='col-md-6']//div[contains(@class,'form-group')]//input[@class='form-control']")
+	WebElement lastname;
 	
-	@FindBy(xpath = "//li[contains(text(),'Cruise')]")
-	@CacheLookup
-	WebElement cruise;
-	
-	@FindBy(xpath = "//li[contains(text(),'Professional tour escort')]")
-	@CacheLookup
-	WebElement pte;
-	
-	@FindBy(xpath = "//li[contains(text(),'Beach Access')]")
-	@CacheLookup
-	WebElement beachAccess;
-	
-	@FindBy(xpath = "//li[contains(text(),'Roundtrip Hotel Transfers')]")
-	@CacheLookup
-	WebElement rHT;
-	
-	@FindBy(xpath = "//li[contains(text(),'Amusement Park Nearby')]")
-	@CacheLookup
-	WebElement aPN;
-	
-	@FindBy(xpath = "//li[contains(text(),'Gratuities (optional)')]")
-	@CacheLookup
-	WebElement gratuities;
-	
-	@FindBy(xpath = "//li[contains(text(),'Safety deposit boxes')]")
-	@CacheLookup
-	WebElement sDB;
-	
-	@FindBy(xpath = "//li[contains(text(),'Lunch')]")
-	@CacheLookup
-	WebElement lunch;
-	
-	@FindBy(xpath = "//li[contains(text(),'Deck Furniture')]")
-	@CacheLookup
-	WebElement deckFurniture;
-	
-	@FindBy(xpath = "//li[contains(text(),'Security System')]")
-	@CacheLookup
-	WebElement securitySystem;
-	
-	@FindBy(xpath = "//li[contains(text(),'State/National Park Nearby')]")
-	@CacheLookup
-	WebElement sNPN;
+	@FindBy(xpath = "//div[@class='col-md-12']//input[@class='form-control form-bg-light']")
+	WebElement email;
 	
 	
 	
+	/*
+	 * @FindBy(xpath = "//li[contains(text(),'Return Ferry Tickets')]")
+	 * 
+	 *  WebElement rft;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Bike equipment')]")
+	 * 
+	 *  WebElement bikeEqpmt;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Complimentary Breakfast')]")
+	 * 
+	 *  WebElement complimentBrkfst;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Central Air/Heat')]")
+	 * 
+	 *  WebElement cAH ;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Guides / Assistance')]")
+	 * 
+	 *  WebElement guidesAssistance;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Dinner')]")
+	 * 
+	 *  WebElement dinner;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Cruise')]")
+	 * 
+	 *  WebElement cruise;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Professional tour escort')]")
+	 * 
+	 *  WebElement pte;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Beach Access')]")
+	 * 
+	 *  WebElement beachAccess;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Roundtrip Hotel Transfers')]")
+	 * 
+	 *  WebElement rHT;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Amusement Park Nearby')]")
+	 * 
+	 *  WebElement aPN;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Gratuities (optional)')]")
+	 * 
+	 *  WebElement gratuities;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Safety deposit boxes')]")
+	 * 
+	 *  WebElement sDB;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Lunch')]")
+	 * 
+	 *  WebElement lunch;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Deck Furniture')]")
+	 * 
+	 *  WebElement deckFurniture;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'Security System')]")
+	 * 
+	 *  WebElement securitySystem;
+	 * 
+	 * @FindBy(xpath = "//li[contains(text(),'State/National Park Nearby')]")
+	 * 
+	 *  WebElement sNPN;
+	 */
 	public void clickTours()
 	{
-		tours.click();
+		try {
+		    
+		    tours.click();
+		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex)
+		{
+
+		    tours.click();
+		}
 	}
 	
 	public void clickSearch()
@@ -202,42 +215,48 @@ public class DashboardPage extends BaseClass {
 	public void verifyShowMap()
 	{
 		String map=showMap.getText();
-		System.out.println(map);
 		Assert.assertEquals(map, "Show On Map");
-		
 	}
 	
 	public void verifyInclusions()
 	{
 		String inclusion=inclusions.getText();
-		System.out.println(inclusion);
 		Assert.assertEquals(inclusion, "Inclusions");
-		
-		String  returnFerryTickets=rft.getText();
-		System.out.println(returnFerryTickets);
-		Assert.assertEquals(returnFerryTickets, "Return Ferry Tickets");
-		
-		String  bikeEquipment=bikeEqpmt.getText();
-		System.out.println(bikeEquipment);
-		Assert.assertEquals(bikeEquipment, "Bike equipment");
-		
-		String  complimentaryBreakfast=complimentBrkfst.getText();
-		System.out.println(complimentaryBreakfast);
-		Assert.assertEquals(complimentaryBreakfast, "Complimentary Breakfast");
-		
-		String  centralAirHeat=cAH.getText();
-		System.out.println(centralAirHeat);
-		Assert.assertEquals(complimentaryBreakfast, "Central Air/Heat");
-		
-		String  guidesAssistances=guidesAssistance.getText();
-		System.out.println(guidesAssistances);
-		Assert.assertEquals(guidesAssistances, "Guides / Assistance");
-		
-		String  dinr=dinner.getText();
-		System.out.println(dinr);
-		Assert.assertEquals(dinr, "Dinner");
-		
-		
+	}
+	
+	public void verifyExclusions()
+	{
+		String exclusion=exclusions.getText();
+		Assert.assertEquals(exclusion, "Exclusions");
+	}
+	
+	public void verifyWriteReview()
+	{
+		Assert.assertEquals(review.isDisplayed(), true);
+	}
+	
+	public void verifyChangeDate()
+	{
+		Assert.assertEquals(changedate.isDisplayed(), true);
+	}
+	
+	public void clickBookNow()
+	{
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+	executor.executeScript("arguments[0].click();", booknow);
+	}
+	
+	public void verifyPersonalDetails()
+	{
+		String firstName=firstname.getAttribute("value");
+		System.out.println(firstName);
+		Assert.assertEquals(firstName, "Demo");
+		String lastName=lastname.getAttribute("value");
+		System.out.println(lastName);
+		Assert.assertEquals(lastName, "User");
+		String emailID=email.getAttribute("value");
+        System.out.println(emailID);
+		Assert.assertEquals(emailID, "user@phptravels.com");
 		
 	}
 }

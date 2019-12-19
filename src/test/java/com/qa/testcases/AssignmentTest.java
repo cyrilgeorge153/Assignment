@@ -17,7 +17,8 @@ import com.qa.pages.DashboardPage;
  *
  */
 public class AssignmentTest extends BaseClass {
-	DashboardPage db;
+	public static DashboardPage db;
+	
 	
 	@BeforeMethod
 	public void setUp() throws IOException
@@ -27,9 +28,9 @@ public class AssignmentTest extends BaseClass {
 		readUrl();
 		getCredentials();
 		db=new DashboardPage(driver);
-//		db.clickTours();
-//		db.clickSearch();
-//		db.clickDetails();
+		db.clickTours();
+		db.clickSearch();
+		db.clickDetails();
 	}
 //	@AfterMethod
 	public void tearDown() throws InterruptedException
@@ -40,9 +41,9 @@ public class AssignmentTest extends BaseClass {
 	@Test(priority = 0)
 	public void clickToursTest() throws IOException
 	{
-		db.clickTours();
-		db.clickSearch();
-		db.clickDetails();
+//		db.clickTours();
+//		db.clickSearch();
+//		db.clickDetails();
 		db.verifyImage();
 		db.verifyFbShare();
 		db.verifyTwitterShare();
@@ -50,6 +51,11 @@ public class AssignmentTest extends BaseClass {
 		db.verifyNormalShare();
 		db.verifyShowMap();
 		db.verifyInclusions();
+		db.verifyExclusions();
+		db.verifyWriteReview();
+		db.verifyChangeDate();
+		db.clickBookNow();
+		db.verifyPersonalDetails();
 	}
 	
 }
