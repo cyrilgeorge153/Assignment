@@ -78,6 +78,12 @@ public class DashboardPage extends BaseClass {
 	@FindBy(xpath = "//div[@class='col-md-12']//input[@class='form-control form-bg-light']")
 	WebElement email;
 	
+	@FindBy(xpath = "//h6[contains(text(),'Booking Date')]")
+	WebElement bookingdate;
+	
+	@FindBy(css = "span[id='displaytotal']")
+	WebElement totalamount;
+	
 	
 	
 	/*
@@ -149,6 +155,7 @@ public class DashboardPage extends BaseClass {
 	 * 
 	 *  WebElement sNPN;
 	 */
+	
 	public void clickTours()
 	{
 		try {
@@ -249,14 +256,24 @@ public class DashboardPage extends BaseClass {
 	public void verifyPersonalDetails()
 	{
 		String firstName=firstname.getAttribute("value");
-		System.out.println(firstName);
 		Assert.assertEquals(firstName, "Demo");
 		String lastName=lastname.getAttribute("value");
-		System.out.println(lastName);
 		Assert.assertEquals(lastName, "User");
 		String emailID=email.getAttribute("value");
-        System.out.println(emailID);
 		Assert.assertEquals(emailID, "user@phptravels.com");
 		
+	}
+	
+	public void verifyBookingDate()
+	{
+		String bd=bookingdate.getText();
+		Assert.assertEquals(bd, "Booking Date");	
+	}
+	
+	public void verifyTotalAmount()
+	{
+		String totalAmount=totalamount.getText();
+		System.out.println(totalAmount);
+		Assert.assertEquals(totalAmount, "$82.50");	
 	}
 }

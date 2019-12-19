@@ -62,6 +62,15 @@ public class BaseClass {
 				WebDriverManager.firefoxdriver().setup(); 
 				driver= new FirefoxDriver();
 			}
+			else if(browser.equalsIgnoreCase("headless")) 
+			{
+				options = new ChromeOptions();
+				options.addArguments("window-size=1400,800");// to drive headless mode
+				options.addArguments("headless");// to drive headless mode
+				driver=new ChromeDriver(options);//passing chrome options object reference
+				return driver;
+			}
+			
 		return driver;
 			}
 	

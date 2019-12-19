@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42917" started-at="2019-12-19T15:51:31 IST" finished-at="2019-12-19T15:52:14 IST">
+  <suite name="Default suite" duration-ms="52022" started-at="2019-12-19T17:39:38 IST" finished-at="2019-12-19T17:40:30 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42917" started-at="2019-12-19T15:51:31 IST" finished-at="2019-12-19T15:52:14 IST">
+    <test name="Default test" duration-ms="52022" started-at="2019-12-19T17:39:38 IST" finished-at="2019-12-19T17:40:30 IST">
       <class name="com.qa.testcases.AssignmentTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AssignmentTest@5e853265]" name="setUp" is-config="true" duration-ms="39588" started-at="2019-12-19T15:51:31 IST" finished-at="2019-12-19T15:52:11 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AssignmentTest@67205a84]" name="setUp" is-config="true" duration-ms="22394" started-at="2019-12-19T17:39:38 IST" finished-at="2019-12-19T17:40:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickToursTest()[pri:0, instance:com.qa.testcases.AssignmentTest@5e853265]" name="clickToursTest" duration-ms="3282" started-at="2019-12-19T15:52:11 IST" finished-at="2019-12-19T15:52:14 IST">
+        <test-method status="PASS" signature="verifyImageTest()[pri:1, instance:com.qa.testcases.AssignmentTest@67205a84]" name="verifyImageTest" duration-ms="362" started-at="2019-12-19T17:40:00 IST" finished-at="2019-12-19T17:40:01 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickToursTest -->
+        </test-method> <!-- verifyImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AssignmentTest@67205a84]" name="tearDown" is-config="true" duration-ms="550" started-at="2019-12-19T17:40:01 IST" finished-at="2019-12-19T17:40:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AssignmentTest@67205a84]" name="setUp" is-config="true" duration-ms="25992" started-at="2019-12-19T17:40:01 IST" finished-at="2019-12-19T17:40:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyFbShareTest()[pri:2, instance:com.qa.testcases.AssignmentTest@67205a84]" name="verifyFbShareTest" duration-ms="337" started-at="2019-12-19T17:40:27 IST" finished-at="2019-12-19T17:40:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFbShareTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AssignmentTest@67205a84]" name="tearDown" is-config="true" duration-ms="2336" started-at="2019-12-19T17:40:28 IST" finished-at="2019-12-19T17:40:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testcases.AssignmentTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

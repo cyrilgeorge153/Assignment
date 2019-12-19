@@ -6,7 +6,8 @@
       <class name="com.qa.testcases.AssignmentTest">
         <methods>
           <include name="setUp"/>
-          <include name="clickToursTest"/>
+          <include name="verifyImageTest"/>
+          <include name="verifyFbShareTest"/>
         </methods>
       </class> <!-- com.qa.testcases.AssignmentTest -->
     </classes>
