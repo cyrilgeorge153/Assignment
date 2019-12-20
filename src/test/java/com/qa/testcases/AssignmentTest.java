@@ -143,7 +143,7 @@ public class AssignmentTest extends BaseClass {
 		db.verifyAmount();
 	}
 	
-	@Test(priority = 15)
+//	@Test(priority = 15)
 	public void verifyBookingDetailsTest() throws IOException 
 	{
 		db.clickBookNow();
