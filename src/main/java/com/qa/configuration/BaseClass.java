@@ -5,19 +5,23 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
-	public static WebDriver driver=null;
+	public static WebDriver driver;
 	public static ChromeOptions options;
 	public static Properties prop;
 	public static FileInputStream ip;
@@ -40,7 +44,7 @@ public class BaseClass {
 	{
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		return driver;
 	}
@@ -71,6 +75,16 @@ public class BaseClass {
 			{
 				WebDriverManager.firefoxdriver().setup(); 
 				driver= new FirefoxDriver();
+			}
+			else if(browser.equalsIgnoreCase("edge")) 
+			{
+				WebDriverManager.edgedriver().setup();
+				driver= new EdgeDriver();
+			}
+			else if(browser.equalsIgnoreCase("IE")) 
+			{
+				WebDriverManager.iedriver().setup();
+				driver = new InternetExplorerDriver();
 			}
 			else if(browser.equalsIgnoreCase("headlesschrome")) 
 			{
@@ -158,4 +172,26 @@ public static WebDriver headlessFirefox() {
 	{
 		return driver;
 	}
+	
+	public boolean handlePopups() {
+
+		  boolean presentFlag = false;
+
+		  try {
+
+		   // Check the presence of alert
+		   Alert alert = driver.switchTo().alert();
+		   // Alert present; set the flag
+		   presentFlag = true;
+		   // if present consume the alert
+		   alert.accept();
+
+		  } catch (NoAlertPresentException ex) {
+		   // Alert not present
+		   ex.printStackTrace();
+		  }
+
+		  return presentFlag;
+
+		 }
 	}

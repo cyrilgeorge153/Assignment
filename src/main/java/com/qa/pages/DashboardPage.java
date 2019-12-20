@@ -22,8 +22,8 @@ public class DashboardPage extends BaseClass {
 	public DashboardPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath = "/html[1]/body[1]/div[2]/header[1]/div[2]/div[1]/div[1]/div[1]/div[1]/nav[1]/ul[1]/li[4]/a[1]")
-//	@CacheLookup
+	@FindBy(css = ".text-center.tours ")
+	@CacheLookup
 	WebElement tours;
 	
 //	@FindBy(css = ".btn.btn-primary.btn-block")
@@ -124,6 +124,10 @@ public class DashboardPage extends BaseClass {
 	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/ul[1]/li[1]/span[2]")
 	@CacheLookup
 	WebElement invoicenovalue;
+	
+	@FindBy(css = "span[id='displaytotal']")
+	@CacheLookup
+	WebElement totalamt;
 	
 	
 	
@@ -334,7 +338,8 @@ try {
 	
 	public void clickConfirmBooking()
 	{
-		confirmbooking.click();
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", confirmbooking);
 	}
 	
 	public void verifyBookingDetails()
@@ -343,6 +348,12 @@ try {
 		String invoicenumbervalue=invoicenovalue.getText();
 		System.out.println(invoicenumber);
 		System.out.println(invoicenumbervalue);
-//		if(invoicenumbervalue.contains(invoicenumber))
+		Assert.assertEquals(invoicenumber, "Invoice Number");
+	}
+	
+	public void verifyTotalAmount()
+	{
+		String totalamount=totalamt.getText();
+		System.out.println(totalamount);
 	}
 }
