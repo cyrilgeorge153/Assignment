@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -49,28 +50,44 @@ public class BaseClass {
 		driver.get(Url);
 		return driver;
 	}
+	
+	public static WebDriver readUrlAdmin() throws IOException {
+		String Url = prop.getProperty("url1");
+		driver.get(Url);
+		return driver;
+	}
 	public static WebDriver startBrowser() throws IOException {
 		readPropertiesFile();
 		String browser=prop.getProperty("Browser");
 		
 			if(browser.equalsIgnoreCase("chrome")) {
 				WebDriverManager.chromedriver().setup();  
-				driver=new ChromeDriver();
+				supressConsoleLogsChrome();
+//				disablePopups();
+//				disableImages();
+				driver=new ChromeDriver();	
 			}
 			else if(browser.equalsIgnoreCase("firefox")) 
 			{
 				WebDriverManager.firefoxdriver().setup(); 
 				driver= new FirefoxDriver();
 			}
-			else if(browser.equalsIgnoreCase("headless")) 
+			else if(browser.equalsIgnoreCase("headlesschrome")) 
 			{
 				WebDriverManager.chromedriver().clearPreferences();
 				WebDriverManager.chromedriver().setup();  
+				supressConsoleLogsChrome();
 				options = new ChromeOptions();
 				options.addArguments("window-size=1400,800");// to drive headless mode
 				options.addArguments("headless");// to drive headless mode
 				driver=new ChromeDriver(options);//passing chrome options object reference
-				return driver;
+			}
+			else if(browser.equalsIgnoreCase("headlessfirefox")) 
+			{
+				WebDriverManager.firefoxdriver().setup();
+				FirefoxOptions options = new FirefoxOptions();
+				options.setHeadless(true);
+			    driver = new FirefoxDriver(options);
 			}
 			
 		return driver;
@@ -83,14 +100,21 @@ public class BaseClass {
 		
 	}
 	
-public static WebDriver headless() {
-		
+public static WebDriver headlessChrome() {
 		options = new ChromeOptions();
 		options.addArguments("window-size=1400,800");// to drive headless mode
 		options.addArguments("headless");// to drive headless mode
 		driver=new ChromeDriver(options);//passing chrome options object reference
 		return driver;
 	}
+
+public static WebDriver headlessFirefox() {
+	WebDriverManager.firefoxdriver().setup();
+	FirefoxOptions options = new FirefoxOptions();
+	options.setHeadless(true);
+    driver = new FirefoxDriver(options);
+	return driver;
+}
 	public static WebDriver getCredentials() throws IOException {
 		String Username = prop.getProperty("username");
 		String Password = prop.getProperty("password");
@@ -98,6 +122,40 @@ public static WebDriver headless() {
 		driver.findElement(By.name("password")).sendKeys(Password);
 		driver.findElement(By.xpath("//button[@class='btn btn-primary btn-lg btn-block loginbtn']")).click();
 		return driver;
+	}
+	
+	public static WebDriver getCredentialsAdmin() throws IOException {
+		String Username = prop.getProperty("username1");
+		String Password = prop.getProperty("password1");
+		driver.findElement(By.name("email")).sendKeys(Username);
+		driver.findElement(By.name("password")).sendKeys(Password);
+		driver.findElement(By.xpath("//span[contains(text(),'Login')]")).click();
+		return driver;
+	}
+	public static WebDriver disableImages() {
+		options = new ChromeOptions();
+		options.addArguments("--blink-settings=imagesEnabled=false");
+		return driver;
+	}
+	
+	public static WebDriver supressConsoleLogsChrome()
+	{
+		System.setProperty("webdriver.chrome.silentOutput", "true");
+		return driver;
+	}
+	
+	public static WebDriver supressConsoleLogsFirefox()
+	{
+		WebDriverManager.firefoxdriver().setup();
+		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
+		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
+		return new FirefoxDriver();
 
+	}
+	
+	@SuppressWarnings("deprecation")
+	public static WebDriver disablePopups()
+	{
+		return driver;
 	}
 	}

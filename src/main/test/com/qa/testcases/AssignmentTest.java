@@ -1,4 +1,5 @@
 package com.qa.testcases;
+
 import java.io.IOException;
 
 import org.testng.annotations.AfterMethod;
@@ -18,28 +19,26 @@ import com.qa.pages.DashboardPage;
  */
 public class AssignmentTest extends BaseClass {
 	public static DashboardPage db;
-	
-	
-	@BeforeMethod
-	public void setUp() throws IOException
-	{
+
+	@BeforeMethod()
+	public void setUp() throws IOException {
 		startBrowser();
 		browserConfig();
 		readUrl();
 		getCredentials();
-		db=new DashboardPage(driver);
+		db = new DashboardPage(driver);
 		db.clickTours();
 		db.clickSearch();
 		db.clickDetails();
 	}
-	@AfterMethod
-	public void tearDown() throws InterruptedException
-	{
+	
+	@AfterMethod()
+	public void tearDown() throws InterruptedException {
 		closeBrowser();
 	}
-
-	@Test(priority = 0)
-	public void clickToursTest() throws IOException
+	
+//	@Test(priority = 0)
+	public void clickToursTest() throws IOException 
 	{
 		db.verifyImage();
 		db.verifyFbShare();
@@ -54,90 +53,104 @@ public class AssignmentTest extends BaseClass {
 		db.clickBookNow();
 		db.verifyPersonalDetails();
 		db.verifyBookingDate();
-		db.verifyTotalAmount();
+		db.verifyAmount();
 	}
-	
-	@Test(priority = 1)
-	public void verifyImageTest() throws IOException
+
+//	@Test(priority = 1)
+	public void verifyImageTest() throws IOException 
 	{
 		db.verifyImage();
 	}
-	
-	@Test(priority = 2)
-	public void verifyFbShareTest() throws IOException
+
+//	@Test(priority = 2)
+	public void verifyFbShareTest() throws IOException 
 	{
 		db.verifyFbShare();
 	}
-	
-	@Test(priority = 3)
+
+//	@Test(priority = 3)
 	public void verifyTwitterShareTest() throws IOException
 	{
 		db.verifyTwitterShare();
 	}
-	
-	@Test(priority = 4)
-	public void verifyPininterestShareTest() throws IOException
+
+//	@Test(priority = 4)
+	public void verifyPininterestShareTest() throws IOException 
 	{
 		db.verifyPininterestShare();
 	}
-	
-	@Test(priority = 5)
+
+//	@Test(priority = 5)
 	public void verifyNormalShareTest() throws IOException
 	{
 		db.verifyNormalShare();
 	}
-	
-	@Test(priority = 6)
-	public void verifyShowMapTest() throws IOException
+
+//	@Test(priority = 6)
+	public void verifyShowMapTest() throws IOException 
 	{
 		db.verifyShowMap();
 	}
-	
-	@Test(priority = 7)
-	public void verifyInclusionsTest() throws IOException
+
+//	@Test(priority = 7)
+	public void verifyInclusionsTest() throws IOException 
 	{
 		db.verifyInclusions();
 	}
-	
-	@Test(priority = 8)
-	public void verifyExclusionsTest() throws IOException
+
+//	@Test(priority = 8)
+	public void verifyExclusionsTest() throws IOException 
 	{
 		db.verifyExclusions();
 	}
-	
-	@Test(priority = 9)
-	public void verifyWriteReviewTest() throws IOException
+
+//	@Test(priority = 9)
+	public void verifyWriteReviewTest() throws IOException 
 	{
 		db.verifyWriteReview();
 	}
-	
-	@Test(priority = 10)
-	public void verifyChangeDateTest() throws IOException
+
+//	@Test(priority = 10)
+	public void verifyChangeDateTest() throws IOException 
 	{
 		db.verifyChangeDate();
 	}
-	
-	@Test(priority = 11)
-	public void clickBookNowTest() throws IOException
+
+//	@Test(priority = 11)
+	public void clickBookNowTest() throws IOException 
 	{
 		db.clickBookNow();
 	}
-	
-	@Test(priority = 12)
-	public void verifyPersonalDetailsTest() throws IOException
+
+//	@Test(priority = 12)
+	public void verifyPersonalDetailsTest() throws IOException 
 	{
+		db.clickBookNow();
 		db.verifyPersonalDetails();
 	}
-	
-	@Test(priority = 13)
-	public void verifyBookingDateTest() throws IOException
+
+//	@Test(priority = 13)
+	public void verifyBookingDateTest() throws IOException 
 	{
+		db.clickBookNow();
 		db.verifyBookingDate();
 	}
-	
-	@Test(priority = 14)
-	public void verifyTotalAmountTest() throws IOException
+
+//	@Test(priority = 14)
+	public void verifyAmountTest() throws IOException 
 	{
-		db.verifyTotalAmount();
+		db.clickBookNow();
+		db.verifyAmount();
 	}
+	
+	@Test(priority = 15)
+	public void verifyBookingDetailsTest() throws IOException 
+	{
+		db.clickBookNow();
+		db.clickConfirmBooking();
+		db.verifyBookingDetails();
+	}
+	
+	
+
 }

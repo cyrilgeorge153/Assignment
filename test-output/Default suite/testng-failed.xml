@@ -8,6 +8,8 @@
           <include name="verifyPersonalDetailsTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verifyChangeDateTest"/>
+          <include name="clickBookNowTest"/>
           <include name="verifyTotalAmountTest"/>
           <include name="verifyBookingDateTest"/>
         </methods>
