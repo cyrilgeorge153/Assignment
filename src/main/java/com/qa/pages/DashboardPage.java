@@ -22,13 +22,13 @@ public class DashboardPage extends BaseClass {
 	public DashboardPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath = "//a[contains(@class,'text-center tours')]")
+	@FindBy(xpath = "/html[1]/body[1]/div[2]/header[1]/div[2]/div[1]/div[1]/div[1]/div[1]/nav[1]/ul[1]/li[4]/a[1]")
 //	@CacheLookup
 	WebElement tours;
 	
 //	@FindBy(css = ".btn.btn-primary.btn-block")
 //	@FindBy(css = ".icon_set_1_icon-66")
-	@FindBy(xpath = "//div[@class='col-md-2 col-xs-12']//button[@class='btn btn-primary btn-block'][contains(text(),'Search')]")
+	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/div[1]/div[1]/div[4]/button[1]")
 	@CacheLookup
 	WebElement search;
 	
