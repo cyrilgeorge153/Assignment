@@ -1,29 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-21T03:48:39Z" name="Default suite" finished-at="2019-12-21T03:49:19Z" duration-ms="39997">
+  <suite started-at="2019-12-21T04:14:12Z" name="Suite" finished-at="2019-12-21T04:15:51Z" duration-ms="98058">
     <groups>
     </groups>
-    <test started-at="2019-12-21T03:48:39Z" name="Default test" finished-at="2019-12-21T03:49:19Z" duration-ms="39997">
-      <class name="com.qa.testcases.AdminAssignmentTest">
-        <test-method is-config="true" signature="generateLog()[pri:0, instance:com.qa.testcases.AdminAssignmentTest@37afeb11]" started-at="2019-12-21T03:48:39Z" name="generateLog" finished-at="2019-12-21T03:48:39Z" duration-ms="24" status="PASS">
+    <test started-at="2019-12-21T04:14:12Z" name="Test" finished-at="2019-12-21T04:15:51Z" duration-ms="98058">
+      <class name="com.qa.testcases.AdminTest">
+        <test-method is-config="true" signature="generateLog()[pri:0, instance:com.qa.testcases.AdminTest@515aebb0]" started-at="2019-12-21T04:14:13Z" name="generateLog" finished-at="2019-12-21T04:14:13Z" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateLog -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AdminAssignmentTest@37afeb11]" started-at="2019-12-21T03:48:39Z" name="setUp" finished-at="2019-12-21T03:48:54Z" duration-ms="15378" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@515aebb0]" started-at="2019-12-21T04:14:13Z" name="setUp" finished-at="2019-12-21T04:14:44Z" duration-ms="31067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyThirtyDayBookingTest()[pri:2, instance:com.qa.testcases.AdminAssignmentTest@37afeb11]" started-at="2019-12-21T03:48:54Z" name="verifyThirtyDayBookingTest" finished-at="2019-12-21T03:49:19Z" duration-ms="24465" status="PASS">
+        <test-method signature="verifyAdminDashboardTest()[pri:0, instance:com.qa.testcases.AdminTest@515aebb0]" started-at="2019-12-21T04:14:44Z" name="verifyAdminDashboardTest" finished-at="2019-12-21T04:15:03Z" duration-ms="19372" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyThirtyDayBookingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminAssignmentTest@37afeb11]" started-at="2019-12-21T03:49:19Z" name="tearDown" finished-at="2019-12-21T03:49:19Z" duration-ms="104" status="PASS">
+        </test-method> <!-- verifyAdminDashboardTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@515aebb0]" started-at="2019-12-21T04:15:03Z" name="tearDown" finished-at="2019-12-21T04:15:03Z" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.AdminAssignmentTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@515aebb0]" started-at="2019-12-21T04:15:03Z" name="setUp" finished-at="2019-12-21T04:15:18Z" duration-ms="15108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTodayBookingTest()[pri:1, instance:com.qa.testcases.AdminTest@515aebb0]" started-at="2019-12-21T04:15:18Z" name="verifyTodayBookingTest" finished-at="2019-12-21T04:15:24Z" duration-ms="6235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTodayBookingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@515aebb0]" started-at="2019-12-21T04:15:24Z" name="tearDown" finished-at="2019-12-21T04:15:24Z" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@515aebb0]" started-at="2019-12-21T04:15:24Z" name="setUp" finished-at="2019-12-21T04:15:39Z" duration-ms="15080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyThirtyDayBookingTest()[pri:2, instance:com.qa.testcases.AdminTest@515aebb0]" started-at="2019-12-21T04:15:39Z" name="verifyThirtyDayBookingTest" finished-at="2019-12-21T04:15:51Z" duration-ms="11026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThirtyDayBookingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@515aebb0]" started-at="2019-12-21T04:15:51Z" name="tearDown" finished-at="2019-12-21T04:15:51Z" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.AdminTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

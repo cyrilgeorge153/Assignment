@@ -54,7 +54,7 @@ public class BaseClass {
 	{
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		return driver;
 	}
@@ -77,8 +77,6 @@ public class BaseClass {
 			if(browser.equalsIgnoreCase("chrome")) {
 				WebDriverManager.chromedriver().setup();  
 				supressConsoleLogsChrome();
-//				disablePopups();
-//				disableImages();
 				driver=new ChromeDriver();	
 			}
 			else if(browser.equalsIgnoreCase("firefox")) 
@@ -177,11 +175,6 @@ public static WebDriver headlessFirefox() {
 
 	}
 	
-	@SuppressWarnings("deprecation")
-	public static WebDriver disablePopups()
-	{
-		return driver;
-	}
 	
 	public boolean handlePopups() {
 
