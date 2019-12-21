@@ -1,0 +1,4 @@
+2019-12-21 09:15:03,153 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 09:15:20,256 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 09:18:39,439 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 09:18:54,815 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************

@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
@@ -16,6 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.BeforeClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -26,12 +29,19 @@ public class BaseClass {
 	public static Properties prop;
 	public static FileInputStream ip;
 	public static DesiredCapabilities cap;
+	public static Logger logger;
 
 	/**
 	 * @return
 	 * @throws IOException 
 	 */
 	
+@BeforeClass
+	public  void generateLog() {
+		 logger=Logger.getLogger("Utility");
+		PropertyConfigurator.configure(".//src//main//resources//log4j.properties");
+//		 PropertyConfigurator.configure(System.getProperty("user.dir"	, "/log4j.properties"));
+	}
 	
 	public static void readPropertiesFile() throws IOException
 	{

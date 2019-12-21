@@ -17,7 +17,7 @@ import com.qa.pages.DashboardPage;
  * @author CYRIL
  *
  */
-public class AssignmentTest extends BaseClass {
+public class UserTest extends BaseClass {
 	public static DashboardPage db;
 
 	@BeforeMethod()
