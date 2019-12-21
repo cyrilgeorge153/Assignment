@@ -22,13 +22,15 @@ public class UserDashboardPage extends BaseClass {
 	public UserDashboardPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(css = ".text-center.tours ")
+//	@FindBy(xpath = "//a[contains(text(),'Tours')]")
+	@FindBy(xpath = "//a[contains(@class,'text-center tours')]")
 //	@CacheLookup
 	WebElement tours;
 	
-//	@FindBy(css = ".btn.btn-primary.btn-block")
-//	@FindBy(css = ".icon_set_1_icon-66")
-	@FindBy(css = ".col-md-2.col-xs-12.o1")
+
+//	@FindBy(xpath = "(//button[normalize-space(.)='Search'])[1]")
+//	@FindBy(xpath = "(//button[contains(text(),'Search')])[1]")
+	@FindBy(xpath = "//div[@class='col-md-2 col-xs-12']//button[@class='btn btn-primary btn-block'][contains(text(),'Search')]")
 	@CacheLookup
 	WebElement search;
 	
@@ -125,7 +127,7 @@ public class UserDashboardPage extends BaseClass {
 	@CacheLookup
 	WebElement invoicenovalue;
 	
-	@FindBy(css = "span[id='displaytotal']")
+	@FindBy(xpath = "//span[@class='text-main text-secondary']")
 	@CacheLookup
 	WebElement totalamt;
 	
@@ -242,16 +244,17 @@ public class UserDashboardPage extends BaseClass {
 	
 	public void verifyPininterestShare()
 	{
-try {
-		    
-	  Assert.assertEquals(pininterestShare.isDisplayed(),true);
-		}
-		catch(org.openqa.selenium.StaleElementReferenceException ex)
-		{
-
-			Assert.assertEquals(pininterestShare.isDisplayed(),true);
-		}
-		
+//try {
+//		    
+//	  Assert.assertEquals(pininterestShare.isDisplayed(),true);
+//		}
+//		catch(org.openqa.selenium.StaleElementReferenceException ex)
+//		{
+//
+//			Assert.assertEquals(pininterestShare.isDisplayed(),true);
+//		}
+		WebElement element = driver.findElement(By.xpath("//span[contains(text(),'Pin')]"));
+		Assert.assertEquals(element.isDisplayed(), true);
 	}
 	
 	public void verifyMailShare()

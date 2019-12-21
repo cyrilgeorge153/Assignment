@@ -56,3 +56,90 @@
 2019-12-21 09:45:51,017 - com.qa.configuration.BaseClass -INFO - *******************ending ThirtyDayBookingTest**************************
 2019-12-21 09:45:51,020 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
 2019-12-21 09:45:51,051 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:13:06,577 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:13:26,193 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:13:26,201 - com.qa.configuration.BaseClass -INFO - *******************starting AdminDashboardTest**************************
+2019-12-21 10:13:31,498 - com.qa.configuration.BaseClass -INFO - *******************ending AdminDashboardTest**************************
+2019-12-21 10:13:31,501 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 10:13:31,541 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:13:31,541 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:13:46,395 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:13:46,397 - com.qa.configuration.BaseClass -INFO - *******************starting TodayBookingTest**************************
+2019-12-21 10:13:51,907 - com.qa.configuration.BaseClass -INFO - *******************ending TodayBookingTest**************************
+2019-12-21 10:13:51,911 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 10:13:51,931 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:13:51,946 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:14:07,829 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:14:07,832 - com.qa.configuration.BaseClass -INFO - *******************starting ThirtyDayBookingTest**************************
+2019-12-21 10:14:34,625 - com.qa.configuration.BaseClass -INFO - *******************ending ThirtyDayBookingTest**************************
+2019-12-21 10:14:34,635 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 10:14:34,676 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:15:18,777 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:15:36,445 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:15:36,460 - com.qa.configuration.BaseClass -INFO - *******************starting AdminDashboardTest**************************
+2019-12-21 10:16:07,156 - com.qa.configuration.BaseClass -INFO - *******************ending AdminDashboardTest**************************
+2019-12-21 10:16:07,161 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 10:16:07,258 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:16:07,262 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:16:30,512 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:16:48,038 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:16:48,049 - com.qa.configuration.BaseClass -INFO - *******************starting AdminDashboardTest**************************
+2019-12-21 10:17:11,003 - com.qa.configuration.BaseClass -INFO - *******************ending AdminDashboardTest**************************
+2019-12-21 10:17:11,008 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 10:17:11,180 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:17:11,185 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:17:27,620 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:17:27,622 - com.qa.configuration.BaseClass -INFO - *******************starting TodayBookingTest**************************
+2019-12-21 10:17:34,069 - com.qa.configuration.BaseClass -INFO - *******************ending TodayBookingTest**************************
+2019-12-21 10:17:34,072 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 10:17:34,137 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:17:34,140 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:33:02,499 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:33:19,203 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:33:19,215 - com.qa.configuration.BaseClass -INFO - *******************starting AdminDashboardTest**************************
+2019-12-21 10:33:27,871 - com.qa.configuration.BaseClass -INFO - *******************ending AdminDashboardTest**************************
+2019-12-21 10:33:27,876 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 10:33:27,967 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:33:27,973 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:33:45,432 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:33:45,437 - com.qa.configuration.BaseClass -INFO - *******************starting TodayBookingTest**************************
+2019-12-21 10:34:22,235 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:34:41,104 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:34:41,112 - com.qa.configuration.BaseClass -INFO - *******************starting AdminDashboardTest**************************
+2019-12-21 10:34:46,856 - com.qa.configuration.BaseClass -INFO - *******************ending AdminDashboardTest**************************
+2019-12-21 10:34:46,862 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 10:34:46,948 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:34:46,952 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:35:03,423 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:35:03,426 - com.qa.configuration.BaseClass -INFO - *******************starting TodayBookingTest**************************
+2019-12-21 10:35:09,246 - com.qa.configuration.BaseClass -INFO - *******************ending TodayBookingTest**************************
+2019-12-21 10:35:09,249 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 10:35:09,329 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:35:09,333 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:35:24,999 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 10:35:25,003 - com.qa.configuration.BaseClass -INFO - *******************starting ThirtyDayBookingTest**************************
+2019-12-21 10:35:31,121 - com.qa.configuration.BaseClass -INFO - *******************ending ThirtyDayBookingTest**************************
+2019-12-21 10:35:31,130 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 10:35:31,213 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 10:57:55,350 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 10:59:10,425 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 11:06:34,562 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 11:07:48,030 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 11:16:07,136 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 11:16:26,301 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 11:16:26,314 - com.qa.configuration.BaseClass -INFO - *******************starting AdminDashboardTest**************************
+2019-12-21 11:16:51,875 - com.qa.configuration.BaseClass -INFO - *******************ending AdminDashboardTest**************************
+2019-12-21 11:16:51,880 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 11:16:51,971 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 11:16:51,976 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 11:17:08,659 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 11:17:08,663 - com.qa.configuration.BaseClass -INFO - *******************starting TodayBookingTest**************************
+2019-12-21 11:17:14,852 - com.qa.configuration.BaseClass -INFO - *******************ending TodayBookingTest**************************
+2019-12-21 11:17:14,854 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 11:17:14,928 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-21 11:17:14,931 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-21 11:17:31,892 - com.qa.configuration.BaseClass -INFO - *******************ending before method**************************
+2019-12-21 11:17:31,894 - com.qa.configuration.BaseClass -INFO - *******************starting ThirtyDayBookingTest**************************
+2019-12-21 11:18:03,846 - com.qa.configuration.BaseClass -INFO - *******************ending ThirtyDayBookingTest**************************
+2019-12-21 11:18:03,852 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-21 11:18:03,978 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************

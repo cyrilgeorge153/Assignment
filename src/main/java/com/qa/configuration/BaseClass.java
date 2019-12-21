@@ -54,8 +54,8 @@ public class BaseClass {
 	{
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		return driver;
 	}
 	
@@ -91,7 +91,7 @@ public class BaseClass {
 			}
 			else if(browser.equalsIgnoreCase("IE")) 
 			{
-				WebDriverManager.iedriver().setup();
+				System.setProperty("webdriver.ie.driver", ".//Drivers//IEDriver//IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 			}
 			else if(browser.equalsIgnoreCase("headlesschrome")) 

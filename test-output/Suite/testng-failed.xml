@@ -6,13 +6,16 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.testcases.AssignmentTest">
+      <class name="com.qa.testcases.UserTest">
         <methods>
-          <include name="setUp"/>
+          <include name="verifyPininterestShareTest"/>
           <include name="tearDown"/>
-          <include name="verifyTotalAmountTest"/>
+          <include name="clickToursTest"/>
+          <include name="setUp"/>
+          <include name="verifyBookingDetailsTest"/>
+          <include name="generateLog"/>
         </methods>
-      </class> <!-- com.qa.testcases.AssignmentTest -->
+      </class> <!-- com.qa.testcases.UserTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
