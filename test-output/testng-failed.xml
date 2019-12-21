@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.qa.testcases.UserTest">
         <methods>
           <include name="verifyBookingDateTest"/>
           <include name="verifyInclusionsTest"/>
-          <include name="verifyPininterestShareTest"/>
           <include name="tearDown"/>
           <include name="verifyAmountTest"/>
           <include name="verifyTotalAmountTest"/>
-          <include name="verifyTwitterShareTest"/>
           <include name="verifyPersonalDetailsTest"/>
           <include name="setUp"/>
           <include name="verifyBookingDetailsTest"/>
           <include name="generateLog"/>
           <include name="verifyWriteReviewTest"/>
           <include name="verifyExclusionsTest"/>
-          <include name="verifyImageTest"/>
           <include name="verifyShowMapTest"/>
           <include name="verifyDemoUserFullFlowTest"/>
           <include name="verifyNormalShareTest"/>
           <include name="verifyChangeDateTest"/>
           <include name="clickBookNowTest"/>
-          <include name="verifyFbShareTest"/>
         </methods>
       </class> <!-- com.qa.testcases.UserTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

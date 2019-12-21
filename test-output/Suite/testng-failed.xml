@@ -8,12 +8,22 @@
     <classes>
       <class name="com.qa.testcases.UserTest">
         <methods>
-          <include name="verifyPininterestShareTest"/>
+          <include name="verifyBookingDateTest"/>
+          <include name="verifyInclusionsTest"/>
           <include name="tearDown"/>
-          <include name="clickToursTest"/>
+          <include name="verifyAmountTest"/>
+          <include name="verifyTotalAmountTest"/>
+          <include name="verifyPersonalDetailsTest"/>
           <include name="setUp"/>
           <include name="verifyBookingDetailsTest"/>
           <include name="generateLog"/>
+          <include name="verifyWriteReviewTest"/>
+          <include name="verifyExclusionsTest"/>
+          <include name="verifyShowMapTest"/>
+          <include name="verifyDemoUserFullFlowTest"/>
+          <include name="verifyNormalShareTest"/>
+          <include name="verifyChangeDateTest"/>
+          <include name="clickBookNowTest"/>
         </methods>
       </class> <!-- com.qa.testcases.UserTest -->
     </classes>
