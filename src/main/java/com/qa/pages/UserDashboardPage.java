@@ -18,8 +18,8 @@ import com.qa.configuration.BaseClass;
  * @author CYRIL
  *
  */
-public class DashboardPage extends BaseClass {
-	public DashboardPage(WebDriver driver) {
+public class UserDashboardPage extends BaseClass {
+	public UserDashboardPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(css = ".text-center.tours ")

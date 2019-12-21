@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qa.configuration.BaseClass;
-import com.qa.pages.DashboardPage;
+import com.qa.pages.UserDashboardPage;
 
 /**
  * 
@@ -18,7 +18,7 @@ import com.qa.pages.DashboardPage;
  *
  */
 public class UserTest extends BaseClass {
-	public static DashboardPage db;
+	public static UserDashboardPage db;
 
 	@BeforeMethod()
 	public void setUp() throws IOException {
@@ -26,7 +26,7 @@ public class UserTest extends BaseClass {
 		browserConfig();
 		readUrl();
 		getCredentials();
-		db = new DashboardPage(driver);
+		db = new UserDashboardPage(driver);
 		db.clickTours();
 		db.clickSearch();
 		db.clickDetails();
