@@ -22,7 +22,7 @@ public class UserTest extends BaseClass {
 	public static UserDashboardPage db;
 	Logger logger=Logger.getLogger(BaseClass.class);
 
-	@BeforeMethod()
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws IOException {
 		logger.info("*******************starting before method**************************");
 		startBrowser();
@@ -36,7 +36,7 @@ public class UserTest extends BaseClass {
 		logger.info("*******************ending before method**************************");
 	}
 	
-	@AfterMethod()
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() throws InterruptedException {
 		closeBrowser();
 	}

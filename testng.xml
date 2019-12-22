@@ -5,9 +5,18 @@
 		<listener class-name="com.qa.resources.ExtentReporterNG" />
 	</listeners>
 	<test thread-count="5" name="Test">
+	<groups>
+			<define name="ExecuteAll">
+				<include name="smoke"></include>
+				<include name="regression"></include>
+			</define>
+			<run>
+				<include name="ExecuteAll"></include>
+			</run>
+		</groups>
 		<classes>
-			<class name="com.qa.testcases.UserTest" />
 			<!-- <class name="com.qa.testcases.AdminTest" /> -->
+			<class name="com.qa.testcases.UserTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -23,7 +23,7 @@ public class AdminTest extends BaseClass {
 	public static AdminDashboardPage adb;
 	Logger logger=Logger.getLogger(BaseClass.class);
 	
-	@BeforeMethod()
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws IOException {
 		logger.info("*******************starting before method**************************");
 		startBrowser();
@@ -35,35 +35,52 @@ public class AdminTest extends BaseClass {
 		
 	}
 	
-	@AfterMethod()
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() throws InterruptedException {
 		logger.info("*******************starting after method**************************");
 		closeBrowser();
 		logger.info("*******************ending after method**************************");
 	}
 	
-	@Test(priority = 0)
-	public void verifyAdminDashboardTest()
-	{
-		logger.info("*******************starting AdminDashboardTest**************************");
-		adb.verifyAdminDashboard();
-		logger.info("*******************ending AdminDashboardTest**************************");
-	}
+//	@Test(priority = 0,groups = "smoke",enabled = true,description = " To verifyAdminDashboardTest")
+//	public void verifyAdminDashboardTest()
+//	{
+//		logger.info("*******************starting verifyAdminDashboardTest**************************");
+//		adb.verifyAdminDashboard();
+//		logger.info("*******************ending verifyAdminDashboardTest**************************");
+//	}
+//	
+//	@Test(priority = 1,groups = "smoke",enabled = true,description = " To verifyTodayBookingTest")
+//	public void verifyTodayBookingTest()
+//	{
+//		logger.info("*******************starting verifyTodayBookingTest**************************");
+//		adb.verifyTodayBooking();
+//		logger.info("*******************ending verifyTodayBookingTest**************************");
+//	}
+//	
+//	@Test(priority = 2,groups = "smoke",enabled = true,description = " To verifyThirtyDayBookingTest")
+//	public void verifyThirtyDayBookingTest()
+//	{
+//		logger.info("*******************starting verifyThirtyDayBookingTest**************************");
+//	    adb.verifyThirtyDayBooking();
+//	    logger.info("*******************ending verifyThirtyDayBookingTest**************************");
+//	}
 	
-	@Test(priority = 1)
-	public void verifyTodayBookingTest()
-	{
-		logger.info("*******************starting TodayBookingTest**************************");
-		adb.verifyTodayBooking();
-		logger.info("*******************ending TodayBookingTest**************************");
-	}
+//	@Test(priority = 3,groups = "smoke",enabled = true,description = " To verifyIdValueTest")
+//	public void verifyIdValueTest()
+//	{
+//		logger.info("*******************starting verifyIdValueTest**************************");
+//	    adb.verifyIdValue();
+//	    logger.info("*******************ending verifyIdValueTest**************************");
+//	}
 	
-	@Test(priority = 2)
-	public void verifyThirtyDayBookingTest()
+	@Test(priority = 4,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
+	public void verifyBookingDetailsTest()
 	{
-		logger.info("*******************starting ThirtyDayBookingTest**************************");
-	    adb.verifyThirtyDayBooking();
-	    logger.info("*******************ending ThirtyDayBookingTest**************************");
+		logger.info("*******************starting verifyBookingDetailsTest**************************");
+	    adb.verifyBookingDetails();
+	    driver.navigate().back();
+	    logger.info("*******************ending verifyBookingDetailsTest**************************");
 	}
 
 }

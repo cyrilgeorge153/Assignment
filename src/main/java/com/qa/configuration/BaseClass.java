@@ -2,6 +2,7 @@ package com.qa.configuration;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +17,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeClass;
@@ -158,7 +160,33 @@ public static WebDriver headlessFirefox() {
 		options = new ChromeOptions();
 		options.addArguments("--blink-settings=imagesEnabled=false");
 		return driver;
+		
 	}
+	
+	public static WebDriver disableChromeImages()
+    {
+		options=new ChromeOptions();
+        HashMap<String, Object> images = new HashMap<String, Object>();
+        images.put("images", 2);
+
+        HashMap<String, Object> prefs = new HashMap<String, Object>();
+        prefs.put("profile.default_content_setting_values", images);
+
+        options.setExperimentalOption("prefs", prefs);
+		return driver;
+
+    }
+	
+	public static WebDriver disableFirefoxImages()
+    {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		FirefoxProfile profile = new FirefoxProfile();
+		profile.setPreference("permissions.default.image", 2);
+		capabilities.setCapability("firefox_profile", profile);
+		WebDriver driver = new FirefoxDriver(capabilities);
+		return driver;
+
+    }
 	
 	public static WebDriver supressConsoleLogsChrome()
 	{

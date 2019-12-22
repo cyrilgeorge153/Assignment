@@ -34,6 +34,14 @@ public class AdminDashboardPage extends BaseClass{
 	@CacheLookup
 	WebElement thirtydayreport;
 	
+	@FindBy(xpath = "//td[contains(text(),'168')]")
+	@CacheLookup
+	WebElement idvalue;
+	
+	@FindBy(xpath = "//tr[5]//td[12]//span[1]//a[1]//i[1]")
+	@CacheLookup
+	WebElement viewinvoice;
+	
 	public void verifyAdminDashboard() {
 		Assert.assertEquals(dashboard.isDisplayed(), true);
 	}
@@ -44,6 +52,14 @@ public class AdminDashboardPage extends BaseClass{
 	
 	public void verifyThirtyDayBooking() {
 		Assert.assertEquals(thirtydayreport.isDisplayed(), true);
+	}
+	
+	public void verifyIdValue() {
+		Assert.assertEquals(idvalue.isDisplayed(), true);
+	}
+	
+	public void verifyBookingDetails() {
+		viewinvoice.click();
 	}
 
 }
