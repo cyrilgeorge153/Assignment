@@ -42,37 +42,37 @@ public class AdminTest extends BaseClass {
 		logger.info("*******************ending after method**************************");
 	}
 	
-//	@Test(priority = 0,groups = "smoke",enabled = true,description = " To verifyAdminDashboardTest")
-//	public void verifyAdminDashboardTest()
-//	{
-//		logger.info("*******************starting verifyAdminDashboardTest**************************");
-//		adb.verifyAdminDashboard();
-//		logger.info("*******************ending verifyAdminDashboardTest**************************");
-//	}
-//	
-//	@Test(priority = 1,groups = "smoke",enabled = true,description = " To verifyTodayBookingTest")
-//	public void verifyTodayBookingTest()
-//	{
-//		logger.info("*******************starting verifyTodayBookingTest**************************");
-//		adb.verifyTodayBooking();
-//		logger.info("*******************ending verifyTodayBookingTest**************************");
-//	}
-//	
-//	@Test(priority = 2,groups = "smoke",enabled = true,description = " To verifyThirtyDayBookingTest")
-//	public void verifyThirtyDayBookingTest()
-//	{
-//		logger.info("*******************starting verifyThirtyDayBookingTest**************************");
-//	    adb.verifyThirtyDayBooking();
-//	    logger.info("*******************ending verifyThirtyDayBookingTest**************************");
-//	}
+	@Test(priority = 0,groups = "smoke",enabled = true,description = " To verifyAdminDashboardTest")
+	public void verifyAdminDashboardTest()
+	{
+		logger.info("*******************starting verifyAdminDashboardTest**************************");
+		adb.verifyAdminDashboard();
+		logger.info("*******************ending verifyAdminDashboardTest**************************");
+	}
 	
-//	@Test(priority = 3,groups = "smoke",enabled = true,description = " To verifyIdValueTest")
-//	public void verifyIdValueTest()
-//	{
-//		logger.info("*******************starting verifyIdValueTest**************************");
-//	    adb.verifyIdValue();
-//	    logger.info("*******************ending verifyIdValueTest**************************");
-//	}
+	@Test(priority = 1,groups = "smoke",enabled = true,description = " To verifyTodayBookingTest")
+	public void verifyTodayBookingTest()
+	{
+		logger.info("*******************starting verifyTodayBookingTest**************************");
+		adb.verifyTodayBooking();
+		logger.info("*******************ending verifyTodayBookingTest**************************");
+	}
+	
+	@Test(priority = 2,groups = "smoke",enabled = true,description = " To verifyThirtyDayBookingTest")
+	public void verifyThirtyDayBookingTest()
+	{
+		logger.info("*******************starting verifyThirtyDayBookingTest**************************");
+	    adb.verifyThirtyDayBooking();
+	    logger.info("*******************ending verifyThirtyDayBookingTest**************************");
+	}
+	
+	@Test(priority = 3,groups = "smoke",enabled = true,description = " To verifyIdValueTest")
+	public void verifyIdValueTest()
+	{
+		logger.info("*******************starting verifyIdValueTest**************************");
+	    adb.verifyIdValue();
+	    logger.info("*******************ending verifyIdValueTest**************************");
+	}
 	
 	@Test(priority = 4,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
 	public void verifyBookingDetailsTest()

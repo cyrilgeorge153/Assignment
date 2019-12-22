@@ -290,3 +290,12 @@
 2019-12-22 12:12:19,546 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
 2019-12-22 12:38:06,677 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
 2019-12-22 12:39:09,774 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-22 13:02:13,022 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-22 13:04:29,410 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-22 13:05:29,649 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-22 13:05:29,782 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-22 13:05:29,789 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-22 13:10:56,656 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************
+2019-12-22 13:11:54,278 - com.qa.configuration.BaseClass -INFO - *******************starting after method**************************
+2019-12-22 13:11:54,420 - com.qa.configuration.BaseClass -INFO - *******************ending after method**************************
+2019-12-22 13:11:54,425 - com.qa.configuration.BaseClass -INFO - *******************starting before method**************************

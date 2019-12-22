@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="15" total="17" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-22T06:41:15Z" name="Suite" finished-at="2019-12-22T06:43:22Z" duration-ms="126701">
+  <suite started-at="2019-12-22T07:34:29Z" name="Suite" finished-at="2019-12-22T07:36:31Z" duration-ms="121731">
     <groups>
+      <group name="regression">
+        <method signature="UserTest.verifyAmountTest()[pri:14, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyAmountTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyBookingDateTest()[pri:13, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyBookingDateTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyBookingDetailsTest()[pri:15, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyBookingDetailsTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyChangeDateTest()[pri:10, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyChangeDateTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyExclusionsTest()[pri:8, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyExclusionsTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyFbShareTest()[pri:2, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyFbShareTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyImageTest()[pri:1, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyImageTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyInclusionsTest()[pri:7, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyInclusionsTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyNormalShareTest()[pri:5, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyNormalShareTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyPersonalDetailsTest()[pri:12, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyPersonalDetailsTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyPininterestShareTest()[pri:4, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyPininterestShareTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyShowMapTest()[pri:6, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyShowMapTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyTotalAmountTest()[pri:16, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyTotalAmountTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyTwitterShareTest()[pri:3, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyTwitterShareTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyWriteReviewTest()[pri:9, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyWriteReviewTest" class="com.qa.testcases.UserTest"/>
+      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="UserTest.clickBookNowTest()[pri:11, instance:com.qa.testcases.UserTest@158d2680]" name="clickBookNowTest" class="com.qa.testcases.UserTest"/>
-        <method signature="UserTest.verifyDemoUserFullFlowTest()[pri:0, instance:com.qa.testcases.UserTest@158d2680]" name="verifyDemoUserFullFlowTest" class="com.qa.testcases.UserTest"/>
+        <method signature="AdminTest.verifyAdminDashboardTest()[pri:0, instance:com.qa.testcases.AdminTest@5c33f1a9]" name="verifyAdminDashboardTest" class="com.qa.testcases.AdminTest"/>
+        <method signature="AdminTest.verifyBookingDetailsTest()[pri:4, instance:com.qa.testcases.AdminTest@5c33f1a9]" name="verifyBookingDetailsTest" class="com.qa.testcases.AdminTest"/>
+        <method signature="AdminTest.verifyIdValueTest()[pri:3, instance:com.qa.testcases.AdminTest@5c33f1a9]" name="verifyIdValueTest" class="com.qa.testcases.AdminTest"/>
+        <method signature="AdminTest.verifyThirtyDayBookingTest()[pri:2, instance:com.qa.testcases.AdminTest@5c33f1a9]" name="verifyThirtyDayBookingTest" class="com.qa.testcases.AdminTest"/>
+        <method signature="AdminTest.verifyTodayBookingTest()[pri:1, instance:com.qa.testcases.AdminTest@5c33f1a9]" name="verifyTodayBookingTest" class="com.qa.testcases.AdminTest"/>
+        <method signature="UserTest.clickBookNowTest()[pri:11, instance:com.qa.testcases.UserTest@1623b78d]" name="clickBookNowTest" class="com.qa.testcases.UserTest"/>
+        <method signature="UserTest.verifyDemoUserFullFlowTest()[pri:0, instance:com.qa.testcases.UserTest@1623b78d]" name="verifyDemoUserFullFlowTest" class="com.qa.testcases.UserTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2019-12-22T06:41:15Z" name="Test" finished-at="2019-12-22T06:43:22Z" duration-ms="126701">
+    <test started-at="2019-12-22T07:34:29Z" name="Test" finished-at="2019-12-22T07:36:31Z" duration-ms="121731">
       <class name="com.qa.testcases.UserTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.UserTest@158d2680]" started-at="2019-12-22T06:41:15Z" name="setUp" finished-at="2019-12-22T06:42:19Z" duration-ms="63704" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.UserTest@1623b78d]" started-at="2019-12-22T07:35:29Z" name="setUp" finished-at="2019-12-22T07:36:30Z" duration-ms="61177" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class,'text-center tours')]"}
@@ -20,8 +42,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-88R09EB', ip: '192.168.43.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 83aa9d7586dd9eda33d5ac4e5f28b23d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49257}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10977e285b358285036c24c55c186794
 *** Element info: {Using=xpath, value=//a[contains(@class,'text-center tours')]}]]>
             </message>
             <full-stacktrace>
@@ -31,8 +53,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-88R09EB', ip: '192.168.43.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 83aa9d7586dd9eda33d5ac4e5f28b23d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49257}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10977e285b358285036c24c55c186794
 *** Element info: {Using=xpath, value=//a[contains(@class,'text-center tours')]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -88,7 +110,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDemoUserFullFlowTest()[pri:0, instance:com.qa.testcases.UserTest@158d2680]" started-at="2019-12-22T06:42:19Z" name="verifyDemoUserFullFlowTest" description=" To test the full flow of demo user" finished-at="2019-12-22T06:42:19Z" duration-ms="0" status="SKIP">
+        <test-method signature="verifyDemoUserFullFlowTest()[pri:0, instance:com.qa.testcases.UserTest@1623b78d]" started-at="2019-12-22T07:36:30Z" name="verifyDemoUserFullFlowTest" description=" To test the full flow of demo user" finished-at="2019-12-22T07:36:30Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class,'text-center tours')]"}
@@ -97,8 +119,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-88R09EB', ip: '192.168.43.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 83aa9d7586dd9eda33d5ac4e5f28b23d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49257}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10977e285b358285036c24c55c186794
 *** Element info: {Using=xpath, value=//a[contains(@class,'text-center tours')]}]]>
             </message>
             <full-stacktrace>
@@ -108,8 +130,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-88R09EB', ip: '192.168.43.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 83aa9d7586dd9eda33d5ac4e5f28b23d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49257}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10977e285b358285036c24c55c186794
 *** Element info: {Using=xpath, value=//a[contains(@class,'text-center tours')]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -165,33 +187,35 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDemoUserFullFlowTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.UserTest@158d2680]" started-at="2019-12-22T06:42:19Z" name="tearDown" finished-at="2019-12-22T06:42:19Z" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.UserTest@1623b78d]" started-at="2019-12-22T07:36:30Z" name="tearDown" finished-at="2019-12-22T07:36:31Z" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.UserTest@158d2680]" started-at="2019-12-22T06:42:19Z" name="setUp" finished-at="2019-12-22T06:43:22Z" duration-ms="62794" status="FAIL">
+      </class> <!-- com.qa.testcases.UserTest -->
+      <class name="com.qa.testcases.AdminTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@5c33f1a9]" started-at="2019-12-22T07:34:29Z" name="setUp" finished-at="2019-12-22T07:35:29Z" duration-ms="60229" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class,'text-center tours')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
   (Session info: chrome=79.0.3945.88)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-88R09EB', ip: '192.168.43.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9a27cab7831be8b1236b5a271e99e596
-*** Element info: {Using=xpath, value=//a[contains(@class,'text-center tours')]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49234}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bf35875efce12ba1f5ff951dbeb93610
+*** Element info: {Using=name, value=email}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class,'text-center tours')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
   (Session info: chrome=79.0.3945.88)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-88R09EB', ip: '192.168.43.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9a27cab7831be8b1236b5a271e99e596
-*** Element info: {Using=xpath, value=//a[contains(@class,'text-center tours')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49234}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bf35875efce12ba1f5ff951dbeb93610
+*** Element info: {Using=name, value=email}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -204,14 +228,11 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy14.click(Unknown Source)
-at com.qa.pages.UserDashboardPage.clickTours(UserDashboardPage.java:210)
-at com.qa.testcases.UserTest.setUp(UserTest.java:33)
+at com.qa.configuration.BaseClass.getCredentialsAdmin(BaseClass.java:154)
+at com.qa.testcases.AdminTest.setUp(AdminTest.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -246,29 +267,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickBookNowTest()[pri:11, instance:com.qa.testcases.UserTest@158d2680]" started-at="2019-12-22T06:43:22Z" name="clickBookNowTest" description="To clickBookNowTest" finished-at="2019-12-22T06:43:22Z" duration-ms="0" status="SKIP">
+        <test-method signature="verifyAdminDashboardTest()[pri:0, instance:com.qa.testcases.AdminTest@5c33f1a9]" started-at="2019-12-22T07:35:29Z" name="verifyAdminDashboardTest" description=" To verifyAdminDashboardTest" finished-at="2019-12-22T07:35:29Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class,'text-center tours')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
   (Session info: chrome=79.0.3945.88)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-88R09EB', ip: '192.168.43.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 83aa9d7586dd9eda33d5ac4e5f28b23d
-*** Element info: {Using=xpath, value=//a[contains(@class,'text-center tours')]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49234}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bf35875efce12ba1f5ff951dbeb93610
+*** Element info: {Using=name, value=email}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@class,'text-center tours')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
   (Session info: chrome=79.0.3945.88)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-88R09EB', ip: '192.168.43.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 83aa9d7586dd9eda33d5ac4e5f28b23d
-*** Element info: {Using=xpath, value=//a[contains(@class,'text-center tours')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\cyril\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49234}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bf35875efce12ba1f5ff951dbeb93610
+*** Element info: {Using=name, value=email}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -281,14 +302,11 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy14.click(Unknown Source)
-at com.qa.pages.UserDashboardPage.clickTours(UserDashboardPage.java:210)
-at com.qa.testcases.UserTest.setUp(UserTest.java:33)
+at com.qa.configuration.BaseClass.getCredentialsAdmin(BaseClass.java:154)
+at com.qa.testcases.AdminTest.setUp(AdminTest.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -322,12 +340,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickBookNowTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.UserTest@158d2680]" started-at="2019-12-22T06:43:22Z" name="tearDown" finished-at="2019-12-22T06:43:22Z" duration-ms="56" status="PASS">
+        </test-method> <!-- verifyAdminDashboardTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@5c33f1a9]" started-at="2019-12-22T07:35:29Z" name="tearDown" finished-at="2019-12-22T07:35:29Z" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.UserTest -->
+      </class> <!-- com.qa.testcases.AdminTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

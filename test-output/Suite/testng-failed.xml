@@ -7,16 +7,22 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="smoke"/>
+        <include name="ExecuteAll"/>
       </run>
     </groups>
     <classes>
+      <class name="com.qa.testcases.AdminTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyAdminDashboardTest"/>
+        </methods>
+      </class> <!-- com.qa.testcases.AdminTest -->
       <class name="com.qa.testcases.UserTest">
         <methods>
           <include name="tearDown"/>
           <include name="verifyDemoUserFullFlowTest"/>
           <include name="setUp"/>
-          <include name="clickBookNowTest"/>
         </methods>
       </class> <!-- com.qa.testcases.UserTest -->
     </classes>
