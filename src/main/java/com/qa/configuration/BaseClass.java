@@ -84,6 +84,7 @@ public class BaseClass {
 			else if(browser.equalsIgnoreCase("firefox")) 
 			{
 				WebDriverManager.firefoxdriver().setup(); 
+				supressConsoleLogsFirefox();
 				driver= new FirefoxDriver();
 			}
 			else if(browser.equalsIgnoreCase("edge")) 
@@ -196,10 +197,8 @@ public static WebDriver headlessFirefox() {
 	
 	public static WebDriver supressConsoleLogsFirefox()
 	{
-		WebDriverManager.firefoxdriver().setup();
-		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
-		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
-		return new FirefoxDriver();
+		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"null");
+		return driver;
 
 	}
 	
