@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="com.qa.resources.ExtentReporterNG"/>
+    <listener class-name="com.qa.analyzer.MyTransformer"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <groups>
