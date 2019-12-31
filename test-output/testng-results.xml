@@ -1,60 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+<testng-results skipped="0" failed="2" ignored="3" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="170523" started-at="2019-12-26T12:18:29Z" finished-at="2019-12-26T12:21:20Z">
+  <suite name="Failed suite [Default suite]" duration-ms="117595" started-at="2019-12-31T04:05:04Z" finished-at="2019-12-31T04:07:01Z">
     <groups>
       <group name="smoke">
-        <method signature="AdminTest.verifyAdminDashboardTest()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="verifyAdminDashboardTest" class="com.qa.testcases.AdminTest"/>
-        <method signature="AdminTest.verifyBookingDetailsTest()[pri:4, instance:com.qa.testcases.AdminTest@627551fb]" name="verifyBookingDetailsTest" class="com.qa.testcases.AdminTest"/>
-        <method signature="AdminTest.verifyIdValueTest()[pri:3, instance:com.qa.testcases.AdminTest@627551fb]" name="verifyIdValueTest" class="com.qa.testcases.AdminTest"/>
-        <method signature="AdminTest.verifyThirtyDayBookingTest()[pri:2, instance:com.qa.testcases.AdminTest@627551fb]" name="verifyThirtyDayBookingTest" class="com.qa.testcases.AdminTest"/>
-        <method signature="AdminTest.verifyTodayBookingTest()[pri:1, instance:com.qa.testcases.AdminTest@627551fb]" name="verifyTodayBookingTest" class="com.qa.testcases.AdminTest"/>
+        <method signature="AdminTest.verifyBookingDetailsTest()[pri:4, instance:com.qa.testcases.AdminTest@43814d18]" name="verifyBookingDetailsTest" class="com.qa.testcases.AdminTest"/>
+        <method signature="AdminTest.verifyIdValueTest()[pri:3, instance:com.qa.testcases.AdminTest@43814d18]" name="verifyIdValueTest" class="com.qa.testcases.AdminTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="170523" started-at="2019-12-26T12:18:29Z" finished-at="2019-12-26T12:21:20Z">
+    <test name="Default test(failed)" duration-ms="117595" started-at="2019-12-31T04:05:04Z" finished-at="2019-12-31T04:07:01Z">
       <class name="com.qa.testcases.AdminTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="setUp" is-config="true" duration-ms="18339" started-at="2019-12-26T12:18:29Z" finished-at="2019-12-26T12:18:48Z">
+        <test-method status="PASS" signature="generateLog()[pri:0, instance:com.qa.testcases.AdminTest@43814d18]" name="generateLog" is-config="true" duration-ms="15" started-at="2019-12-31T04:05:04Z" finished-at="2019-12-31T04:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateLog -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@43814d18]" name="setUp" is-config="true" duration-ms="15509" started-at="2019-12-31T04:05:04Z" finished-at="2019-12-31T04:05:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyAdminDashboardTest()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="verifyAdminDashboardTest" duration-ms="5328" started-at="2019-12-26T12:18:48Z" description=" To verifyAdminDashboardTest" finished-at="2019-12-26T12:18:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAdminDashboardTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="tearDown" is-config="true" duration-ms="2139" started-at="2019-12-26T12:18:53Z" finished-at="2019-12-26T12:18:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="setUp" is-config="true" duration-ms="9868" started-at="2019-12-26T12:18:55Z" finished-at="2019-12-26T12:19:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyTodayBookingTest()[pri:1, instance:com.qa.testcases.AdminTest@627551fb]" name="verifyTodayBookingTest" duration-ms="5298" started-at="2019-12-26T12:19:05Z" description=" To verifyTodayBookingTest" finished-at="2019-12-26T12:19:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTodayBookingTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="tearDown" is-config="true" duration-ms="138" started-at="2019-12-26T12:19:10Z" finished-at="2019-12-26T12:19:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="setUp" is-config="true" duration-ms="9241" started-at="2019-12-26T12:19:10Z" finished-at="2019-12-26T12:19:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyThirtyDayBookingTest()[pri:2, instance:com.qa.testcases.AdminTest@627551fb]" name="verifyThirtyDayBookingTest" duration-ms="8546" started-at="2019-12-26T12:19:20Z" description=" To verifyThirtyDayBookingTest" finished-at="2019-12-26T12:19:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThirtyDayBookingTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="tearDown" is-config="true" duration-ms="181" started-at="2019-12-26T12:19:28Z" finished-at="2019-12-26T12:19:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="setUp" is-config="true" duration-ms="8840" started-at="2019-12-26T12:19:28Z" finished-at="2019-12-26T12:19:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyIdValueTest()[pri:3, instance:com.qa.testcases.AdminTest@627551fb]" name="verifyIdValueTest" duration-ms="45130" started-at="2019-12-26T12:19:37Z" description=" To verifyIdValueTest" finished-at="2019-12-26T12:20:22Z">
+        <test-method status="FAIL" signature="verifyIdValueTest()[pri:3, instance:com.qa.testcases.AdminTest@43814d18]" name="verifyIdValueTest" duration-ms="45257" started-at="2019-12-31T04:05:19Z" description=" To verifyIdValueTest" finished-at="2019-12-31T04:06:04Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'168')]"}
@@ -63,8 +28,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LINU-PC', ip: '169.254.156.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\CYRIL\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e953572ccaae15f16b250fab30a16206
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\CYRIL\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61891}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 47ef0fb349a9456d3c8670207b5d72c8
 *** Element info: {Using=xpath, value=//td[contains(text(),'168')]}]]>
             </message>
             <full-stacktrace>
@@ -74,8 +39,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LINU-PC', ip: '169.254.156.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\CYRIL\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e953572ccaae15f16b250fab30a16206
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\CYRIL\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61891}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 47ef0fb349a9456d3c8670207b5d72c8
 *** Element info: {Using=xpath, value=//td[contains(text(),'168')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -95,7 +60,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
 at com.qa.pages.AdminDashboardPage.verifyIdValue(AdminDashboardPage.java:58)
-at com.qa.testcases.AdminTest.verifyIdValueTest(AdminTest.java:73)
+at com.qa.testcases.AdminTest.verifyIdValueTest(AdminTest.java:78)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -127,15 +92,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIdValueTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="tearDown" is-config="true" duration-ms="2158" started-at="2019-12-26T12:20:22Z" finished-at="2019-12-26T12:20:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@43814d18]" name="tearDown" is-config="true" duration-ms="2339" started-at="2019-12-31T04:06:04Z" finished-at="2019-12-31T04:06:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="setUp" is-config="true" duration-ms="7912" started-at="2019-12-26T12:20:24Z" finished-at="2019-12-26T12:20:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.AdminTest@43814d18]" name="setUp" is-config="true" duration-ms="7005" started-at="2019-12-31T04:06:07Z" finished-at="2019-12-31T04:06:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyBookingDetailsTest()[pri:4, instance:com.qa.testcases.AdminTest@627551fb]" name="verifyBookingDetailsTest" duration-ms="45085" started-at="2019-12-26T12:20:32Z" description=" To verifyBookingDetailsTest" finished-at="2019-12-26T12:21:17Z">
+        <test-method status="FAIL" signature="verifyBookingDetailsTest()[pri:4, instance:com.qa.testcases.AdminTest@43814d18]" name="verifyBookingDetailsTest" duration-ms="45088" started-at="2019-12-31T04:06:14Z" description=" To verifyBookingDetailsTest" finished-at="2019-12-31T04:06:59Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//tr[5]//td[12]//span[1]//a[1]//i[1]"}
@@ -144,8 +109,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LINU-PC', ip: '169.254.156.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\CYRIL\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 377b87967cc5f7021e19ef461321e93a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\CYRIL\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3ad339f3ab0a433c1194865b4a0d6f12
 *** Element info: {Using=xpath, value=//tr[5]//td[12]//span[1]//a[1]//i[1]}]]>
             </message>
             <full-stacktrace>
@@ -155,8 +120,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LINU-PC', ip: '169.254.156.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\CYRIL\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 377b87967cc5f7021e19ef461321e93a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\CYRIL\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3ad339f3ab0a433c1194865b4a0d6f12
 *** Element info: {Using=xpath, value=//tr[5]//td[12]//span[1]//a[1]//i[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -176,7 +141,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy11.click(Unknown Source)
 at com.qa.pages.AdminDashboardPage.verifyBookingDetails(AdminDashboardPage.java:62)
-at com.qa.testcases.AdminTest.verifyBookingDetailsTest(AdminTest.java:81)
+at com.qa.testcases.AdminTest.verifyBookingDetailsTest(AdminTest.java:87)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -208,11 +173,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBookingDetailsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@627551fb]" name="tearDown" is-config="true" duration-ms="2169" started-at="2019-12-26T12:21:17Z" finished-at="2019-12-26T12:21:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.AdminTest@43814d18]" name="tearDown" is-config="true" duration-ms="2342" started-at="2019-12-31T04:06:59Z" finished-at="2019-12-31T04:07:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testcases.AdminTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
 </testng-results>
