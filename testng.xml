@@ -4,6 +4,10 @@
 	<listeners>
 		<listener class-name="com.qa.resources.ExtentReporterNG" />
 	</listeners>
+	<listeners>
+        <listener class-name="com.qa.analyzer.MyTransformer"/>
+  </listeners>
+	
 	<test thread-count="5" name="Test">
 	<groups>
 			<define name="ExecuteAll">
@@ -16,7 +20,7 @@
 		</groups>
 		<classes>
 			<class name="com.qa.testcases.AdminTest" />
-			<class name="com.qa.testcases.UserTest" />
+			<!-- <class name="com.qa.testcases.UserTest" /> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
