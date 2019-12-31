@@ -16,7 +16,7 @@ public class RetryAnalyzer implements IRetryAnalyzer{
 
 	
 	int counter = 0;
-	int retryLimit = 3;
+	int retryLimit = 1;
 	
 	
 	

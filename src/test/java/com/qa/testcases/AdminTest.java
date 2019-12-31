@@ -79,7 +79,7 @@ public class AdminTest extends BaseClass {
 	    logger.info("*******************ending verifyIdValueTest**************************");
 	}
 	
-	@Test(priority = 4,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
+//	@Test(priority = 4,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
 	public void verifyBookingDetailsTest() throws Exception
 	{
 		logger.info("*******************starting verifyBookingDetailsTest**************************");

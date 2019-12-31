@@ -3,10 +3,11 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="com.qa.resources.ExtentReporterNG" />
+		 <listener class-name="com.qa.analyzer.MyTransformer"/>
 	</listeners>
-	<listeners>
+	<!-- <listeners>
         <listener class-name="com.qa.analyzer.MyTransformer"/>
-  </listeners>
+  </listeners> -->
 	
 	<test thread-count="5" name="Test">
 	<groups>
