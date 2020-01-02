@@ -5,9 +5,6 @@
 		<listener class-name="com.qa.resources.ExtentReporterNG" />
 		 <listener class-name="com.qa.analyzer.MyTransformer"/>
 	</listeners>
-	<!-- <listeners>
-        <listener class-name="com.qa.analyzer.MyTransformer"/>
-  </listeners> -->
 	
 	<test thread-count="5" name="Test">
 	<groups>

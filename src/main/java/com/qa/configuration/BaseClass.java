@@ -2,6 +2,7 @@ package com.qa.configuration;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -35,14 +36,14 @@ public class BaseClass {
 
 	/**
 	 * @return
+	 * @throws URISyntaxException 
 	 * @throws IOException 
 	 */
 	
 @BeforeClass
-	public  void generateLog() {
+	public void generateLog() throws URISyntaxException {
 		 logger=Logger.getLogger("Utility");
-		PropertyConfigurator.configure(".//src//main//resources//log4j.properties");
-//		 PropertyConfigurator.configure(System.getProperty("user.dir"	, "/log4j.properties"));
+		PropertyConfigurator.configure(".//src//main//resources//log4j//log4j.properties");
 	}
 	
 	public static void readPropertiesFile() throws IOException
@@ -178,6 +179,7 @@ public static WebDriver headlessFirefox() {
 
     }
 	
+	@SuppressWarnings("deprecation")
 	public static WebDriver disableFirefoxImages()
     {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
