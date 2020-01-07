@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Command line suite]">
-  <test thread-count="5" name="Command line test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.resources.ExtentReporterNG"/>
+    <listener class-name="com.qa.analyzer.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="ExecuteAll"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.qa.testcases.AdminTest">
         <methods>
@@ -12,9 +21,8 @@
           <include name="verifyTodayBookingTest"/>
           <include name="tearDown"/>
           <include name="verifyAdminDashboardTest"/>
-          <include name="generateLog"/>
         </methods>
       </class> <!-- com.qa.testcases.AdminTest -->
     </classes>
-  </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [Command line suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

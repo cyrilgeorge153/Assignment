@@ -3,15 +3,13 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="com.qa.resources.ExtentReporterNG" />
-		 <listener class-name="com.qa.analyzer.MyTransformer"/>
+		<listener class-name="com.qa.analyzer.MyTransformer" />
 	</listeners>
-<<<<<<< HEAD
-	<test name="Test" >
-=======
-	
+
+
 	<test thread-count="5" name="Test">
->>>>>>> c374f97b3be4cbd1df701951025d026225cd3c46
-	<groups>
+
+		<groups>
 			<define name="ExecuteAll">
 				<include name="smoke"></include>
 				<include name="regression"></include>
