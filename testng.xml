@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="com.qa.resources.ExtentReporterNG" />
 	</listeners>
-	<test thread-count="5" name="Test">
+	<test name="Test" >
 	<groups>
 			<define name="ExecuteAll">
 				<include name="smoke"></include>
