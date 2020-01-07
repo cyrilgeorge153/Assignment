@@ -2,6 +2,7 @@ package com.qa.configuration;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -35,14 +36,14 @@ public class BaseClass {
 
 	/**
 	 * @return
+	 * @throws URISyntaxException 
 	 * @throws IOException 
 	 */
 	
 @BeforeClass
-	public  void generateLog() {
+	public void generateLog() throws URISyntaxException {
 		 logger=Logger.getLogger("Utility");
-		PropertyConfigurator.configure(".//src//main//resources//log4j.properties");
-//		 PropertyConfigurator.configure(System.getProperty("user.dir"	, "/log4j.properties"));
+		PropertyConfigurator.configure(".//src//main//resources//log4j//log4j.properties");
 	}
 	
 	public static void readPropertiesFile() throws IOException
@@ -56,8 +57,8 @@ public class BaseClass {
 	{
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		return driver;
 	}
 	
@@ -84,6 +85,7 @@ public class BaseClass {
 			else if(browser.equalsIgnoreCase("firefox")) 
 			{
 				WebDriverManager.firefoxdriver().setup(); 
+				supressConsoleLogsFirefox();
 				driver= new FirefoxDriver();
 			}
 			else if(browser.equalsIgnoreCase("edge")) 
@@ -177,6 +179,7 @@ public static WebDriver headlessFirefox() {
 
     }
 	
+	@SuppressWarnings("deprecation")
 	public static WebDriver disableFirefoxImages()
     {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -196,10 +199,8 @@ public static WebDriver headlessFirefox() {
 	
 	public static WebDriver supressConsoleLogsFirefox()
 	{
-		WebDriverManager.firefoxdriver().setup();
-		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
-		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
-		return new FirefoxDriver();
+		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"null");
+		return driver;
 
 	}
 	
