@@ -87,6 +87,9 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 				<configuration>
+					<systemProperties>
+						<log4j.configuration>file:.//src//main//resources//log4j//log4j.properties</log4j.configuration>
+					</systemProperties>
 					<suiteXmlFiles>
 						<suiteXmlFile>.//testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
