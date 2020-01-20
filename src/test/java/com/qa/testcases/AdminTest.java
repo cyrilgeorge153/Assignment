@@ -63,31 +63,31 @@ public class AdminTest extends BaseClass {
 		logger.info("*******************ending verifyTodayBookingTest**************************");
 	}
 	
-//	@Test(priority = 2,groups = "smoke",enabled = true,description = " To verifyThirtyDayBookingTest")
+	@Test(priority = 2,groups = "smoke",enabled = true,description = " To verifyThirtyDayBookingTest")
 	public void verifyThirtyDayBookingTest() throws Exception
 	{
 		logger.info("*******************starting verifyThirtyDayBookingTest**************************");
 		MyScreenRecorder.startRecording("verifyThirtyDayBookingTest");
-//	    adb.verifyThirtyDayBooking();
+		generic.webElementIsDisplayed(adb.thirtydayreport);
 	    MyScreenRecorder.stopRecording();
 	    logger.info("*******************ending verifyThirtyDayBookingTest**************************");
 	}
 	
-//	@Test(priority = 3,groups = "smoke",enabled = true,description = " To verifyIdValueTest")
+	@Test(priority = 3,groups = "smoke",enabled = true,description = " To verifyIdValueTest")
 	public void verifyIdValueTest() throws Exception
 	{
 		logger.info("*******************starting verifyIdValueTest**************************");
 		MyScreenRecorder.startRecording("verifyIdValueTest");
-//	    adb.verifyIdValue();
+		generic.webElementIsDisplayed(adb.idvalue);
 	    logger.info("*******************ending verifyIdValueTest**************************");
 	}
 	
-//	@Test(priority = 4,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
+	@Test(priority = 4,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
 	public void verifyBookingDetailsTest() throws Exception
 	{
 		logger.info("*******************starting verifyBookingDetailsTest**************************");
 		MyScreenRecorder.startRecording("verifyBookingDetailsTest");
-//	    adb.verifyBookingDetails();
+        generic.clickWebElement(adb.viewinvoice, driver);
 	    driver.navigate().back();
 	    MyScreenRecorder.stopRecording();
 	    logger.info("*******************ending verifyBookingDetailsTest**************************");

@@ -14,12 +14,7 @@ import com.qa.configuration.BaseClass;
  *
  */
 public class AdminDashboardPage extends BaseClass{
-	
-//	public AdminDashboardPage(WebDriver driver) {
-//		PageFactory.initElements(driver, this);
-//	}
-//	
-	
+		
 	@FindBy(xpath = "//p[@class='serverHeader__title']")
 	@CacheLookup
 	public WebElement dashboard;
@@ -40,24 +35,4 @@ public class AdminDashboardPage extends BaseClass{
 	@CacheLookup
 	public WebElement viewinvoice;
 	
-//	public void verifyAdminDashboard() {
-//		Assert.assertEquals(dashboard.isDisplayed(), true);
-//	}
-//	
-//	public void verifyTodayBooking() {
-//		Assert.assertEquals(todaybooking.isDisplayed(), true);
-//	}
-//	
-//	public void verifyThirtyDayBooking() {
-//		Assert.assertEquals(thirtydayreport.isDisplayed(), true);
-//	}
-//	
-//	public void verifyIdValue() {
-//		Assert.assertEquals(idvalue.isDisplayed(), true);
-//	}
-//	
-//	public void verifyBookingDetails() {
-//		viewinvoice.click();
-//	}
-
 }
