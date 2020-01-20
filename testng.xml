@@ -7,7 +7,7 @@
 	</listeners>
 
 
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="Test" >
 
 		<groups>
 			<define name="ExecuteAll">

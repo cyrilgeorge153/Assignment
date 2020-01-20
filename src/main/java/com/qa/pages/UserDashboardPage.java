@@ -30,7 +30,8 @@ public class UserDashboardPage extends BaseClass {
 
 //	@FindBy(xpath = "(//button[normalize-space(.)='Search'])[1]")
 //	@FindBy(xpath = "(//button[contains(text(),'Search')])[1]")
-	@FindBy(xpath = "//div[@class='col-md-2 col-xs-12']//button[@class='btn btn-primary btn-block'][contains(text(),'Search')]")
+//	@FindBy(xpath = "//div[@class='col-md-2 col-xs-12']//button[@class='btn btn-primary btn-block'][contains(text(),'Search')]")
+	@FindBy(xpath = "//div[contains(@class,'ftab-inner menu-horizontal-content')]//button[contains(@class,'btn btn-primary btn-block')][contains(text(),'Search')]")
 	@CacheLookup
 	public WebElement search;
 	
@@ -131,90 +132,9 @@ public class UserDashboardPage extends BaseClass {
 	@CacheLookup
 	public WebElement totalamt;
 	
-
-	public void verifyImage()
-	{
-		Assert.assertEquals(img.isDisplayed(),true);
-	}
-	
-	public void verifyFbShare()
-	{
-		Assert.assertEquals(fbShare.isDisplayed(),true);
-	}
-	
-	public void verifyTwitterShare()
-	{
-		Assert.assertEquals(twitterShare.isDisplayed(),true);
-	}
-	
-	public void verifyPininterestShare()
-	{
-//try {
-//		    
-//	  Assert.assertEquals(pininterestShare.isDisplayed(),true);
-//		}
-//		catch(org.openqa.selenium.StaleElementReferenceException ex)
-//		{
-//
-//			Assert.assertEquals(pininterestShare.isDisplayed(),true);
-//		}
-		WebElement element = driver.findElement(By.xpath("//span[contains(text(),'Pin')]"));
-		Assert.assertEquals(element.isDisplayed(), true);
-	}
-	
-	public void verifyMailShare()
-	{
-		Assert.assertEquals(mailShare.isDisplayed(),true);
-	}
-	
-	public void verifyWhatsppShare()
-	{
-		Assert.assertEquals(whatsappShare.isDisplayed(),true);
-	}
-	
-	public void verifyLinkedinShare()
-	{
-		Assert.assertEquals(linkedinShare.isDisplayed(),true);
-	}
-	
-	public void verifyNormalShare()
-	{
-		Assert.assertEquals(normalShare.isDisplayed(),true);
-	}
-	
-	public void verifyShowMap()
-	{
-		String map=showMap.getText();
-		Assert.assertEquals(map, "Show On Map");
-	}
-	
-	public void verifyInclusions()
-	{
-		String inclusion=inclusions.getText();
-		Assert.assertEquals(inclusion, "Inclusions");
-	}
-	
-	public void verifyExclusions()
-	{
-		String exclusion=exclusions.getText();
-		Assert.assertEquals(exclusion, "Exclusions");
-	}
-	
-	public void verifyWriteReview()
-	{
-		Assert.assertEquals(review.isDisplayed(), true);
-	}
-	
-	public void verifyChangeDate()
-	{
-		Assert.assertEquals(changedate.isDisplayed(), true);
-	}
-	
-	public void clickBookNow()
-	{
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
-	executor.executeScript("arguments[0].click();", booknow);
-	}
+	@FindBy(xpath = "//h4[contains(text(),'Please read the terms before proceed')]")
+	@CacheLookup
+	public WebElement terms;
 	
 	public void verifyPersonalDetails()
 	{
@@ -228,20 +148,6 @@ public class UserDashboardPage extends BaseClass {
 		String emailID=email.getAttribute("value");
 		Assert.assertEquals(emailID, "user@phptravels.com");
 		
-	}
-	
-	public void verifyBookingDate()
-	{
-//		WebElement dynamicWebelement = (new WebDriverWait(driver, 60)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(text(),'Booking Date')]")));
-		String bd= bookingdate.getText();
-		Assert.assertEquals(bd, "Booking Date");	
-	}
-	
-	public void verifyAmount()
-	{
-		String amountvalue=amount.getText();
-		System.out.println(amountvalue);
-		Assert.assertEquals(amountvalue, "$82.50");	
 	}
 	
 	public void clickConfirmBooking()

@@ -3,14 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.AdminTest">
+      <class name="com.qa.testcases.UserTest">
         <methods>
-          <include name="verifyIdValueTest"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verifyAmountTest"/>
+          <include name="verifyTotalAmountTest"/>
+          <include name="verifyDemoUserFullFlowTest"/>
+          <include name="setUp"/>
           <include name="generateLog"/>
         </methods>
-      </class> <!-- com.qa.testcases.AdminTest -->
+      </class> <!-- com.qa.testcases.UserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
