@@ -14,7 +14,7 @@ import com.qa.configuration.BaseClass;
  *
  */
 public class AdminDashboardPage extends BaseClass{
-		
+
 	@FindBy(xpath = "//p[@class='serverHeader__title']")
 	@CacheLookup
 	public WebElement dashboard;

@@ -5,6 +5,7 @@ package com.qa.testcases;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -48,7 +49,7 @@ public class AdminTest extends BaseClass {
 	{
 		logger.info("*******************starting verifyAdminDashboardTest**************************");
 		MyScreenRecorder.startRecording("verifyAdminDashboardTest");
-		generic.webElementIsDisplayed(adb.dashboard);
+		Assert.assertEquals(generic.webElementIsDisplayed(adb.dashboard), true);
 		MyScreenRecorder.stopRecording();
 		logger.info("*******************ending verifyAdminDashboardTest**************************");
 	}
@@ -58,7 +59,7 @@ public class AdminTest extends BaseClass {
 	{
 		logger.info("*******************starting verifyTodayBookingTest**************************");
 		MyScreenRecorder.startRecording("verifyTodayBookingTest");
-		generic.webElementIsDisplayed(adb.todaybooking);
+		Assert.assertEquals(generic.webElementIsDisplayed(adb.todaybooking), true);
 		MyScreenRecorder.stopRecording();
 		logger.info("*******************ending verifyTodayBookingTest**************************");
 	}
@@ -68,7 +69,7 @@ public class AdminTest extends BaseClass {
 	{
 		logger.info("*******************starting verifyThirtyDayBookingTest**************************");
 		MyScreenRecorder.startRecording("verifyThirtyDayBookingTest");
-		generic.webElementIsDisplayed(adb.thirtydayreport);
+		Assert.assertEquals(generic.webElementIsDisplayed(adb.thirtydayreport), true);
 	    MyScreenRecorder.stopRecording();
 	    logger.info("*******************ending verifyThirtyDayBookingTest**************************");
 	}
@@ -78,7 +79,7 @@ public class AdminTest extends BaseClass {
 	{
 		logger.info("*******************starting verifyIdValueTest**************************");
 		MyScreenRecorder.startRecording("verifyIdValueTest");
-		generic.webElementIsDisplayed(adb.idvalue);
+		Assert.assertEquals(generic.webElementIsDisplayed(adb.idvalue), true);
 	    logger.info("*******************ending verifyIdValueTest**************************");
 	}
 	
