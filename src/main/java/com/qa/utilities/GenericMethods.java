@@ -28,5 +28,10 @@ public class GenericMethods {
 			executor.executeScript("arguments[0].click();", element);
 		}
 	}
+	
+	public String getTextWebElement(WebElement element)
+	{
+		return element.getText();
+	}
 
 }

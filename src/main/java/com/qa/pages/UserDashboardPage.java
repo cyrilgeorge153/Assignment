@@ -22,139 +22,116 @@ public class UserDashboardPage extends BaseClass {
 	public UserDashboardPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-//	@FindBy(xpath = "//a[contains(text(),'Tours')]")
-	@FindBy(xpath = "//a[contains(@class,'text-center tours')]")
+	@FindBy(xpath = "//a[contains(text(),'Tours')]")
+//	@FindBy(xpath = "//a[contains(@class,'text-center tours')]")
 //	@CacheLookup
-	WebElement tours;
+	public WebElement tours;
 	
 
 //	@FindBy(xpath = "(//button[normalize-space(.)='Search'])[1]")
 //	@FindBy(xpath = "(//button[contains(text(),'Search')])[1]")
 	@FindBy(xpath = "//div[@class='col-md-2 col-xs-12']//button[@class='btn btn-primary btn-block'][contains(text(),'Search')]")
 	@CacheLookup
-	WebElement search;
+	public WebElement search;
 	
 	@FindBy(xpath = "//div[@class='content-wrapper']//div[1]//div[1]//div[2]//div[1]//div[3]//div[1]//div[2]//a[1]")
 	@CacheLookup
-	WebElement details;
+	public WebElement details;
 	
 	@FindBy(xpath = "//div[@class='slick-slide slick-current slick-active']//img")
 	@CacheLookup
-	WebElement img;
+	public WebElement img;
 	
 	@FindBy(xpath = "//div[@class='st-btn st-first']//span[@class='st-label'][contains(text(),'Share')]")
 	@CacheLookup
-	WebElement fbShare;
+	public WebElement fbShare;
 	
 	@FindBy(xpath = "//span[contains(text(),'Tweet')]")
 	@CacheLookup
-	WebElement twitterShare;
+	public WebElement twitterShare;
 	
 	@FindBy(xpath = "//span[contains(text(),'Pin')]")
 	@CacheLookup
-	WebElement pininterestShare;
+	public WebElement pininterestShare;
 	
 	@FindBy(xpath = "//div[contains(@class,'blog-media mt-10')]//div[4]")
 	@CacheLookup
-	WebElement mailShare;
+	public WebElement mailShare;
 	
 	@FindBy(xpath = "//div[contains(@class,'blog-media mt-10')]//div[5]//img[1]")
 	@CacheLookup
-	WebElement whatsappShare;
+	public WebElement whatsappShare;
 	
 	@FindBy(xpath = "//div[contains(@class,'blog-media mt-10')]//div[6]//img[1]")
 	@CacheLookup
-	WebElement linkedinShare;
+	public WebElement linkedinShare;
 	
 	@FindBy(xpath = "//div[contains(@class,'blog-media mt-10')]//div[6]//img[1]")
 	@CacheLookup
-	WebElement normalShare;
+	public WebElement normalShare;
 	
 	@FindBy(xpath = "//span[contains(text(),'Show on Map')]")
 	@CacheLookup
-	WebElement showMap;
+	public WebElement showMap;
 	
 	@FindBy(xpath = "//h4[contains(text(),'Inclusions')]")
 	@CacheLookup
-	WebElement inclusions;
+	public WebElement inclusions;
 	
 	@FindBy(xpath = "//h4[contains(text(),'Exclusions')]")
 	@CacheLookup
-	WebElement exclusions;
+	public WebElement exclusions;
 	
 	@FindBy(css = "button[class='writeReview btn btn-primary btn-block mb-10']")
 	@CacheLookup
-	WebElement review;
+	public WebElement review;
 	
 	@FindBy(css = ".btn.btn-block.btn-success.btn-sm.loader.mt-5.date")
 	@CacheLookup
-	WebElement changedate;
+	public WebElement changedate;
 	
 	@FindBy(css = "button[class='btn btn-secondary btn-block mt-20 btn-action btn-lg loader']")
 	@CacheLookup
-	WebElement booknow;
+	public WebElement booknow;
 	
 	@FindBy(css = ".form-control.form-bg-light")
 //	@FindBy(xpath = "//div[@class='col-md-6']//input[@class='form-control form-bg-light']")
 	@CacheLookup
-	WebElement firstname;
+	public WebElement firstname;
 	
 	@FindBy(xpath = "//div[@class='col-md-6']//div[contains(@class,'form-group')]//input[@class='form-control']")
 	@CacheLookup
-	WebElement lastname;
+	public WebElement lastname;
 	
 	@FindBy(xpath = "//div[@class='col-md-12']//input[@class='form-control form-bg-light']")
 	@CacheLookup
-	WebElement email;
+	public WebElement email;
 	
 	@FindBy(xpath = "//h6[contains(text(),'Booking Date')]")
 	@CacheLookup
-	WebElement bookingdate;
+	public WebElement bookingdate;
 	
 	@FindBy(css = "span[id='displaytotal']")
 	@CacheLookup
-	WebElement amount;
+	public WebElement amount;
 	
 	@FindBy(css = "button[name='logged']")
 	@CacheLookup
-	WebElement confirmbooking;
+	public WebElement confirmbooking;
 	
 	@FindBy(xpath = "//span[contains(text(),'Invoice Number')]")
 	@CacheLookup
-	WebElement invoiceno;
+	public WebElement invoiceno;
 	
 	@FindBy(xpath = "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/ul[1]/li[1]/span[2]")
 	@CacheLookup
-	WebElement invoicenovalue;
+	public WebElement invoicenovalue;
 	
 	@FindBy(xpath = "//span[@class='text-main text-secondary']")
 	@CacheLookup
-	WebElement totalamt;
+	public WebElement totalamt;
 	
-	public void clickTours()
-	{
-		try {
-		    
-		    tours.click();
-		}
-		catch(org.openqa.selenium.StaleElementReferenceException ex)
-		{
 
-		    tours.click();
-		}
-	}
-	
-	public void clickSearch()
-	{
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();", search);
-	}
-	
-	public void clickDetails()
-	{
-		details.click();
-	}
-	
 	public void verifyImage()
 	{
 		Assert.assertEquals(img.isDisplayed(),true);

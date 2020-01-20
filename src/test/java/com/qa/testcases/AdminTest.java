@@ -20,11 +20,10 @@ import com.qa.utilities.MyScreenRecorder;
  *
  */
 public class AdminTest extends BaseClass {
-	
-    AdminDashboardPage adb;
+	AdminDashboardPage adb;
 	Logger logger=Logger.getLogger(BaseClass.class);
 	GenericMethods generic=new GenericMethods(); 
-	    
+	
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws Exception {
 		startBrowser();
@@ -33,8 +32,7 @@ public class AdminTest extends BaseClass {
 		readUrlAdmin();
 		getCredentialsAdmin();
 		adb =  PageFactory.initElements(driver, AdminDashboardPage.class); 
-		logger.info("*******************ending before method**************************");
-		
+		logger.info("*******************ending before method**************************");	
 	}
 	
 	@AfterMethod(alwaysRun = true)
