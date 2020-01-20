@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.qa.resources.ExtentReporterNG"/>
-    <listener class-name="com.qa.analyzer.MyTransformer"/>
-  </listeners>
-  <test thread-count="5" parallel="methods" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="ExecuteAll"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.qa.testcases.AdminTest">
         <methods>
-          <include name="verifyThirtyDayBookingTest"/>
-          <include name="verifyIdValueTest"/>
           <include name="setUp"/>
-          <include name="verifyBookingDetailsTest"/>
-          <include name="verifyTodayBookingTest"/>
           <include name="tearDown"/>
           <include name="verifyAdminDashboardTest"/>
+          <include name="generateLog"/>
         </methods>
       </class> <!-- com.qa.testcases.AdminTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

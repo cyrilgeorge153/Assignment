@@ -5,10 +5,9 @@
     <classes>
       <class name="com.qa.testcases.AdminTest">
         <methods>
-          <include name="verifyIdValueTest"/>
           <include name="setUp"/>
-          <include name="verifyBookingDetailsTest"/>
           <include name="tearDown"/>
+          <include name="verifyAdminDashboardTest"/>
           <include name="generateLog"/>
         </methods>
       </class> <!-- com.qa.testcases.AdminTest -->

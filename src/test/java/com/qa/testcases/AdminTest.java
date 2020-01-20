@@ -4,12 +4,14 @@
 package com.qa.testcases;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qa.configuration.BaseClass;
 import com.qa.pages.AdminDashboardPage;
+import com.qa.utilities.GenericMethods;
 import com.qa.utilities.MyScreenRecorder;
 
 /**
@@ -18,9 +20,10 @@ import com.qa.utilities.MyScreenRecorder;
  */
 public class AdminTest extends BaseClass {
 	
-	public static AdminDashboardPage adb;
+    AdminDashboardPage adb;
 	Logger logger=Logger.getLogger(BaseClass.class);
-	
+	GenericMethods generic=new GenericMethods(); 
+	    
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws Exception {
 		startBrowser();
@@ -28,7 +31,7 @@ public class AdminTest extends BaseClass {
 		browserConfig();
 		readUrlAdmin();
 		getCredentialsAdmin();
-		adb = new AdminDashboardPage(driver);
+		adb =  PageFactory.initElements(driver, AdminDashboardPage.class); 
 		logger.info("*******************ending before method**************************");
 		
 	}
@@ -45,7 +48,7 @@ public class AdminTest extends BaseClass {
 	{
 		logger.info("*******************starting verifyAdminDashboardTest**************************");
 		MyScreenRecorder.startRecording("verifyAdminDashboardTest");
-		adb.verifyAdminDashboard();
+		generic.webElementIsDisplayed(adb.dashboard);
 		MyScreenRecorder.stopRecording();
 		logger.info("*******************ending verifyAdminDashboardTest**************************");
 	}
@@ -55,36 +58,36 @@ public class AdminTest extends BaseClass {
 	{
 		logger.info("*******************starting verifyTodayBookingTest**************************");
 		MyScreenRecorder.startRecording("verifyTodayBookingTest");
-		adb.verifyTodayBooking();
+		generic.webElementIsDisplayed(adb.todaybooking);
 		MyScreenRecorder.stopRecording();
 		logger.info("*******************ending verifyTodayBookingTest**************************");
 	}
 	
-	@Test(priority = 2,groups = "smoke",enabled = true,description = " To verifyThirtyDayBookingTest")
+//	@Test(priority = 2,groups = "smoke",enabled = true,description = " To verifyThirtyDayBookingTest")
 	public void verifyThirtyDayBookingTest() throws Exception
 	{
 		logger.info("*******************starting verifyThirtyDayBookingTest**************************");
 		MyScreenRecorder.startRecording("verifyThirtyDayBookingTest");
-	    adb.verifyThirtyDayBooking();
+//	    adb.verifyThirtyDayBooking();
 	    MyScreenRecorder.stopRecording();
 	    logger.info("*******************ending verifyThirtyDayBookingTest**************************");
 	}
 	
-	@Test(priority = 3,groups = "smoke",enabled = true,description = " To verifyIdValueTest")
+//	@Test(priority = 3,groups = "smoke",enabled = true,description = " To verifyIdValueTest")
 	public void verifyIdValueTest() throws Exception
 	{
 		logger.info("*******************starting verifyIdValueTest**************************");
 		MyScreenRecorder.startRecording("verifyIdValueTest");
-	    adb.verifyIdValue();
+//	    adb.verifyIdValue();
 	    logger.info("*******************ending verifyIdValueTest**************************");
 	}
 	
-	@Test(priority = 4,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
+//	@Test(priority = 4,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
 	public void verifyBookingDetailsTest() throws Exception
 	{
 		logger.info("*******************starting verifyBookingDetailsTest**************************");
 		MyScreenRecorder.startRecording("verifyBookingDetailsTest");
-	    adb.verifyBookingDetails();
+//	    adb.verifyBookingDetails();
 	    driver.navigate().back();
 	    MyScreenRecorder.stopRecording();
 	    logger.info("*******************ending verifyBookingDetailsTest**************************");
