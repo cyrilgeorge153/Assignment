@@ -49,7 +49,8 @@ public class BaseClass {
 	public static void readPropertiesFile() throws IOException
 	{
 		prop = new Properties();
-		ip = new FileInputStream(".//src//main//java//com//qa//configuration//config.properties");
+//		ip = new FileInputStream(".//src//main//java//com//qa//configuration//config.properties");
+		ip = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//com//qa//configuration//config.properties");
 		prop.load(ip);
 	}
 	
