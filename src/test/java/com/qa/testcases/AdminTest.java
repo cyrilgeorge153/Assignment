@@ -91,5 +91,13 @@ public class AdminTest extends BaseClass {
 	    MyScreenRecorder.stopRecording();
 	    logger.info("*******************ending verifyBookingDetailsTest**************************");
 	}
+	
+//	@Test(priority = 5,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
+	public void verifyLinks() throws Exception
+	{
+		logger.info("*******************starting verifyBookingDetailsTest**************************");
+		generic.navigateToEveryLinkInPage();
+	    logger.info("*******************ending verifyBookingDetailsTest**************************");
+	}
 
 }
