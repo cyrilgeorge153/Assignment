@@ -3,7 +3,9 @@
  */
 package com.qa.utilities;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -105,8 +107,7 @@ public class GenericMethods extends BaseClass {
 		dragAndDrop.perform();
 	}
 
-	public void dragAndDrop_Method3(WebElement fromWebElement, WebElement toWebElement)
-			throws InterruptedException {
+	public void dragAndDrop_Method3(WebElement fromWebElement, WebElement toWebElement) throws InterruptedException {
 		Actions builder = new Actions(driver);
 		builder.clickAndHold(fromWebElement).moveToElement(toWebElement).perform();
 		Thread.sleep(2000);
@@ -140,17 +141,16 @@ public class GenericMethods extends BaseClass {
 
 	public void highlightelement(WebElement element) {
 		for (int i = 0; i < 4; i++) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].setAttribute('style', arguments[1]);",element, "color: solid red; border: 6px solid yellow;");
-		js.executeScript(
-		"arguments[0].setAttribute('style', arguments[1]);",
-		element, "");
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element,
+					"color: solid red; border: 6px solid yellow;");
+			js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "");
 
 		}
-		}
+	}
 
 	public boolean checkAlert_Accept() {
-			try {
+		try {
 			Alert a = driver.switchTo().alert();
 			String str = a.getText();
 			System.out.println(str);
@@ -158,16 +158,16 @@ public class GenericMethods extends BaseClass {
 			a.accept();
 			return true;
 
-			} catch (Exception e) {
+		} catch (Exception e) {
 
 			System.out.println("no alert");
 			return false;
 
-			}
-			}
+		}
+	}
 
 	public boolean checkAlert_Dismiss() {
-			try {
+		try {
 			Alert a = driver.switchTo().alert();
 			String str = a.getText();
 			System.out.println(str);
@@ -175,13 +175,13 @@ public class GenericMethods extends BaseClass {
 			a.dismiss();
 			return true;
 
-			} catch (Exception e) {
+		} catch (Exception e) {
 
 			System.out.println("no alert ");
 			return false;
 
-			}
-			}
+		}
+	}
 
 	public void scrolltoElement(WebElement ScrolltoThisElement) {
 		Coordinates coordinate = ((Locatable) ScrolltoThisElement).getCoordinates();
@@ -190,47 +190,67 @@ public class GenericMethods extends BaseClass {
 	}
 
 	public void checkbox_Checking(WebElement checkbox) {
-			boolean checkstatus;
-			checkstatus = checkbox.isSelected();
-			if (checkstatus == true) {
+		boolean checkstatus;
+		checkstatus = checkbox.isSelected();
+		if (checkstatus == true) {
 			System.out.println("Checkbox is already checked");
-			} else {
+		} else {
 			checkbox.click();
 			System.out.println("Checked the checkbox");
-			}
-			}
+		}
+	}
 
 	public void radiobutton_Select(WebElement Radio) {
-			boolean checkstatus;
-			checkstatus = Radio.isSelected();
-			if (checkstatus == true) {
+		boolean checkstatus;
+		checkstatus = Radio.isSelected();
+		if (checkstatus == true) {
 			System.out.println("RadioButton is already checked");
-			} else {
+		} else {
 			Radio.click();
 			System.out.println("Selected the Radiobutton");
-			}
-			}
+		}
+	}
 
 	// Unchecking
 	public void checkbox_Unchecking(WebElement checkbox) {
-			boolean checkstatus;
-			checkstatus = checkbox.isSelected();
-			if (checkstatus == true) {
+		boolean checkstatus;
+		checkstatus = checkbox.isSelected();
+		if (checkstatus == true) {
 			checkbox.click();
 			System.out.println("Checkbox is unchecked");
-			} else {
+		} else {
 			System.out.println("Checkbox is already unchecked");
-			}
-			}
+		}
+	}
 
 	public void radioButton_Deselect(WebElement Radio) {
-			boolean checkstatus;
-			checkstatus = Radio.isSelected();
-			if (checkstatus == true) {
+		boolean checkstatus;
+		checkstatus = Radio.isSelected();
+		if (checkstatus == true) {
 			Radio.click();
 			System.out.println("Radio Button is deselected");
-			} else {
+		} else {
 			System.out.println("Radio Button was already Deselected");
-			}
-			}
+		}
+	}
+
+	public void switchToNewWindow() {
+		Set s = driver.getWindowHandles();
+		Iterator itr = s.iterator();
+		String w1 = (String) itr.next();
+		String w2 = (String) itr.next();
+		driver.switchTo().window(w2);
+	}
+
+	public void switchToOldWindow() {
+		Set s = driver.getWindowHandles();
+		Iterator itr = s.iterator();
+		String w1 = (String) itr.next();
+		String w2 = (String) itr.next();
+		driver.switchTo().window(w1);
+	}
+
+	public void switchToParentWindow() {
+		driver.switchTo().defaultContent();
+	}
 }
