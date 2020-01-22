@@ -6,7 +6,6 @@ package com.qa.utilities;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,7 +18,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.Coordinates;
 import org.openqa.selenium.interactions.Locatable;
 import org.openqa.selenium.support.ui.Select;
-
 import com.qa.configuration.BaseClass;
 
 /**
@@ -27,7 +25,6 @@ import com.qa.configuration.BaseClass;
  *
  */
 public class GenericMethods extends BaseClass {
-
 	public boolean webElementIsDisplayed(WebElement element) {
 		return element.isDisplayed();
 	}
@@ -46,7 +43,6 @@ public class GenericMethods extends BaseClass {
 	}
 
 	public void navigateToEveryLinkInPage() throws InterruptedException {
-
 		List<WebElement> linksize = driver.findElements(By.tagName("a"));
 		int linksCount = linksize.size();
 		System.out.println("Total no of links Available:" + linksCount);
@@ -66,7 +62,6 @@ public class GenericMethods extends BaseClass {
 	}
 
 	public static void clickCheckboxFromList(String xpathOfElement, String valueToSelect) {
-
 		List<WebElement> lst = driver.findElements(By.xpath(xpathOfElement));
 		for (int i = 0; i < lst.size(); i++) {
 			List<WebElement> dr = lst.get(i).findElements(By.tagName("label"));
@@ -118,14 +113,12 @@ public class GenericMethods extends BaseClass {
 		Actions builder = new Actions(driver);
 		builder.moveToElement(HovertoWebElement).perform();
 		Thread.sleep(2000);
-
 	}
 
 	public void doubleClickWebelement(WebElement doubleclickonWebElement) throws InterruptedException {
 		Actions builder = new Actions(driver);
 		builder.doubleClick(doubleclickonWebElement).perform();
 		Thread.sleep(2000);
-
 	}
 
 	public String getToolTip(WebElement toolTipofWebElement) throws InterruptedException {
@@ -145,7 +138,6 @@ public class GenericMethods extends BaseClass {
 			js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element,
 					"color: solid red; border: 6px solid yellow;");
 			js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "");
-
 		}
 	}
 
@@ -154,15 +146,11 @@ public class GenericMethods extends BaseClass {
 			Alert a = driver.switchTo().alert();
 			String str = a.getText();
 			System.out.println(str);
-
 			a.accept();
 			return true;
-
 		} catch (Exception e) {
-
 			System.out.println("no alert");
 			return false;
-
 		}
 	}
 
@@ -171,15 +159,11 @@ public class GenericMethods extends BaseClass {
 			Alert a = driver.switchTo().alert();
 			String str = a.getText();
 			System.out.println(str);
-
 			a.dismiss();
 			return true;
-
 		} catch (Exception e) {
-
 			System.out.println("no alert ");
 			return false;
-
 		}
 	}
 
