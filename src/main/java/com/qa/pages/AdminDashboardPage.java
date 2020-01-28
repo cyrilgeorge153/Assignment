@@ -20,7 +20,6 @@ import com.qa.utilities.GenericMethods;
 public class AdminDashboardPage extends BaseClass {
 	
 	GenericMethods generic=new GenericMethods(); 
-	AdminDashboardPage adb;
 	
 	@FindBy(xpath = "//p[@class='serverHeader__title']")
 	@CacheLookup
@@ -46,6 +45,6 @@ public AdminDashboardPage(WebDriver driver) {
 
 public void verifyAdminDashboardTest()
 {
-	Assert.assertEquals(generic.webElementIsDisplayed(adb.dashboard), true);
+	Assert.assertEquals(generic.webElementIsDisplayed(dashboard), true);
 }
 }
