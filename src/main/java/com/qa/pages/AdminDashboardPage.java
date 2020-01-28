@@ -3,16 +3,25 @@
  */
 package com.qa.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
 import com.qa.configuration.BaseClass;
+import com.qa.utilities.GenericMethods;
 
 /**
  * @author CYRIL
  *
  */
 public class AdminDashboardPage extends BaseClass {
+	
+	GenericMethods generic=new GenericMethods(); 
+	AdminDashboardPage adb;
+	
 	@FindBy(xpath = "//p[@class='serverHeader__title']")
 	@CacheLookup
 	public WebElement dashboard;
@@ -28,4 +37,15 @@ public class AdminDashboardPage extends BaseClass {
 	@FindBy(xpath = "//tr[5]//td[12]//span[1]//a[1]//i[1]")
 	@CacheLookup
 	public WebElement viewinvoice;
+
+
+public AdminDashboardPage(WebDriver driver) {
+
+	PageFactory.initElements(driver, this);
+}
+
+public void verifyAdminDashboardTest()
+{
+	Assert.assertEquals(generic.webElementIsDisplayed(adb.dashboard), true);
+}
 }
