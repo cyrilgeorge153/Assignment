@@ -237,4 +237,10 @@ public class GenericMethods extends BaseClass {
 	public void switchToParentWindow() {
 		driver.switchTo().defaultContent();
 	}
+	
+	public void hoverOverElement(WebElement element,WebDriver driver)
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(element).build().perform();
+	}
 }
