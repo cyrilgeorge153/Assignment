@@ -1661,3 +1661,16 @@
 2020-01-21 17:19:32,235 [main] INFO com.qa.configuration.BaseClass - *******************starting before method**************************
 2020-01-21 17:19:38,329 [main] INFO com.qa.configuration.BaseClass - *******************ending before method**************************
 2020-01-21 17:19:38,331 [main] INFO com.qa.configuration.BaseClass - *******************starting verifyIdValueTest**************************
+2020-01-28 09:40:43,906 [main] INFO com.qa.configuration.BaseClass - *******************starting before method**************************
+2020-01-28 09:41:15,588 [main] INFO com.qa.configuration.BaseClass - *******************starting after method**************************
+2020-01-28 09:41:15,973 [main] INFO com.qa.configuration.BaseClass - *******************ending after method**************************
+2020-01-28 09:41:19,538 [main] INFO com.qa.configuration.BaseClass - *******************starting before method**************************
+2020-01-28 09:41:51,017 [main] INFO com.qa.configuration.BaseClass - *******************starting after method**************************
+2020-01-28 09:41:51,122 [main] INFO com.qa.configuration.BaseClass - *******************ending after method**************************
+2020-01-28 09:41:53,902 [main] INFO com.qa.configuration.BaseClass - *******************starting before method**************************
+2020-01-28 09:48:42,746 [main] INFO com.qa.configuration.BaseClass - *******************starting before method**************************
+2020-01-28 09:49:14,172 [main] INFO com.qa.configuration.BaseClass - *******************starting after method**************************
+2020-01-28 09:49:14,352 [main] INFO com.qa.configuration.BaseClass - *******************ending after method**************************
+2020-01-28 09:49:16,784 [main] INFO com.qa.configuration.BaseClass - *******************starting before method**************************
+2020-01-28 09:59:40,413 [main] INFO com.qa.configuration.BaseClass - *******************starting before method**************************
+2020-01-28 09:59:46,783 [main] INFO com.qa.configuration.BaseClass - *******************starting after method**************************
