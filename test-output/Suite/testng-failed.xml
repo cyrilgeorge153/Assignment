@@ -15,6 +15,7 @@
       <class name="com.qa.testcases.AdminTest">
         <methods>
           <include name="verifyIdValueTest"/>
+          <include name="verifyLinks"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

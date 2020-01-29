@@ -47,7 +47,8 @@ public class AdminTest extends BaseClass {
 	{
 		logger.info("*******************starting verifyAdminDashboardTest**************************");
 		MyScreenRecorder.startRecording("verifyAdminDashboardTest");
-		Assert.assertEquals(generic.webElementIsDisplayed(adb.dashboard), true);
+//		Assert.assertEquals(generic.webElementIsDisplayed(adb.dashboard), true);
+		adb.verifyAdminDashboardTest();
 		MyScreenRecorder.stopRecording();
 		logger.info("*******************ending verifyAdminDashboardTest**************************");
 	}
@@ -57,7 +58,8 @@ public class AdminTest extends BaseClass {
 	{
 		logger.info("*******************starting verifyTodayBookingTest**************************");
 		MyScreenRecorder.startRecording("verifyTodayBookingTest");
-		Assert.assertEquals(generic.webElementIsDisplayed(adb.todaybooking), true);
+//		Assert.assertEquals(generic.webElementIsDisplayed(adb.todaybooking), true);
+		adb.verifyTodayBookingTest();
 		MyScreenRecorder.stopRecording();
 		logger.info("*******************ending verifyTodayBookingTest**************************");
 	}
@@ -67,7 +69,8 @@ public class AdminTest extends BaseClass {
 	{
 		logger.info("*******************starting verifyThirtyDayBookingTest**************************");
 		MyScreenRecorder.startRecording("verifyThirtyDayBookingTest");
-		Assert.assertEquals(generic.webElementIsDisplayed(adb.thirtydayreport), true);
+//		Assert.assertEquals(generic.webElementIsDisplayed(adb.thirtydayreport), true);
+		adb.verifyThirtyDayBookingTest();
 	    MyScreenRecorder.stopRecording();
 	    logger.info("*******************ending verifyThirtyDayBookingTest**************************");
 	}
@@ -77,7 +80,8 @@ public class AdminTest extends BaseClass {
 	{
 		logger.info("*******************starting verifyIdValueTest**************************");
 		MyScreenRecorder.startRecording("verifyIdValueTest");
-		Assert.assertEquals(generic.webElementIsDisplayed(adb.idvalue), true);
+//		Assert.assertEquals(generic.webElementIsDisplayed(adb.idvalue), true);
+		adb.verifyIdValueTest();
 	    logger.info("*******************ending verifyIdValueTest**************************");
 	}
 	
@@ -92,7 +96,7 @@ public class AdminTest extends BaseClass {
 	    logger.info("*******************ending verifyBookingDetailsTest**************************");
 	}
 	
-//	@Test(priority = 5,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
+	@Test(priority = 5,groups = "smoke",enabled = true,description = " To verifyBookingDetailsTest")
 	public void verifyLinks() throws Exception
 	{
 		logger.info("*******************starting verifyBookingDetailsTest**************************");

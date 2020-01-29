@@ -18,9 +18,7 @@ import com.qa.utilities.GenericMethods;
  *
  */
 public class AdminDashboardPage extends BaseClass {
-	
-	GenericMethods generic=new GenericMethods(); 
-	
+	GenericMethods generic = new GenericMethods();
 	@FindBy(xpath = "//p[@class='serverHeader__title']")
 	@CacheLookup
 	public WebElement dashboard;
@@ -37,14 +35,23 @@ public class AdminDashboardPage extends BaseClass {
 	@CacheLookup
 	public WebElement viewinvoice;
 
+	public AdminDashboardPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
 
-public AdminDashboardPage(WebDriver driver) {
+	public void verifyAdminDashboardTest() {
+		Assert.assertEquals(generic.webElementIsDisplayed(dashboard), true);
+	}
 
-	PageFactory.initElements(driver, this);
-}
+	public void verifyTodayBookingTest() {
+		Assert.assertEquals(generic.webElementIsDisplayed(todaybooking), true);
+	}
 
-public void verifyAdminDashboardTest()
-{
-	Assert.assertEquals(generic.webElementIsDisplayed(dashboard), true);
-}
+	public void verifyThirtyDayBookingTest() {
+		Assert.assertEquals(generic.webElementIsDisplayed(thirtydayreport), true);
+	}
+
+	public void verifyIdValueTest() {
+		Assert.assertEquals(generic.webElementIsDisplayed(idvalue), true);
+	}
 }
