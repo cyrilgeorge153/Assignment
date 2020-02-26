@@ -6,6 +6,7 @@ import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.Alert;
@@ -21,6 +22,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeClass;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
@@ -28,7 +30,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *
  */
 public class BaseClass {
-	public static WebDriver driver;
+	public  WebDriver driver;
 	public static ChromeOptions options;
 	public static Properties prop;
 	public static FileInputStream ip;
@@ -49,7 +51,7 @@ public class BaseClass {
 		prop.load(ip);
 	}
 
-	public static WebDriver browserConfig() {
+	public  WebDriver browserConfig() {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
@@ -57,19 +59,19 @@ public class BaseClass {
 		return driver;
 	}
 
-	public static WebDriver readUrl() throws IOException {
+	public  WebDriver readUrl() throws IOException {
 		String Url = prop.getProperty("url");
 		driver.get(Url);
 		return driver;
 	}
 
-	public static WebDriver readUrlAdmin() throws IOException {
+	public WebDriver readUrlAdmin() throws IOException {
 		String Url = prop.getProperty("url1");
 		driver.get(Url);
 		return driver;
 	}
 
-	public static WebDriver startBrowser() throws IOException {
+	public  WebDriver startBrowser() throws IOException {
 		readPropertiesFile();
 		String browser = prop.getProperty("Browser");
 		if (browser.equalsIgnoreCase("chrome")) {
@@ -103,12 +105,12 @@ public class BaseClass {
 		return driver;
 	}
 
-	public static WebDriver closeBrowser() throws InterruptedException {
+	public  WebDriver closeBrowser() throws InterruptedException {
 		driver.close();
 		return driver;
 	}
 
-	public static WebDriver headlessChrome() {
+	public  WebDriver headlessChrome() {
 		options = new ChromeOptions();
 		options.addArguments("window-size=1400,800");// to drive headless mode
 		options.addArguments("headless");// to drive headless mode
@@ -116,7 +118,7 @@ public class BaseClass {
 		return driver;
 	}
 
-	public static WebDriver headlessFirefox() {
+	public  WebDriver headlessFirefox() {
 		WebDriverManager.firefoxdriver().setup();
 		FirefoxOptions options = new FirefoxOptions();
 		options.setHeadless(true);
@@ -124,7 +126,7 @@ public class BaseClass {
 		return driver;
 	}
 
-	public static WebDriver getCredentials() throws IOException {
+	public  WebDriver getCredentials() throws IOException {
 		String Username = prop.getProperty("username");
 		String Password = prop.getProperty("password");
 		driver.findElement(By.name("username")).sendKeys(Username);
@@ -133,7 +135,7 @@ public class BaseClass {
 		return driver;
 	}
 
-	public static WebDriver getCredentialsAdmin() throws IOException {
+	public  WebDriver getCredentialsAdmin() throws IOException {
 		String Username = prop.getProperty("username1");
 		String Password = prop.getProperty("password1");
 		driver.findElement(By.name("email")).sendKeys(Username);
@@ -142,13 +144,13 @@ public class BaseClass {
 		return driver;
 	}
 
-	public static WebDriver disableImages() {
+	public  WebDriver disableImages() {
 		options = new ChromeOptions();
 		options.addArguments("--blink-settings=imagesEnabled=false");
 		return driver;
 	}
 
-	public static WebDriver disableChromeImages() {
+	public  WebDriver disableChromeImages() {
 		options = new ChromeOptions();
 		HashMap<String, Object> images = new HashMap<String, Object>();
 		images.put("images", 2);
@@ -168,12 +170,12 @@ public class BaseClass {
 		return driver;
 	}
 
-	public static WebDriver supressConsoleLogsChrome() {
+	public  WebDriver supressConsoleLogsChrome() {
 		System.setProperty("webdriver.chrome.silentOutput", "true");
 		return driver;
 	}
 
-	public static WebDriver supressConsoleLogsFirefox() {
+	public  WebDriver supressConsoleLogsFirefox() {
 		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
 		return driver;
 	}

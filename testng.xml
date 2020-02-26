@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" parallel="methods" thread-count="6">
 	<listeners>
 		<listener class-name="com.qa.resources.ExtentReporterNG" />
 		<listener class-name="com.qa.analyzer.MyTransformer" />
 	</listeners>
 
 
-	<test thread-count="5" name="Test" >
+	<test name="Test" >
 
-		<groups>
+		<!-- <groups>
 			<define name="ExecuteAll">
 				<include name="smoke"></include>
 				<include name="regression"></include>
@@ -17,7 +17,8 @@
 			<run>
 				<include name="ExecuteAll"></include>
 			</run>
-		</groups>
+		</groups> -->
+		
 		<classes>
 			<class name="com.qa.testcases.AdminTest" />
 			<!-- <class name="com.qa.testcases.UserTest" /> -->

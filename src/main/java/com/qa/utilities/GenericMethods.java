@@ -1,11 +1,12 @@
 /**
- * 
+ *
  */
 package com.qa.utilities;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,6 +19,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.Coordinates;
 import org.openqa.selenium.interactions.Locatable;
 import org.openqa.selenium.support.ui.Select;
+
 import com.qa.configuration.BaseClass;
 
 /**
@@ -61,7 +63,7 @@ public class GenericMethods extends BaseClass {
 		}
 	}
 
-	public static void clickCheckboxFromList(String xpathOfElement, String valueToSelect) {
+	public static void clickCheckboxFromList(String xpathOfElement, String valueToSelect,WebDriver driver) {
 		List<WebElement> lst = driver.findElements(By.xpath(xpathOfElement));
 		for (int i = 0; i < lst.size(); i++) {
 			List<WebElement> dr = lst.get(i).findElements(By.tagName("label"));
@@ -237,7 +239,7 @@ public class GenericMethods extends BaseClass {
 	public void switchToParentWindow() {
 		driver.switchTo().defaultContent();
 	}
-	
+
 	public void hoverOverElement(WebElement element,WebDriver driver)
 	{
 		Actions action=new Actions(driver);
