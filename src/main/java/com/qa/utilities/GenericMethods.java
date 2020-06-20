@@ -20,13 +20,14 @@ import org.openqa.selenium.interactions.Coordinates;
 import org.openqa.selenium.interactions.Locatable;
 import org.openqa.selenium.support.ui.Select;
 
-import com.qa.configuration.BaseClass;
+import com.configuration.Base;
+
 
 /**
  * @author CYRIL
  *
  */
-public class GenericMethods extends BaseClass {
+public class GenericMethods extends Base {
 	public boolean webElementIsDisplayed(WebElement element) {
 		return element.isDisplayed();
 	}
