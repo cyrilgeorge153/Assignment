@@ -8,6 +8,5 @@ The code can be executed using Testng.Xml or using Maven Build...(clean install)
 Same option can be used from CLI if maven is installed and system path is set.
 Can be integrated with jenkins for CI purposes if needed.
 Given support to chrome,firefox,ie,edge,headless chrome,headless firefox.
-Extent Reports(Testng.xml):/Assignment/test-output/ExtentReportsTestNG.html
-Extent Reports(Maven):/Assignment/target/surefire-reports/ExtentReportsTestNG.html
+Extent Reports(Testng.xml):/Assignment/test-output/ExtentReport.html
 Log File location:/Assignment/log/testlog.log.
