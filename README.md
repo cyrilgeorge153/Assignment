@@ -11,4 +11,5 @@ Can be integrated with jenkins for CI purposes if needed.
 Given support to chrome,firefox,ie,edge,headless chrome,headless firefox.
 Extent Reports(Testng.xml):/Assignment/test-output/ExtentReport.html
 Log File location:/Assignment/log/testlog.log.
+
 Extent Report Screenshots
