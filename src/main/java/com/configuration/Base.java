@@ -28,7 +28,9 @@ public class Base {
 	}
 
 	public void initialisation() throws IOException {
-		switch (Utilities.getPropertiesFileValue("browser"))
+//		switch (Utilities.getPropertiesFileValue("browser"))
+		String browser = System.getProperty("browsername"); //To take browser value 
+		switch (browser) //using maven from cmd using command mvn test -Dbrowsername=firefox
 		 {
 		case "chrome":
 			Utilities.supressConsoleLogsChrome();
