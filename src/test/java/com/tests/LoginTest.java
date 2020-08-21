@@ -10,7 +10,7 @@ public class LoginTest extends BaseTest {
 	public void verifyForgotPasswordButtonTextTest() throws IOException {
 		extentTest = extent.startTest("verifyForgotPasswordButtonTextTest");
 		logger.info("starting extenttest");
-		String actualText = login.verifyForgotPasswordButtonText().getText();
+		String actualText = login.verifyForgotPasswordButtonText();
 		logger.info("storing button text value in String variable actualText");
 		System.out.println(actualText);
 		Assert.assertEquals(actualText, "Forgot your password?");
@@ -21,9 +21,9 @@ public class LoginTest extends BaseTest {
 	public void verifyLoginTest(String Email, String Password) throws IOException, InterruptedException {
 		extentTest = extent.startTest("verifyLoginTest");
 		logger.info("starting extenttest");
-		login.enterUsername().sendKeys(Email);
+		login.enterUsername(Email);
 		logger.info("entered email");
-		login.enterPassword().sendKeys(Password);
+		login.enterPassword(Password);
 		logger.info("entered password");
 		login.clickLogin();
 		logger.info("clicked login button");

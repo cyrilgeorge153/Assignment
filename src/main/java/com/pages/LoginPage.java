@@ -28,16 +28,16 @@ public class LoginPage extends BasePage {
 	@FindBy(id = "spanMessage")
 	WebElement errorMsg;
 
-	public WebElement verifyForgotPasswordButtonText() {
-		return forgotPwdButton;
+	public String verifyForgotPasswordButtonText() {
+		return forgotPwdButton.getText();
 	}
 
-	public WebElement enterUsername() {
-		return uname;
+	public void enterUsername(String Email) {
+		uname.sendKeys(Email);
 	}
 
-	public WebElement enterPassword() {
-		return pwd;
+	public void enterPassword(String Password) {
+		 pwd.sendKeys(Password);
 	}
 
 	public void clickLogin() {

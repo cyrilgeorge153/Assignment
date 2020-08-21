@@ -30,7 +30,7 @@ public class Base {
 	public void initialisation() throws IOException {
 //		switch (Utilities.getPropertiesFileValue("browser"))
 		String browser = System.getProperty("browsername"); //To take browser value 
-		switch (browser) //using maven from cmd using command mvn test -Dbrowsername=firefox
+		switch (browser) //using maven from cmd using command  
 		 {
 		case "chrome":
 			Utilities.supressConsoleLogsChrome();
