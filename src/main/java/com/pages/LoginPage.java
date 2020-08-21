@@ -44,8 +44,8 @@ public class LoginPage extends BasePage {
 		Utilities.clickWebElement(lgnBtn);
 	}
 
-	public WebElement verifyErrorMsg() {
-		return errorMsg;
+	public String verifyErrorMsg() {
+		return errorMsg.getText();
 	}
 
 }

@@ -27,7 +27,7 @@ public class LoginTest extends BaseTest {
 		logger.info("entered password");
 		login.clickLogin();
 		logger.info("clicked login button");
-		String actualErrorMsg = login.verifyErrorMsg().getText();
+		String actualErrorMsg = login.verifyErrorMsg();
 		logger.info("getting error message after invalid login");
 		System.out.println(actualErrorMsg);
 		Assert.assertEquals(actualErrorMsg, "Invalid credentials");
