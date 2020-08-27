@@ -69,6 +69,12 @@ public class Base {
 			options.setHeadless(true);
 			driver = new FirefoxDriver(options);
 			break;
+		case "aws":
+			Utilities.supressConsoleLogsChrome();
+//			WebDriverManager.chromedriver().setup();
+//			System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
+			driver = new ChromeDriver();
+			break;
 		default:
 			System.out.println("Entered browser not present in config.properties file");
 			break;
