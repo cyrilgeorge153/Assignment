@@ -73,9 +73,11 @@ public class Base {
 		case "aws":
 			Utilities.supressConsoleLogsChrome();
 			options = new ChromeOptions();
-			options.addArguments("--no-sandbox");
+//			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-setuid-sandbox");
 	        options.addArguments("--disable-dev-shm-usage");
 	        options.addArguments("--headless");
+	        
 //			WebDriverManager.chromedriver().setup();
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
 			driver = new ChromeDriver(options);
