@@ -2148,3 +2148,58 @@
 2020-08-21 09:41:39,951 - com.configuration.Base -INFO - getting error message after invalid login
 2020-08-21 09:41:39,951 - com.configuration.Base -INFO - asserting expected and actual value
 2020-08-21 09:41:41,114 - com.configuration.Base -INFO - quitting browser
+2020-08-31 15:21:13,308 - com.configuration.Base -INFO - starting initialisation method from base class
+2020-08-31 15:22:23,094 - com.configuration.Base -INFO - starting initialisation method from base class
+2020-08-31 15:23:34,511 - com.configuration.Base -INFO - completed initialisation method from base class
+2020-08-31 15:23:34,556 - com.configuration.Base -INFO - initialising login page object
+2020-08-31 15:23:34,564 - com.configuration.Base -INFO - starting extenttest
+2020-08-31 15:23:34,614 - com.configuration.Base -INFO - storing button text value in String variable actualText
+2020-08-31 15:23:34,618 - com.configuration.Base -INFO - asserting expected and actual value
+2020-08-31 15:23:35,210 - com.configuration.Base -INFO - quitting browser
+2020-08-31 15:23:35,246 - com.configuration.Base -INFO - starting initialisation method from base class
+2020-08-31 15:23:44,663 - com.configuration.Base -INFO - completed initialisation method from base class
+2020-08-31 15:23:44,664 - com.configuration.Base -INFO - initialising login page object
+2020-08-31 15:23:44,665 - com.configuration.Base -INFO - starting extenttest
+2020-08-31 15:23:44,792 - com.configuration.Base -INFO - entered email
+2020-08-31 15:23:44,922 - com.configuration.Base -INFO - entered password
+2020-08-31 15:23:46,131 - com.configuration.Base -INFO - clicked login button
+2020-08-31 15:23:46,173 - com.configuration.Base -INFO - getting error message after invalid login
+2020-08-31 15:23:46,173 - com.configuration.Base -INFO - asserting expected and actual value
+2020-08-31 15:23:46,767 - com.configuration.Base -INFO - quitting browser
+2020-08-31 15:23:46,771 - com.configuration.Base -INFO - starting initialisation method from base class
+2020-08-31 15:23:56,625 - com.configuration.Base -INFO - completed initialisation method from base class
+2020-08-31 15:23:56,626 - com.configuration.Base -INFO - initialising login page object
+2020-08-31 15:23:56,626 - com.configuration.Base -INFO - starting extenttest
+2020-08-31 15:23:56,766 - com.configuration.Base -INFO - entered email
+2020-08-31 15:23:56,897 - com.configuration.Base -INFO - entered password
+2020-08-31 15:23:58,088 - com.configuration.Base -INFO - clicked login button
+2020-08-31 15:23:58,147 - com.configuration.Base -INFO - getting error message after invalid login
+2020-08-31 15:23:58,147 - com.configuration.Base -INFO - asserting expected and actual value
+2020-08-31 15:23:58,791 - com.configuration.Base -INFO - quitting browser
+2020-08-31 15:24:19,378 - com.configuration.Base -INFO - starting initialisation method from base class
+2020-08-31 15:24:32,469 - com.configuration.Base -INFO - completed initialisation method from base class
+2020-08-31 15:24:32,529 - com.configuration.Base -INFO - initialising login page object
+2020-08-31 15:24:32,538 - com.configuration.Base -INFO - starting extenttest
+2020-08-31 15:24:32,607 - com.configuration.Base -INFO - storing button text value in String variable actualText
+2020-08-31 15:24:32,611 - com.configuration.Base -INFO - asserting expected and actual value
+2020-08-31 15:24:33,638 - com.configuration.Base -INFO - quitting browser
+2020-08-31 15:24:33,657 - com.configuration.Base -INFO - starting initialisation method from base class
+2020-08-31 15:24:46,991 - com.configuration.Base -INFO - completed initialisation method from base class
+2020-08-31 15:24:46,992 - com.configuration.Base -INFO - initialising login page object
+2020-08-31 15:24:46,993 - com.configuration.Base -INFO - starting extenttest
+2020-08-31 15:24:47,103 - com.configuration.Base -INFO - entered email
+2020-08-31 15:24:47,179 - com.configuration.Base -INFO - entered password
+2020-08-31 15:24:48,875 - com.configuration.Base -INFO - clicked login button
+2020-08-31 15:24:48,936 - com.configuration.Base -INFO - getting error message after invalid login
+2020-08-31 15:24:48,937 - com.configuration.Base -INFO - asserting expected and actual value
+2020-08-31 15:24:50,199 - com.configuration.Base -INFO - quitting browser
+2020-08-31 15:24:50,203 - com.configuration.Base -INFO - starting initialisation method from base class
+2020-08-31 15:25:02,059 - com.configuration.Base -INFO - completed initialisation method from base class
+2020-08-31 15:25:02,060 - com.configuration.Base -INFO - initialising login page object
+2020-08-31 15:25:02,061 - com.configuration.Base -INFO - starting extenttest
+2020-08-31 15:25:02,143 - com.configuration.Base -INFO - entered email
+2020-08-31 15:25:02,190 - com.configuration.Base -INFO - entered password
+2020-08-31 15:25:03,560 - com.configuration.Base -INFO - clicked login button
+2020-08-31 15:25:03,605 - com.configuration.Base -INFO - getting error message after invalid login
+2020-08-31 15:25:03,605 - com.configuration.Base -INFO - asserting expected and actual value
+2020-08-31 15:25:04,600 - com.configuration.Base -INFO - quitting browser

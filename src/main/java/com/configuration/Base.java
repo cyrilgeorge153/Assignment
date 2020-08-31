@@ -30,9 +30,9 @@ public class Base {
 
 	public void initialisation() throws IOException {
 //		switch (Utilities.getPropertiesFileValue("browser"))
-		String browser = System.getProperty("browsername"); //To take browser value 
-		switch (browser) //using maven from cmd using command  
-		 {
+		String browser = System.getProperty("browsername"); // To take browser value
+		switch (browser) // using maven from cmd using command
+		{
 		case "chrome":
 			Utilities.supressConsoleLogsChrome();
 			WebDriverManager.chromedriver().setup();
@@ -72,13 +72,12 @@ public class Base {
 			break;
 		case "aws":
 			Utilities.supressConsoleLogsChrome();
-			options = new ChromeOptions();
+//			options = new ChromeOptions();
 //			options.addArguments("--no-sandbox");
-			options.addArguments("--disable-setuid-sandbox");
-	        options.addArguments("--disable-dev-shm-usage");
-	        options.addArguments("--headless");
-	        
-//			WebDriverManager.chromedriver().setup();
+//			options.addArguments("--disable-setuid-sandbox");
+//			options.addArguments("--disable-dev-shm-usage");
+//	        options.addArguments("--headless");
+			// WebDriverManager.chromedriver().setup();
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
 			driver = new ChromeDriver(options);
 			break;
