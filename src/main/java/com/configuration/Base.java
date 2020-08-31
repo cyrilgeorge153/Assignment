@@ -20,6 +20,7 @@ public class Base {
 	public static WebDriver driver;
 	public static Logger logger;
 	ChromeOptions options;
+	FirefoxOptions option;
 
 	@BeforeClass
 	public void generateLog() throws URISyntaxException {
@@ -65,15 +66,18 @@ public class Base {
 			Utilities.supressConsoleLogsFirefox();
 			WebDriverManager.firefoxdriver().setup();
 //			System.setProperty("webdriver.gecko.driver","./src/test/resources/geckodriver.exe");
-			FirefoxOptions options = new FirefoxOptions();
-			options.setHeadless(true);
-			driver = new FirefoxDriver(options);
+			option = new FirefoxOptions();
+			option.setHeadless(true);
+			driver = new FirefoxDriver(option);
 			break;
 		case "aws":
 			Utilities.supressConsoleLogsChrome();
+			options = new ChromeOptions();
+			options.addArguments("--no-sandbox");
+	        options.addArguments("--disable-dev-shm-usage");
 //			WebDriverManager.chromedriver().setup();
-//			System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+			driver = new ChromeDriver(options);
 			break;
 		default:
 			System.out.println("Entered browser not present in config.properties file");
