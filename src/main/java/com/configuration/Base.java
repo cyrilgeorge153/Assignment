@@ -79,7 +79,7 @@ public class Base {
 //	        options.addArguments("--headless");
 			// WebDriverManager.chromedriver().setup();
 			System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 			break;
 		default:
 			System.out.println("Entered browser not present in config.properties file");
