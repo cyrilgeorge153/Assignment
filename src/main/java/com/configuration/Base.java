@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -21,6 +22,7 @@ public class Base {
 	public static Logger logger;
 	ChromeOptions options;
 	FirefoxOptions option;
+	EdgeOptions opt;
 
 	@BeforeClass
 	public void generateLog() throws URISyntaxException {
@@ -70,6 +72,13 @@ public class Base {
 			option.setHeadless(true);
 			driver = new FirefoxDriver(option);
 			break;
+		case "headlessedge":
+			WebDriverManager.edgedriver().setup();
+			opt=new EdgeOptions();
+			opt.addArguments("headless");
+			driver = new EdgeDriver(opt);
+			break;
+			
 		case "aws":
 			Utilities.supressConsoleLogsChrome();
 //			options = new ChromeOptions();
