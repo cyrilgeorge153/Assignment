@@ -26,6 +26,8 @@ To execute in microsoft edge->mvn test -Dbrowsername=edge
 
 To execute in headless microsoft edge->mvn test -Dbrowsername=headlessedge
 
+To execute in opera->mvn test -Dbrowsername=opera
+
 Extent Reports(Testng.xml):/Assignment/test-output/ExtentReport.html
 
 Log File location:/Assignment/log/testlog.log.
