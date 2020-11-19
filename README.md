@@ -36,3 +36,14 @@ Extent Report Screenshots
 ![Extent Report 1](https://user-images.githubusercontent.com/52770689/87049243-5d641600-c21a-11ea-8d66-f00a47185d70.png)
 ![Extent Report 2](https://user-images.githubusercontent.com/52770689/87049270-63f28d80-c21a-11ea-9aaa-28cd344686e3.png)
 
+
+Prerequisites
+
+1. Java 8+ should be present and environment variable should be set
+2. Maven should be present and environment variable should be set
+3. All browsers mentioned above should be present
+
+
+
+
+
