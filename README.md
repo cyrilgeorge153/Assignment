@@ -28,11 +28,11 @@ To execute in headless microsoft edge->mvn test -Dbrowsername=headlessedge
 
 To execute in opera->mvn test -Dbrowsername=opera
 
-**Extent Reports(Testng.xml):**Assignment/test-output/ExtentReport.html
+**Extent Reports(Testng.xml):Assignment/test-output/ExtentReport.html**
 
-**Log File location:**Assignment/log/testlog.log.
+**Log File location:Assignment/log/testlog.log**
 
-Extent Report Screenshots
+**Extent Report Screenshots**
 ![Extent Report 1](https://user-images.githubusercontent.com/52770689/87049243-5d641600-c21a-11ea-8d66-f00a47185d70.png)
 ![Extent Report 2](https://user-images.githubusercontent.com/52770689/87049270-63f28d80-c21a-11ea-9aaa-28cd344686e3.png)
 
