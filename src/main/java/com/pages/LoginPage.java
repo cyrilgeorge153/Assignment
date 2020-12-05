@@ -1,15 +1,18 @@
 package com.pages;
 
 import java.io.IOException;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.configuration.Base;
 import com.utilities.Utilities;
 
-public class LoginPage extends BasePage {
+public class LoginPage {
 
-	public LoginPage(WebDriver driver) throws IOException {
-		super(driver);
+	public LoginPage() throws IOException {
+		PageFactory.initElements(Base.driver, this);
 
 	}
 
@@ -33,11 +36,11 @@ public class LoginPage extends BasePage {
 	}
 
 	public void enterUsername(String Email) {
-		uname.sendKeys(Email);
+		Utilities.enterValuesWebElement(uname, Email);
 	}
 
 	public void enterPassword(String Password) {
-		 pwd.sendKeys(Password);
+		Utilities.enterValuesWebElement(pwd, Password);
 	}
 
 	public void clickLogin() {
@@ -45,7 +48,14 @@ public class LoginPage extends BasePage {
 	}
 
 	public String verifyErrorMsg() {
-		return errorMsg.getText();
+		return Utilities.getText(errorMsg);
+	}
+
+	public HomePage validLogin() throws IOException {
+		Utilities.enterValuesWebElement(uname, Utilities.getPropertiesFileValue("username"));
+		Utilities.enterValuesWebElement(pwd, Utilities.getPropertiesFileValue("password"));
+		Utilities.clickWebElement(lgnBtn);
+		return new HomePage();
 	}
 
 }

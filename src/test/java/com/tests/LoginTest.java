@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-	@Test(description = "To check landing page is displayed or not")
-	public void verifyForgotPasswordButtonTextTest() throws IOException {
-		extentTest = extent.startTest("verifyForgotPasswordButtonTextTest");
+	@Test(description = "To check forgot passwprd button is displayed or not")
+	public void verifyForgotPasswordButtonTest() throws IOException {
+		extentTest = extent.startTest("verifyForgotPasswordButtonTest");
 		logger.info("starting extenttest");
 		String actualText = login.verifyForgotPasswordButtonText();
 		logger.info("storing button text value in String variable actualText");

@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.configuration.Base;
+import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -19,8 +20,9 @@ import com.utilities.Utilities;
 public class BaseTest extends Base {
 	Logger logger = Logger.getLogger(Base.class);
 	LoginPage login;
-	public ExtentReports extent;
-	public ExtentTest extentTest;
+	HomePage home;
+	public static ExtentReports extent;
+	public static ExtentTest extentTest;
 	Utilities util = new Utilities();
 
 	@BeforeMethod
@@ -29,7 +31,8 @@ public class BaseTest extends Base {
 		logger.info("starting initialisation method from base class");
 		initialisation();
 		logger.info("completed initialisation method from base class");
-		login = new LoginPage(driver);
+		login = new LoginPage();
+		home=new HomePage();
 		logger.info("initialising login page object");
 
 	}
@@ -56,7 +59,6 @@ public class BaseTest extends Base {
 
 		extent.endTest(extentTest);
 		driver.quit();
-		driver = null;
 		logger.info("quitting browser");
 
 	}

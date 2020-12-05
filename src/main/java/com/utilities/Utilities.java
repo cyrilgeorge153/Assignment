@@ -36,6 +36,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
+import com.configuration.Base;
+
 public class Utilities {
 
 	public static String getPropertiesFileValue(String propertyName) throws IOException {
@@ -184,8 +186,18 @@ public class Utilities {
 		element.sendKeys(value);
 	}
 
-	public static String getTitle(WebElement element) {
+	public static String getText(WebElement element) {
 		return element.getText();
+	}
+	
+	public static String getTitleOfPage() {
+		
+		return Base.driver.getTitle();
+	}
+	
+public static boolean isElementDisplayed(WebElement element) {
+		
+		return element.isDisplayed();
 	}
 
 }

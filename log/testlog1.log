@@ -2455,3 +2455,506 @@
 2020-12-04 14:34:48,540 [main] INFO com.configuration.Base - getting error message after invalid login
 2020-12-04 14:34:48,540 [main] INFO com.configuration.Base - asserting expected and actual value
 2020-12-04 14:34:49,235 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 18:33:34,705 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 18:33:46,801 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 18:33:46,878 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 18:33:46,895 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 18:33:47,000 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 18:33:47,004 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 18:33:48,602 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 18:33:48,602 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 18:33:59,307 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 18:33:59,307 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 18:33:59,307 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 18:33:59,487 [main] INFO com.configuration.Base - entered email
+2020-12-05 18:33:59,579 [main] INFO com.configuration.Base - entered password
+2020-12-05 18:34:00,429 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 18:34:00,477 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 18:34:00,477 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 18:34:01,689 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 18:34:01,689 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 18:34:10,716 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 18:34:10,716 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 18:34:10,716 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 18:34:10,871 [main] INFO com.configuration.Base - entered email
+2020-12-05 18:34:11,029 [main] INFO com.configuration.Base - entered password
+2020-12-05 18:34:12,032 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 18:34:12,073 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 18:34:12,073 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 18:34:13,258 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 18:40:40,520 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 18:40:52,429 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 18:40:52,485 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 18:40:52,500 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 18:40:52,573 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 18:40:52,578 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 18:40:53,340 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 18:40:53,357 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 18:41:02,521 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 18:41:02,522 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 18:41:02,523 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 18:41:02,689 [main] INFO com.configuration.Base - entered email
+2020-12-05 18:41:02,825 [main] INFO com.configuration.Base - entered password
+2020-12-05 18:41:03,800 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 18:41:03,839 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 18:41:03,839 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 18:41:05,450 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 18:41:05,453 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 18:41:14,325 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 18:41:14,340 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 18:41:14,340 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 18:41:14,625 [main] INFO com.configuration.Base - entered email
+2020-12-05 18:41:14,806 [main] INFO com.configuration.Base - entered password
+2020-12-05 18:41:15,663 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 18:41:15,727 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 18:41:15,732 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 18:41:16,382 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 19:34:59,234 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:35:13,995 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 19:35:14,094 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 19:35:14,131 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 19:35:14,198 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 19:35:14,204 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 19:35:15,201 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 19:35:15,221 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:35:26,921 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 19:35:26,922 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 19:35:26,923 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 19:35:27,113 [main] INFO com.configuration.Base - entered email
+2020-12-05 19:35:27,272 [main] INFO com.configuration.Base - entered password
+2020-12-05 19:35:28,778 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 19:35:28,823 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 19:35:28,823 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 19:35:29,601 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 19:35:29,606 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:35:41,075 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 19:35:41,077 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 19:35:41,077 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 19:35:41,276 [main] INFO com.configuration.Base - entered email
+2020-12-05 19:35:41,533 [main] INFO com.configuration.Base - entered password
+2020-12-05 19:35:42,935 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 19:35:42,987 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 19:35:42,987 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 19:35:43,788 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 19:42:41,151 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:42:55,345 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 19:42:55,420 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 19:42:55,426 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 19:42:55,555 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 19:42:55,559 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 19:42:56,412 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 19:42:56,443 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:43:08,055 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 19:43:08,058 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 19:43:08,058 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 19:43:08,203 [main] INFO com.configuration.Base - entered email
+2020-12-05 19:43:08,353 [main] INFO com.configuration.Base - entered password
+2020-12-05 19:43:09,963 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 19:43:10,013 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 19:43:10,014 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 19:43:10,702 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 19:43:10,709 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:44:54,305 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:45:38,669 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:45:53,170 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 19:45:53,266 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 19:45:53,272 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 19:45:53,402 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 19:45:53,406 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 19:45:54,976 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 19:45:55,007 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:46:06,767 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 19:46:06,768 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 19:46:06,769 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 19:46:06,944 [main] INFO com.configuration.Base - entered email
+2020-12-05 19:46:07,113 [main] INFO com.configuration.Base - entered password
+2020-12-05 19:46:08,590 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 19:46:08,647 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 19:46:08,647 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 19:46:09,876 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 19:46:09,879 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:46:21,316 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 19:46:21,317 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 19:46:21,317 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 19:46:21,502 [main] INFO com.configuration.Base - entered email
+2020-12-05 19:46:21,641 [main] INFO com.configuration.Base - entered password
+2020-12-05 19:46:23,164 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 19:46:23,215 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 19:46:23,215 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 19:46:24,007 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 19:59:25,609 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 19:59:40,627 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 19:59:40,709 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:21:24,388 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:21:39,592 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:21:39,672 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:21:39,707 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:21:46,091 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 20:21:46,092 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 20:21:46,888 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:21:46,893 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:21:58,524 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:21:58,524 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:21:58,524 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:22:04,650 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 20:22:04,651 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 20:22:05,458 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:22:05,488 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:22:18,859 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:22:18,859 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:28:53,182 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:29:07,749 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:29:07,803 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:29:07,810 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:29:09,547 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:29:09,548 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:29:20,952 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:29:20,952 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:29:20,952 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:29:22,703 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:29:22,749 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:29:33,723 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:29:33,723 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:30:49,928 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:31:04,792 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:31:04,795 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:31:04,800 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:31:07,148 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:31:07,152 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:31:18,525 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:31:18,526 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:31:18,529 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:31:20,666 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:31:20,666 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:31:31,501 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:31:31,502 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:35:34,226 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:35:48,819 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:35:48,819 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:35:48,819 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:35:48,874 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:36:01,356 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:36:01,364 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:42:46,445 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:43:00,909 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:43:00,910 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:43:00,910 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:43:03,321 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:43:03,321 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:43:14,773 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:43:14,774 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:43:14,775 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:43:16,692 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:43:16,692 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:43:27,844 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:43:27,844 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:46:58,431 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:47:13,295 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:47:13,459 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:47:13,505 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:47:20,769 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 20:47:20,773 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 20:47:21,664 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:47:21,664 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:47:33,492 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:47:33,492 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:47:33,492 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:47:39,769 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 20:47:39,770 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 20:47:40,533 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:47:40,548 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:47:53,131 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:47:53,131 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:50:41,264 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:50:55,627 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:50:55,778 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:50:55,778 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:51:01,977 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 20:51:01,981 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 20:51:02,750 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:51:02,750 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:51:14,136 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:51:14,137 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:51:14,139 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:51:20,372 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 20:51:20,374 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 20:51:21,171 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:51:21,191 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:51:32,807 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:51:32,811 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:54:08,232 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:54:22,438 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:54:22,513 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:54:22,529 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:54:29,138 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 20:54:29,141 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 20:54:29,899 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:54:29,899 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:54:41,522 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:54:41,525 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 20:54:41,526 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 20:54:47,629 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 20:54:47,629 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 20:54:48,469 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 20:54:48,469 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 20:54:59,716 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 20:54:59,721 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:30:46,950 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:31:02,221 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:31:02,346 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:31:02,362 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:31:09,530 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:31:09,534 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:31:10,292 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:31:10,292 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:31:24,263 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:31:24,266 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:31:24,266 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:31:30,315 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:31:30,317 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 21:31:31,186 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:31:31,202 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:31:43,108 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:31:43,124 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:32:15,981 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:32:30,896 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:32:30,988 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:32:31,019 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:32:38,232 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:32:38,235 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:32:39,000 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:32:39,000 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:32:50,402 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:32:50,403 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:32:50,407 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:32:56,639 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:32:56,640 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 21:32:57,386 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:32:57,408 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:33:08,522 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:33:08,525 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:36:20,874 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:36:34,824 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:36:34,907 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:36:34,954 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:36:41,144 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:36:41,147 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:36:41,990 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:36:41,990 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:36:54,272 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:36:54,273 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:36:54,276 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:37:00,575 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:37:00,576 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 21:37:01,380 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:37:01,413 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:37:13,152 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:37:13,156 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:38:05,751 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:38:20,373 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:38:20,437 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:38:20,491 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:38:27,030 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:38:27,032 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:38:27,871 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:38:27,878 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:38:39,169 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:38:39,170 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:38:39,173 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:38:46,359 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:38:46,361 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 21:38:47,154 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:38:47,184 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:38:58,767 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:38:58,771 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:40:47,229 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:41:02,952 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:41:03,030 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:41:03,077 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:41:03,156 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:41:03,160 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:41:04,050 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:41:04,079 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:41:15,460 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:41:15,460 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:41:15,468 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:41:15,639 [main] INFO com.configuration.Base - entered email
+2020-12-05 21:41:15,824 [main] INFO com.configuration.Base - entered password
+2020-12-05 21:41:17,336 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 21:41:17,384 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 21:41:17,384 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:41:18,167 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:41:18,173 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:41:29,726 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:41:29,727 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:41:29,731 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:41:29,910 [main] INFO com.configuration.Base - entered email
+2020-12-05 21:41:30,065 [main] INFO com.configuration.Base - entered password
+2020-12-05 21:41:31,612 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 21:41:31,671 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 21:41:31,671 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:41:33,275 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:42:24,801 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:42:39,078 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:42:39,150 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:42:39,188 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:42:45,542 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:42:45,546 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:42:46,312 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:42:46,312 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:42:57,577 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:42:57,577 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:42:57,577 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:43:03,782 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:43:03,783 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 21:43:04,571 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:43:04,599 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:43:16,159 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:43:16,161 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:43:16,161 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:43:16,243 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:43:16,243 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:43:17,681 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:43:17,697 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:43:29,331 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:43:29,331 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:43:29,331 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:43:29,477 [main] INFO com.configuration.Base - entered email
+2020-12-05 21:43:29,648 [main] INFO com.configuration.Base - entered password
+2020-12-05 21:43:30,772 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 21:43:30,819 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 21:43:30,819 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:43:31,569 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:43:31,573 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:43:43,339 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:43:43,339 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:43:43,346 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:43:43,501 [main] INFO com.configuration.Base - entered email
+2020-12-05 21:43:43,669 [main] INFO com.configuration.Base - entered password
+2020-12-05 21:43:45,129 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 21:43:45,172 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 21:43:45,173 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:43:45,939 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:48:44,060 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:48:58,662 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:48:58,775 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:48:58,793 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:49:05,256 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:49:05,256 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:49:06,075 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:49:06,080 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:49:18,002 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:49:18,005 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:49:18,005 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:49:24,449 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:49:24,451 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 21:49:25,264 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:49:25,293 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:49:37,355 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:49:37,356 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:49:37,356 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:49:37,427 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:49:37,427 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:49:38,273 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:49:38,310 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:49:51,001 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:49:51,001 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:49:51,001 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:49:51,175 [main] INFO com.configuration.Base - entered email
+2020-12-05 21:49:51,329 [main] INFO com.configuration.Base - entered password
+2020-12-05 21:49:52,415 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 21:49:52,458 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 21:49:52,459 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:49:53,262 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:49:53,267 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:50:05,179 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:50:05,179 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:50:05,179 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:50:05,334 [main] INFO com.configuration.Base - entered email
+2020-12-05 21:50:05,492 [main] INFO com.configuration.Base - entered password
+2020-12-05 21:50:06,960 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 21:50:07,011 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 21:50:07,011 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:50:08,217 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:52:05,275 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:52:22,869 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:52:22,944 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:52:22,945 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:52:23,010 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:52:23,013 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:52:23,631 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:52:23,669 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:52:35,472 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:52:35,472 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:52:35,472 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:52:35,584 [main] INFO com.configuration.Base - entered email
+2020-12-05 21:52:35,679 [main] INFO com.configuration.Base - entered password
+2020-12-05 21:52:36,807 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 21:52:36,917 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 21:52:36,919 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:52:37,542 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:52:37,549 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:52:49,423 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:52:49,428 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:52:49,430 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:52:49,540 [main] INFO com.configuration.Base - entered email
+2020-12-05 21:52:49,636 [main] INFO com.configuration.Base - entered password
+2020-12-05 21:52:50,745 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 21:52:50,851 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 21:52:50,851 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:52:51,445 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:52:51,472 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:53:03,297 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:53:03,299 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:53:03,299 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:53:10,153 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:53:10,153 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 21:53:10,761 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 21:53:10,762 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 21:53:24,100 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 21:53:24,102 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 21:53:24,104 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 21:53:30,554 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 21:53:30,554 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 21:53:31,222 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 22:02:58,132 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 22:03:15,455 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 22:03:15,551 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 22:03:15,568 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 22:03:15,631 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 22:03:15,646 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 22:03:16,265 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 22:03:16,285 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 22:03:27,825 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 22:03:27,828 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 22:03:27,830 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 22:03:28,041 [main] INFO com.configuration.Base - entered email
+2020-12-05 22:03:28,193 [main] INFO com.configuration.Base - entered password
+2020-12-05 22:03:29,335 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 22:03:29,398 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 22:03:29,400 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 22:03:29,984 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 22:03:29,986 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 22:03:41,467 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 22:03:41,471 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 22:03:41,471 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 22:03:41,583 [main] INFO com.configuration.Base - entered email
+2020-12-05 22:03:41,721 [main] INFO com.configuration.Base - entered password
+2020-12-05 22:03:43,178 [main] INFO com.configuration.Base - clicked login button
+2020-12-05 22:03:43,236 [main] INFO com.configuration.Base - getting error message after invalid login
+2020-12-05 22:03:43,237 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 22:03:43,838 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 22:03:43,864 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 22:03:55,376 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 22:03:55,378 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 22:03:55,379 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 22:04:02,556 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 22:04:02,556 [main] INFO com.configuration.Base - asserting expected and actual value
+2020-12-05 22:04:03,200 [main] INFO com.configuration.Base - quitting browser
+2020-12-05 22:04:03,201 [main] INFO com.configuration.Base - starting initialisation method from base class
+2020-12-05 22:04:15,048 [main] INFO com.configuration.Base - completed initialisation method from base class
+2020-12-05 22:04:15,058 [main] INFO com.configuration.Base - initialising login page object
+2020-12-05 22:04:15,060 [main] INFO com.configuration.Base - starting extenttest
+2020-12-05 22:04:21,559 [main] INFO com.configuration.Base - storing button text value in String variable actualText
+2020-12-05 22:04:21,559 [main] INFO com.configuration.Base - asserting expected and actual title
+2020-12-05 22:04:22,174 [main] INFO com.configuration.Base - quitting browser
