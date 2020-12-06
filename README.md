@@ -1,3 +1,5 @@
+# Assignment
+
 Selenium-Maven-TestNG framework.
 
 Used properties file to read url,username and password.
@@ -31,6 +33,16 @@ To execute in opera->mvn test -Dbrowsername=opera
 **Extent Reports(Testng.xml):Assignment/test-output/ExtentReport.html**
 
 **Log File location:Assignment/log/testlog.log**
+
+**Test cases covered-Orange HRM-https://opensource-demo.orangehrmlive.com/**
+
+1.Verify forgot password button is displayed or not
+
+2.Verify login with multiple sets of data
+
+3.Verify home page title
+
+4.Verify orange hrm logo is displayed in homepage after login
 
 **Extent Report Screenshots**
 ![Extent Report 1](https://user-images.githubusercontent.com/52770689/87049243-5d641600-c21a-11ea-8d66-f00a47185d70.png)
