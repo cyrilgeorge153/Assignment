@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-	@Test(description = "To check forgot passwprd button is displayed or not")
+	@Test(description = "To check forgot password button is displayed or not")
 	public void verifyForgotPasswordButtonTest() throws IOException {
 		extentTest = extent.startTest("verifyForgotPasswordButtonTest");
 		logger.info("starting extenttest");
