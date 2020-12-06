@@ -28,7 +28,7 @@ public class Base {
 	@BeforeClass
 	public void generateLog() throws URISyntaxException {
 		logger = Logger.getLogger("Utility");
-		PropertyConfigurator.configure("./src/main/resources//log4j/log4j.properties");
+		PropertyConfigurator.configure("./src/main/resources/log4j/log4j.properties");
 	}
 
 	public void initialisation() throws IOException {
