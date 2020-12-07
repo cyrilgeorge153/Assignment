@@ -73,6 +73,8 @@ public class BaseTest extends Base {
 		extent.addSystemInfo("User Name", "Cyril George");
 		extent.addSystemInfo("Environment", "QA");
 		extent.addSystemInfo("Application", "OrangeHRM");
+		extent.loadConfig(new File("./src/test/resources/extent-config.xml"));
+		
 
 	}
 
