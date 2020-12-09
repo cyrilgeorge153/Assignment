@@ -17,7 +17,11 @@
     <documentTitle>ExtentReports 2.0</documentTitle>
     
     <!-- report name - displayed at top-nav -->
-    <reportName>Automation Test Report Orange HRM</reportName>
+    <reportName>
+    <![CDATA[
+            <img src='Logo/images-crop.png'/>
+        ]]>              
+    </reportName>
     
     
     <!-- report headline - displayed at top-nav, after reportHeadline -->

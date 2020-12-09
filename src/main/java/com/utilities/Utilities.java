@@ -43,7 +43,7 @@ public class Utilities {
 	public static String getPropertiesFileValue(String propertyName) throws IOException {
 		String propertyValue;
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("./src/main/java/com/configuration/config.properties");
+		FileInputStream fis = new FileInputStream("./src/main/resources/config.properties");
 		prop.load(fis);
 		propertyValue = prop.getProperty(propertyName);
 		return propertyValue;
