@@ -19,7 +19,7 @@
     <!-- report name - displayed at top-nav -->
     <reportName>
     <![CDATA[
-            <img src='Logo/images-crop.png'/>
+            <img src='src/test/resources/Logo/google.png'/>
         ]]>              
     </reportName>
     

@@ -1,41 +1,41 @@
-[INFO: 2020-12-09 22:55:09 com.tests.BaseTest.setUp(BaseTest.java:33)] starting initialisation method from base class
-[INFO: 2020-12-09 22:55:25 com.tests.BaseTest.setUp(BaseTest.java:35)] completed initialisation method from base class
-[INFO: 2020-12-09 22:55:25 com.tests.BaseTest.setUp(BaseTest.java:38)] initialising login page object
-[INFO: 2020-12-09 22:55:25 com.tests.LoginTest.verifyForgotPasswordButtonTest(LoginTest.java:12)] starting extenttest
-[INFO: 2020-12-09 22:55:25 com.tests.LoginTest.verifyForgotPasswordButtonTest(LoginTest.java:14)] storing button text value in String variable actualText
-[INFO: 2020-12-09 22:55:25 com.tests.LoginTest.verifyForgotPasswordButtonTest(LoginTest.java:17)] asserting expected and actual value
-[INFO: 2020-12-09 22:55:25 com.tests.BaseTest.tearDown(BaseTest.java:64)] quitting browser
-[INFO: 2020-12-09 22:55:26 com.tests.BaseTest.setUp(BaseTest.java:33)] starting initialisation method from base class
-[INFO: 2020-12-09 22:55:35 com.tests.BaseTest.setUp(BaseTest.java:35)] completed initialisation method from base class
-[INFO: 2020-12-09 22:55:35 com.tests.BaseTest.setUp(BaseTest.java:38)] initialising login page object
-[INFO: 2020-12-09 22:55:35 com.tests.LoginTest.verifyLoginTest(LoginTest.java:23)] starting extenttest
-[INFO: 2020-12-09 22:55:35 com.tests.LoginTest.verifyLoginTest(LoginTest.java:25)] entered email
-[INFO: 2020-12-09 22:55:35 com.tests.LoginTest.verifyLoginTest(LoginTest.java:27)] entered password
-[INFO: 2020-12-09 22:55:36 com.tests.LoginTest.verifyLoginTest(LoginTest.java:29)] clicked login button
-[INFO: 2020-12-09 22:55:36 com.tests.LoginTest.verifyLoginTest(LoginTest.java:31)] getting error message after invalid login
-[INFO: 2020-12-09 22:55:36 com.tests.LoginTest.verifyLoginTest(LoginTest.java:34)] asserting expected and actual value
-[INFO: 2020-12-09 22:55:37 com.tests.BaseTest.tearDown(BaseTest.java:64)] quitting browser
-[INFO: 2020-12-09 22:55:37 com.tests.BaseTest.setUp(BaseTest.java:33)] starting initialisation method from base class
-[INFO: 2020-12-09 22:55:46 com.tests.BaseTest.setUp(BaseTest.java:35)] completed initialisation method from base class
-[INFO: 2020-12-09 22:55:46 com.tests.BaseTest.setUp(BaseTest.java:38)] initialising login page object
-[INFO: 2020-12-09 22:55:46 com.tests.LoginTest.verifyLoginTest(LoginTest.java:23)] starting extenttest
-[INFO: 2020-12-09 22:55:47 com.tests.LoginTest.verifyLoginTest(LoginTest.java:25)] entered email
-[INFO: 2020-12-09 22:55:47 com.tests.LoginTest.verifyLoginTest(LoginTest.java:27)] entered password
-[INFO: 2020-12-09 22:55:48 com.tests.LoginTest.verifyLoginTest(LoginTest.java:29)] clicked login button
-[INFO: 2020-12-09 22:55:48 com.tests.LoginTest.verifyLoginTest(LoginTest.java:31)] getting error message after invalid login
-[INFO: 2020-12-09 22:55:48 com.tests.LoginTest.verifyLoginTest(LoginTest.java:34)] asserting expected and actual value
-[INFO: 2020-12-09 22:55:48 com.tests.BaseTest.tearDown(BaseTest.java:64)] quitting browser
-[INFO: 2020-12-09 22:55:48 com.tests.BaseTest.setUp(BaseTest.java:33)] starting initialisation method from base class
-[INFO: 2020-12-09 22:55:58 com.tests.BaseTest.setUp(BaseTest.java:35)] completed initialisation method from base class
-[INFO: 2020-12-09 22:55:58 com.tests.BaseTest.setUp(BaseTest.java:38)] initialising login page object
-[INFO: 2020-12-09 22:55:58 com.tests.HomeTest.homePageLogoTest(HomeTest.java:26)] starting extenttest
-[INFO: 2020-12-09 22:56:03 com.tests.HomeTest.homePageLogoTest(HomeTest.java:29)] storing button text value in String variable actualText
-[INFO: 2020-12-09 22:56:03 com.tests.HomeTest.homePageLogoTest(HomeTest.java:32)] asserting expected and actual value
-[INFO: 2020-12-09 22:56:04 com.tests.BaseTest.tearDown(BaseTest.java:64)] quitting browser
-[INFO: 2020-12-09 22:56:04 com.tests.BaseTest.setUp(BaseTest.java:33)] starting initialisation method from base class
-[INFO: 2020-12-09 22:56:14 com.tests.BaseTest.setUp(BaseTest.java:35)] completed initialisation method from base class
-[INFO: 2020-12-09 22:56:14 com.tests.BaseTest.setUp(BaseTest.java:38)] initialising login page object
-[INFO: 2020-12-09 22:56:14 com.tests.HomeTest.homePageTitleTest(HomeTest.java:14)] starting extenttest
-[INFO: 2020-12-09 22:56:18 com.tests.HomeTest.homePageTitleTest(HomeTest.java:17)] storing button text value in String variable actualText
-[INFO: 2020-12-09 22:56:18 com.tests.HomeTest.homePageTitleTest(HomeTest.java:20)] asserting expected and actual title
-[INFO: 2020-12-09 22:56:19 com.tests.BaseTest.tearDown(BaseTest.java:64)] quitting browser
+[INFO: 2020-12-10 18:50:52 com.tests.BaseTest.setUp(BaseTest.java:33)] starting initialisation method from base class
+[INFO: 2020-12-10 18:51:15 com.tests.BaseTest.setUp(BaseTest.java:35)] completed initialisation method from base class
+[INFO: 2020-12-10 18:51:15 com.tests.BaseTest.setUp(BaseTest.java:38)] initialising login page object
+[INFO: 2020-12-10 18:51:15 com.tests.LoginTest.verifyForgotPasswordButtonTest(LoginTest.java:12)] starting extenttest
+[INFO: 2020-12-10 18:51:15 com.tests.LoginTest.verifyForgotPasswordButtonTest(LoginTest.java:14)] storing button text value in String variable actualText
+[INFO: 2020-12-10 18:51:15 com.tests.LoginTest.verifyForgotPasswordButtonTest(LoginTest.java:17)] asserting expected and actual value
+[INFO: 2020-12-10 18:51:16 com.tests.BaseTest.tearDown(BaseTest.java:64)] quitting browser
+[INFO: 2020-12-10 18:51:16 com.tests.BaseTest.setUp(BaseTest.java:33)] starting initialisation method from base class
+[INFO: 2020-12-10 18:51:27 com.tests.BaseTest.setUp(BaseTest.java:35)] completed initialisation method from base class
+[INFO: 2020-12-10 18:51:27 com.tests.BaseTest.setUp(BaseTest.java:38)] initialising login page object
+[INFO: 2020-12-10 18:51:27 com.tests.LoginTest.verifyLoginTest(LoginTest.java:23)] starting extenttest
+[INFO: 2020-12-10 18:51:27 com.tests.LoginTest.verifyLoginTest(LoginTest.java:25)] entered email
+[INFO: 2020-12-10 18:51:27 com.tests.LoginTest.verifyLoginTest(LoginTest.java:27)] entered password
+[INFO: 2020-12-10 18:51:29 com.tests.LoginTest.verifyLoginTest(LoginTest.java:29)] clicked login button
+[INFO: 2020-12-10 18:51:29 com.tests.LoginTest.verifyLoginTest(LoginTest.java:31)] getting error message after invalid login
+[INFO: 2020-12-10 18:51:29 com.tests.LoginTest.verifyLoginTest(LoginTest.java:34)] asserting expected and actual value
+[INFO: 2020-12-10 18:51:30 com.tests.BaseTest.tearDown(BaseTest.java:64)] quitting browser
+[INFO: 2020-12-10 18:51:30 com.tests.BaseTest.setUp(BaseTest.java:33)] starting initialisation method from base class
+[INFO: 2020-12-10 18:51:41 com.tests.BaseTest.setUp(BaseTest.java:35)] completed initialisation method from base class
+[INFO: 2020-12-10 18:51:41 com.tests.BaseTest.setUp(BaseTest.java:38)] initialising login page object
+[INFO: 2020-12-10 18:51:41 com.tests.LoginTest.verifyLoginTest(LoginTest.java:23)] starting extenttest
+[INFO: 2020-12-10 18:51:41 com.tests.LoginTest.verifyLoginTest(LoginTest.java:25)] entered email
+[INFO: 2020-12-10 18:51:41 com.tests.LoginTest.verifyLoginTest(LoginTest.java:27)] entered password
+[INFO: 2020-12-10 18:51:43 com.tests.LoginTest.verifyLoginTest(LoginTest.java:29)] clicked login button
+[INFO: 2020-12-10 18:51:43 com.tests.LoginTest.verifyLoginTest(LoginTest.java:31)] getting error message after invalid login
+[INFO: 2020-12-10 18:51:43 com.tests.LoginTest.verifyLoginTest(LoginTest.java:34)] asserting expected and actual value
+[INFO: 2020-12-10 18:51:43 com.tests.BaseTest.tearDown(BaseTest.java:64)] quitting browser
+[INFO: 2020-12-10 18:51:44 com.tests.BaseTest.setUp(BaseTest.java:33)] starting initialisation method from base class
+[INFO: 2020-12-10 18:51:55 com.tests.BaseTest.setUp(BaseTest.java:35)] completed initialisation method from base class
+[INFO: 2020-12-10 18:51:55 com.tests.BaseTest.setUp(BaseTest.java:38)] initialising login page object
+[INFO: 2020-12-10 18:51:55 com.tests.HomeTest.homePageLogoTest(HomeTest.java:26)] starting extenttest
+[INFO: 2020-12-10 18:52:02 com.tests.HomeTest.homePageLogoTest(HomeTest.java:29)] storing button text value in String variable actualText
+[INFO: 2020-12-10 18:52:02 com.tests.HomeTest.homePageLogoTest(HomeTest.java:32)] asserting expected and actual value
+[INFO: 2020-12-10 18:52:02 com.tests.BaseTest.tearDown(BaseTest.java:64)] quitting browser
+[INFO: 2020-12-10 18:52:02 com.tests.BaseTest.setUp(BaseTest.java:33)] starting initialisation method from base class
+[INFO: 2020-12-10 18:52:14 com.tests.BaseTest.setUp(BaseTest.java:35)] completed initialisation method from base class
+[INFO: 2020-12-10 18:52:14 com.tests.BaseTest.setUp(BaseTest.java:38)] initialising login page object
+[INFO: 2020-12-10 18:52:14 com.tests.HomeTest.homePageTitleTest(HomeTest.java:14)] starting extenttest
+[INFO: 2020-12-10 18:52:21 com.tests.HomeTest.homePageTitleTest(HomeTest.java:17)] storing button text value in String variable actualText
+[INFO: 2020-12-10 18:52:21 com.tests.HomeTest.homePageTitleTest(HomeTest.java:20)] asserting expected and actual title
+[INFO: 2020-12-10 18:52:21 com.tests.BaseTest.tearDown(BaseTest.java:64)] quitting browser
