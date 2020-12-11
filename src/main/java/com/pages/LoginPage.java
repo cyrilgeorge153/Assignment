@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.configuration.Base;
 import com.utilities.Utilities;
 
-public class LoginPage {
+public final class LoginPage {
 
 	public LoginPage() throws IOException {
 		PageFactory.initElements(Base.driver, this);
@@ -17,19 +17,19 @@ public class LoginPage {
 	}
 
 	@FindBy(css = "[href='/index.php/auth/requestPasswordResetCode']")
-	WebElement forgotPwdButton;
+	private WebElement forgotPwdButton;
 
 	@FindBy(id = "txtUsername")
-	WebElement uname;
+	private WebElement uname;
 
 	@FindBy(id = "txtPassword")
-	WebElement pwd;
+	private WebElement pwd;
 
 	@FindBy(id = "btnLogin")
-	WebElement lgnBtn;
+	private WebElement lgnBtn;
 
 	@FindBy(id = "spanMessage")
-	WebElement errorMsg;
+	private WebElement errorMsg;
 
 	public String verifyForgotPasswordButtonText() {
 		return forgotPwdButton.getText();

@@ -19,8 +19,9 @@
     <!-- report name - displayed at top-nav -->
     <reportName>
     <![CDATA[
-            <img src='src/test/resources/Logo/google.png'/>
-        ]]>              
+           <!--  <img src='src/test/resources/Logo/google.png'/> -->
+        ]]>  
+        Automation Test Report            
     </reportName>
     
     

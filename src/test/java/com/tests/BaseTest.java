@@ -34,7 +34,7 @@ public class BaseTest extends Base {
 		initialisation();
 		logger.info("completed initialisation method from base class");
 		login = new LoginPage();
-		home=new HomePage();
+		home = new HomePage();
 		logger.info("initialising login page object");
 
 	}
@@ -60,10 +60,9 @@ public class BaseTest extends Base {
 		}
 
 		extent.endTest(extentTest);
-		driver.quit();
-		logger.info("quitting browser");
-
-	}
+		quitBrowser();
+		}
+	
 
 	@BeforeTest
 	public void setExtent() {
@@ -74,7 +73,6 @@ public class BaseTest extends Base {
 		extent.addSystemInfo("Environment", "QA");
 		extent.addSystemInfo("Application", "OrangeHRM");
 		extent.loadConfig(new File("./src/test/resources/extent-config.xml"));
-		
 
 	}
 

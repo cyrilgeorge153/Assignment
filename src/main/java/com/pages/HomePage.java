@@ -15,7 +15,7 @@ public class HomePage {
 		PageFactory.initElements(Base.driver, this);
 	}
 	@FindBy(css = "img[alt='OrangeHRM']")
-	WebElement orangehrmLogo;
+	private WebElement orangehrmLogo;
 	
 	public String verifyHomePageTitle()
 	{

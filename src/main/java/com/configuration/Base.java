@@ -34,6 +34,7 @@ public class Base {
 	public void initialisation() throws IOException {
 //		switch (Utilities.getPropertiesFileValue("browser"))
 		String browser = System.getProperty("browsername"); // To take browser value
+		if(driver==null) {
 		switch (browser) // using maven from cmd using command
 		{
 		case "chrome":
@@ -105,5 +106,13 @@ public class Base {
 		driver.get(Utilities.getPropertiesFileValue("url"));
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
-
+	}
+	public void quitBrowser()
+	{
+		if(driver!=null) {
+			driver.quit();
+			driver=null;
+			logger.info("quitting browser");
+	}
+	}
 }
