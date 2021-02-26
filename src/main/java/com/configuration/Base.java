@@ -19,7 +19,7 @@ import com.utilities.Utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
-	public static WebDriver driver;
+	protected WebDriver driver;
 	public static Logger logger;
 	ChromeOptions options;
 	FirefoxOptions option;

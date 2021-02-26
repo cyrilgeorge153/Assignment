@@ -13,6 +13,7 @@ public class HomeTest extends BaseTest{
 		extentTest = extent.startTest("homePageTitleTest");
 		logger.info("starting extenttest");
 		login.validLogin();
+		logger.info("completed login");
 		String actualTitle = home.verifyHomePageTitle();
 		logger.info("storing button text value in String variable actualText");
 		System.out.println(actualTitle);
@@ -25,6 +26,7 @@ public class HomeTest extends BaseTest{
 		extentTest = extent.startTest("homePageLogoTest");
 		logger.info("starting extenttest");
 		login.validLogin();
+		logger.info("completed login");
 		boolean actualValue = home.verifyHomePageLogo();
 		logger.info("storing button text value in String variable actualText");
 		System.out.println(actualValue);

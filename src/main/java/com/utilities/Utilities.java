@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
@@ -22,6 +23,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
+
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.mail.DefaultAuthenticator;
@@ -35,8 +37,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-
-import com.configuration.Base;
 
 public class Utilities {
 
@@ -190,9 +190,9 @@ public class Utilities {
 		return element.getText();
 	}
 	
-	public static String getTitleOfPage() {
+	public static String getTitleOfPage(WebDriver driver) {
 		
-		return Base.driver.getTitle();
+		return driver.getTitle();
 	}
 	
 public static boolean isElementDisplayed(WebElement element) {

@@ -22,7 +22,7 @@ import com.utilities.Utilities;
 public class BaseTest extends Base {
 	Logger logger = Logger.getLogger(Base.class);
 	LoginPage login;
-	HomePage home;
+	static HomePage home;
 	public static ExtentReports extent;
 	public static ExtentTest extentTest;
 	Utilities util = new Utilities();
@@ -33,8 +33,8 @@ public class BaseTest extends Base {
 		logger.info("starting initialisation method from base class");
 		initialisation();
 		logger.info("completed initialisation method from base class");
-		login = new LoginPage();
-		home = new HomePage();
+		login = new LoginPage(driver);
+		home = new HomePage(driver);
 		logger.info("initialising login page object");
 
 	}
