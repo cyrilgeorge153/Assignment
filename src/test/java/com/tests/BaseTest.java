@@ -1,6 +1,5 @@
 package com.tests;
 
-import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 
@@ -79,20 +78,7 @@ public class BaseTest extends Base {
 	@AfterTest
 	public void endReport() {
 		extent.flush();
-		extent.close();
-		try {
-			Desktop.getDesktop().browse(new File("test-output/ExtentReport.html").toURI());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		extent.close();				
 	}
-
-//	@AfterSuite
-//	public void afterTestExecution() throws EmailException
-//	{
-////		Utilities.sendCommonsEmailAfterExecution();
-//		Utilities.sendJavaMailAfterExecution();
-//	}
 
 }
