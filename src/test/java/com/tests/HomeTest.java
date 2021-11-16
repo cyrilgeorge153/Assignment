@@ -33,5 +33,4 @@ public class HomeTest extends BaseTest{
 		Assert.assertEquals(actualValue, true);
 		logger.info("asserting expected and actual value");
 	}
-
 }
