@@ -1,10 +1,7 @@
 package com.configuration;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.concurrent.TimeUnit;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,22 +11,17 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
-import org.testng.annotations.BeforeClass;
+
+import com.utilities.Log;
 import com.utilities.Utilities;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 	protected WebDriver driver;
-	public static Logger logger;
 	ChromeOptions options;
 	FirefoxOptions option;
 	EdgeOptions opt;
-
-	@BeforeClass
-	public void generateLog() throws URISyntaxException {
-		logger = Logger.getLogger("Utility");
-		PropertyConfigurator.configure("./src/main/resources/log4j/log4j.properties");
-	}
 
 	public void initialisation() throws IOException {
 //		switch (Utilities.getPropertiesFileValue("browser"))
@@ -112,7 +104,7 @@ public class Base {
 		if(driver!=null) {
 			driver.quit();
 			driver=null;
-			logger.info("quitting browser");
+			Log.info("quitting browser");
 	}
 	}
 }

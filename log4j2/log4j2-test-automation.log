@@ -1,0 +1,43 @@
+[INFO ] 2021-11-17 12:12:23 [main] Log - starting initialisation method from base class
+[INFO ] 2021-11-17 12:12:39 [main] Log - completed initialisation method from base class
+[INFO ] 2021-11-17 12:12:39 [main] Log - initialising login page object
+[INFO ] 2021-11-17 12:12:39 [main] Log - starting extenttest
+[INFO ] 2021-11-17 12:12:39 [main] Log - storing button text value in String variable actualText
+[INFO ] 2021-11-17 12:12:39 [main] Log - asserting expected and actual value
+[INFO ] 2021-11-17 12:12:39 [main] Log - quitting browser
+[INFO ] 2021-11-17 12:12:39 [main] Log - starting initialisation method from base class
+[INFO ] 2021-11-17 12:12:50 [main] Log - completed initialisation method from base class
+[INFO ] 2021-11-17 12:12:50 [main] Log - initialising login page object
+[INFO ] 2021-11-17 12:12:50 [main] Log - starting extenttest
+[INFO ] 2021-11-17 12:12:50 [main] Log - entered email
+[INFO ] 2021-11-17 12:12:50 [main] Log - entered password
+[INFO ] 2021-11-17 12:12:51 [main] Log - clicked login button
+[INFO ] 2021-11-17 12:12:51 [main] Log - getting error message after invalid login
+[INFO ] 2021-11-17 12:12:51 [main] Log - asserting expected and actual value
+[INFO ] 2021-11-17 12:12:52 [main] Log - quitting browser
+[INFO ] 2021-11-17 12:12:52 [main] Log - starting initialisation method from base class
+[INFO ] 2021-11-17 12:13:01 [main] Log - completed initialisation method from base class
+[INFO ] 2021-11-17 12:13:01 [main] Log - initialising login page object
+[INFO ] 2021-11-17 12:13:01 [main] Log - starting extenttest
+[INFO ] 2021-11-17 12:13:01 [main] Log - entered email
+[INFO ] 2021-11-17 12:13:01 [main] Log - entered password
+[INFO ] 2021-11-17 12:13:02 [main] Log - clicked login button
+[INFO ] 2021-11-17 12:13:02 [main] Log - getting error message after invalid login
+[INFO ] 2021-11-17 12:13:02 [main] Log - asserting expected and actual value
+[INFO ] 2021-11-17 12:13:03 [main] Log - quitting browser
+[INFO ] 2021-11-17 12:13:03 [main] Log - starting initialisation method from base class
+[INFO ] 2021-11-17 12:13:11 [main] Log - completed initialisation method from base class
+[INFO ] 2021-11-17 12:13:11 [main] Log - initialising login page object
+[INFO ] 2021-11-17 12:13:11 [main] Log - starting extenttest
+[INFO ] 2021-11-17 12:13:17 [main] Log - completed login
+[INFO ] 2021-11-17 12:13:17 [main] Log - storing button text value in String variable actualText
+[INFO ] 2021-11-17 12:13:17 [main] Log - asserting expected and actual value
+[INFO ] 2021-11-17 12:13:18 [main] Log - quitting browser
+[INFO ] 2021-11-17 12:13:18 [main] Log - starting initialisation method from base class
+[INFO ] 2021-11-17 12:13:27 [main] Log - completed initialisation method from base class
+[INFO ] 2021-11-17 12:13:27 [main] Log - initialising login page object
+[INFO ] 2021-11-17 12:13:27 [main] Log - starting extenttest
+[INFO ] 2021-11-17 12:13:32 [main] Log - completed login
+[INFO ] 2021-11-17 12:13:32 [main] Log - storing button text value in String variable actualText
+[INFO ] 2021-11-17 12:13:32 [main] Log - asserting expected and actual title
+[INFO ] 2021-11-17 12:13:33 [main] Log - quitting browser

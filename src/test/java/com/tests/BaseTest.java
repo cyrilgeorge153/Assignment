@@ -2,24 +2,22 @@ package com.tests;
 
 import java.io.File;
 import java.io.IOException;
-
-import org.apache.log4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
-
 import com.configuration.Base;
 import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import com.utilities.Log;
 import com.utilities.Utilities;
 
 public class BaseTest extends Base {
-	Logger logger = Logger.getLogger(Base.class);
+
 	LoginPage login;
 	static HomePage home;
 	public static ExtentReports extent;
@@ -29,12 +27,12 @@ public class BaseTest extends Base {
 	@BeforeMethod
 	public void setUp() throws IOException {
 
-		logger.info("starting initialisation method from base class");
+		Log.info("starting initialisation method from base class");
 		initialisation();
-		logger.info("completed initialisation method from base class");
+		Log.info("completed initialisation method from base class");
 		login = new LoginPage(driver);
 		home = new HomePage(driver);
-		logger.info("initialising login page object");
+		Log.info("initialising login page object");
 
 	}
 
