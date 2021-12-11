@@ -2,17 +2,15 @@
 
 Selenium-Maven-TestNG framework.
 
-Used properties file to read url,username and password.
+Used properties file to read url,username and password and other datas.
 
-Implemented Page Object Model and used page factory.
+Implemented Plain Page Object Model.
 
-Added Extent Reporting in addition to the TestNG inbuild Reports.
+Added Extent Reporting in addition to the TestNG inbuild Reports. Report will be generated with timestamp in TestReport folder.
 
 Added Log 4j Api to generate log files.
 
-Added groups concept in testng.xml file.
-
-Given support to chrome,firefox,ie,edge,headless chrome,headless firefox.
+Given support to chrome,firefox,ie,edge,headless chrome,headless firefox with parallel execution.
 
 **Maven Project Execution without using any IDE after downloading project to local system-> Select CMD and go to project path where pom.xml file is loacted and execute following commands:**
 
@@ -30,15 +28,15 @@ To execute in headless microsoft edge->mvn test -Dbrowsername=headlessedge
 
 To execute in opera->mvn test -Dbrowsername=opera
 
-**Extent Reports(Testng.xml):Assignment/test-output/ExtentReport.html**
+**Extent Reports(Testng.xml):Assignment/TestReport**
 
-**Log File location:Assignment/log4j2/log4j2-test-automation.log**
+**Log File location:Assignment/log/testlog.log**
 
 **Test cases covered-Orange HRM-https://opensource-demo.orangehrmlive.com/**
 
 1.Verify forgot password button is displayed or not
 
-2.Verify login with multiple sets of data
+2.Verify login with invalid data
 
 3.Verify home page title
 
