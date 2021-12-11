@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest {
 		Assert.assertEquals(actualText, "Forgot your password?");
 		logger.info("ending verifyForgotPasswordButtonTest");
 	}
-	@Test(dataProvider = "loginData1", dataProviderClass = com.testdata.TestData.class, description = "To check login with multiple sets of data")
+	@Test(dataProvider = "loginData1", dataProviderClass = com.testdata.TestData.class, description = "To check login with invalid data")
 	public void verifyLoginTest(String email, String password) throws IOException, InterruptedException {
 		logger.info("starting verifyLoginTest");
 		login.enterUsername(email);
