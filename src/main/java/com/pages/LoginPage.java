@@ -2,62 +2,36 @@ package com.pages;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.By;
 import com.utilities.Utilities;
 
 public final class LoginPage {
 
-	WebDriver driver;
-	public LoginPage(WebDriver driver) throws IOException {
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
-
-	}
-
-	@FindBy(css = "[href='/index.php/auth/requestPasswordResetCode']")
-	private WebElement forgotPwdButton;
-
-	@FindBy(id = "txtUsername")
-	private WebElement uname;
-
-	@FindBy(id = "txtPassword")
-	private WebElement pwd;
-
-	@FindBy(id = "btnLogin")
-	private WebElement lgnBtn;
-
-	@FindBy(id = "spanMessage")
-	private WebElement errorMsg;
+	By forgotPwdButton = By.cssSelector("[href='/index.php/auth/requestPasswordResetCode']");
+	By uname = By.id("txtUsername");
+	By pwd = By.id("txtPassword");
+	By lgnBtn = By.id("btnLogin");
+	By errorMsg = By.id("spanMessage");
 
 	public String verifyForgotPasswordButtonText() {
-		return forgotPwdButton.getText();
+		return Utilities.getText(forgotPwdButton);
 	}
-
-	public void enterUsername(String Email) {
-		Utilities.enterValuesWebElement(uname, Email);
+	public void enterUsername(String email) {
+		Utilities.enterValuesWebElement(uname, email);
 	}
-
-	public void enterPassword(String Password) {
-		Utilities.enterValuesWebElement(pwd, Password);
+	public void enterPassword(String password) {
+		Utilities.enterValuesWebElement(pwd, password);
 	}
-
 	public void clickLogin() {
 		Utilities.clickWebElement(lgnBtn);
 	}
-
 	public String verifyErrorMsg() {
 		return Utilities.getText(errorMsg);
 	}
-
 	public HomePage validLogin() throws IOException {
 		Utilities.enterValuesWebElement(uname, Utilities.getPropertiesFileValue("username"));
 		Utilities.enterValuesWebElement(pwd, Utilities.getPropertiesFileValue("password"));
 		Utilities.clickWebElement(lgnBtn);
-		return new HomePage(driver);
+		return new HomePage();
 	}
-
 }

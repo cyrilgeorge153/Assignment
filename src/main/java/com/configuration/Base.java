@@ -1,7 +1,10 @@
 package com.configuration;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+import java.net.URISyntaxException;
+import java.time.Duration;
+import java.util.logging.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -11,100 +14,83 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
-
-import com.utilities.Log;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.BeforeClass;
 import com.utilities.Utilities;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
-	protected WebDriver driver;
+//	protected WebDriver driver;
+	protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 	ChromeOptions options;
 	FirefoxOptions option;
 	EdgeOptions opt;
+	public static Logger logger;
 
+	@BeforeClass
+	public void generateLog() throws URISyntaxException {
+		logger = Logger.getLogger("Utility");
+		PropertyConfigurator.configure("./src/main/resources/log4j.properties");
+	}
 	public void initialisation() throws IOException {
-//		switch (Utilities.getPropertiesFileValue("browser"))
-		String browser = System.getProperty("browsername"); // To take browser value
-		if(driver==null) {
+		String browser = System.getProperty("browsername","chrome"); // To take browser value
 		switch (browser) // using maven from cmd using command
 		{
 		case "chrome":
 			Utilities.supressConsoleLogsChrome();
 			WebDriverManager.chromedriver().setup();
-//			System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
-			driver = new ChromeDriver();
+			driver.set(new ChromeDriver());
 			break;
 		case "firefox":
 			Utilities.supressConsoleLogsFirefox();
 			WebDriverManager.firefoxdriver().setup();
-//			System.setProperty("webdriver.gecko.driver","./src/test/resources/geckodriver.exe");
-			driver = new FirefoxDriver();
+			driver.set(new FirefoxDriver());
 			break;
 		case "ie":
 			WebDriverManager.iedriver().setup();
-			driver = new InternetExplorerDriver();
+			driver.set(new InternetExplorerDriver());
 			break;
 		case "edge":
 			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			driver.set(new EdgeDriver());
 			break;
 		case "opera":
 			WebDriverManager.operadriver().setup();
-			driver = new OperaDriver();
+			driver.set(new OperaDriver());
 			break;
 		case "headlesschrome":
 			Utilities.supressConsoleLogsChrome();
 			WebDriverManager.chromedriver().setup();
-//			System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
 			options = new ChromeOptions();
 			options.addArguments("window-size=1400,800");// to drive headless mode
 			options.addArguments("headless");// to drive headless mode
-			driver = new ChromeDriver(options);// passing chrome options object reference
+			driver.set(new ChromeDriver(options));
 			break;
 		case "headlessfirefox":
 			Utilities.supressConsoleLogsFirefox();
 			WebDriverManager.firefoxdriver().setup();
-//			System.setProperty("webdriver.gecko.driver","./src/test/resources/geckodriver.exe");
 			option = new FirefoxOptions();
 			option.setHeadless(true);
-			driver = new FirefoxDriver(option);
+			driver.set(new FirefoxDriver(option));
 			break;
 		case "headlessedge":
 			WebDriverManager.edgedriver().setup();
 			opt=new EdgeOptions();
 			opt.addArguments("headless");
-			driver = new EdgeDriver(opt);
-			break;
-			
-		case "aws":
-			Utilities.supressConsoleLogsChrome();
-//			options = new ChromeOptions();
-//			options.addArguments("--no-sandbox");
-//			options.addArguments("--disable-setuid-sandbox");
-//			options.addArguments("--disable-dev-shm-usage");
-//	        options.addArguments("--headless");
-			// WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
-			driver = new ChromeDriver();
+			driver.set(new EdgeDriver(opt));
 			break;
 		default:
 			System.out.println("Entered browser not present in config.properties file");
 			break;
 		}
-		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().deleteAllCookies();
-		driver.get(Utilities.getPropertiesFileValue("url"));
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		getDriver().manage().window().maximize();
+		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(45));
+		getDriver().manage().deleteAllCookies();
+		getDriver().get(Utilities.getPropertiesFileValue("url"));
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
+		logger.info("ending initialisation");
 	}
-	}
-	public void quitBrowser()
-	{
-		if(driver!=null) {
-			driver.quit();
-			driver=null;
-			Log.info("quitting browser");
-	}
+	public static WebDriver getDriver() {
+		return driver.get();
 	}
 }

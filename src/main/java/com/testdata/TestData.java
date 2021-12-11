@@ -15,12 +15,9 @@ public class TestData {
 		data[1][1] = "admin123";
 		return data;
 	}
-
 	@DataProvider(name = "loginData1")
 	public Object[][] valuestoTest() {
-		Object[][] values = new Object[][] { { "dsgd", "admin123" }, { "adminsdf", "admin123" } };
+		Object[][] values = new Object[][] { { "dsgd", "admin123" }};
 		return values;
-
 	}
-
 }

@@ -6,7 +6,6 @@ package com.qa.utilities;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,7 +18,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.Coordinates;
 import org.openqa.selenium.interactions.Locatable;
 import org.openqa.selenium.support.ui.Select;
-
 import com.configuration.Base;
 
 
@@ -31,7 +29,6 @@ public class GenericMethods extends Base {
 	public boolean webElementIsDisplayed(WebElement element) {
 		return element.isDisplayed();
 	}
-
 	public void clickWebElement(WebElement element, WebDriver driver) {
 		try {
 			element.click();
@@ -40,13 +37,11 @@ public class GenericMethods extends Base {
 			executor.executeScript("arguments[0].click();", element);
 		}
 	}
-
 	public String getTextWebElement(WebElement element) {
 		return element.getText();
 	}
-
 	public void navigateToEveryLinkInPage() throws InterruptedException {
-		List<WebElement> linksize = driver.findElements(By.tagName("a"));
+		List<WebElement> linksize = getDriver().findElements(By.tagName("a"));
 		int linksCount = linksize.size();
 		System.out.println("Total no of links Available:" + linksCount);
 		String[] links = new String[linksCount];
@@ -58,12 +53,11 @@ public class GenericMethods extends Base {
 		}
 		// navigate to each Link on the webpage
 		for (int i = 0; i < linksCount; i++) {
-			driver.navigate().to(links[i]);
+			getDriver().navigate().to(links[i]);
 			Thread.sleep(3000);
-			System.out.println(driver.getTitle());
+			System.out.println(getDriver().getTitle());
 		}
 	}
-
 	public static void clickCheckboxFromList(String xpathOfElement, String valueToSelect,WebDriver driver) {
 		List<WebElement> lst = driver.findElements(By.xpath(xpathOfElement));
 		for (int i = 0; i < lst.size(); i++) {
@@ -77,64 +71,53 @@ public class GenericMethods extends Base {
 			}
 		}
 	}
-
 	public void selectElementByNameMethod(WebElement element, String Name) {
 		Select selectitem = new Select(element);
 		selectitem.selectByVisibleText(Name);
 	}
-
 	public void selectElementByValueMethod(WebElement element, String value) {
 		Select selectitem = new Select(element);
 		selectitem.selectByValue(value);
 	}
-
 	public void selectElementByIndexMethod(WebElement element, int index) {
 		Select selectitem = new Select(element);
 		selectitem.selectByIndex(index);
 	}
-
 	public void dragAndDrop(WebElement fromWebElement, WebElement toWebElement) {
-		Actions builder = new Actions(driver);
+		Actions builder = new Actions(getDriver());
 		builder.dragAndDrop(fromWebElement, toWebElement);
 	}
-
 	public void dragAndDrop_Method2(WebElement fromWebElement, WebElement toWebElement) {
-		Actions builder = new Actions(driver);
+		Actions builder = new Actions(getDriver());
 		Action dragAndDrop = builder.clickAndHold(fromWebElement).moveToElement(toWebElement).release(toWebElement)
 				.build();
 		dragAndDrop.perform();
 	}
-
 	public void dragAndDrop_Method3(WebElement fromWebElement, WebElement toWebElement) throws InterruptedException {
-		Actions builder = new Actions(driver);
+		Actions builder = new Actions(getDriver());
 		builder.clickAndHold(fromWebElement).moveToElement(toWebElement).perform();
 		Thread.sleep(2000);
 		builder.release(toWebElement).build().perform();
 	}
-
 	public void hoverWebelement(WebElement HovertoWebElement) throws InterruptedException {
-		Actions builder = new Actions(driver);
+		Actions builder = new Actions(getDriver());
 		builder.moveToElement(HovertoWebElement).perform();
 		Thread.sleep(2000);
 	}
-
 	public void doubleClickWebelement(WebElement doubleclickonWebElement) throws InterruptedException {
-		Actions builder = new Actions(driver);
+		Actions builder = new Actions(getDriver());
 		builder.doubleClick(doubleclickonWebElement).perform();
 		Thread.sleep(2000);
 	}
-
 	public String getToolTip(WebElement toolTipofWebElement) throws InterruptedException {
 		String tooltip = toolTipofWebElement.getAttribute("title");
 		System.out.println("Tool text : " + tooltip);
 		return tooltip;
 	}
-
 	public void clickMultipleElements(WebElement someElement, WebElement someOtherElement) {
-		Actions builder = new Actions(driver);
+		Actions builder = new Actions(getDriver());
 		builder.keyDown(Keys.CONTROL).click(someElement).click(someOtherElement).keyUp(Keys.CONTROL).build().perform();
 	}
-
 	public void highlightelement(WebElement element) {
 		for (int i = 0; i < 4; i++) {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -143,10 +126,9 @@ public class GenericMethods extends Base {
 			js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "");
 		}
 	}
-
 	public boolean checkAlert_Accept() {
 		try {
-			Alert a = driver.switchTo().alert();
+			Alert a = getDriver().switchTo().alert();
 			String str = a.getText();
 			System.out.println(str);
 			a.accept();
@@ -156,10 +138,9 @@ public class GenericMethods extends Base {
 			return false;
 		}
 	}
-
 	public boolean checkAlert_Dismiss() {
 		try {
-			Alert a = driver.switchTo().alert();
+			Alert a = getDriver().switchTo().alert();
 			String str = a.getText();
 			System.out.println(str);
 			a.dismiss();
@@ -169,13 +150,11 @@ public class GenericMethods extends Base {
 			return false;
 		}
 	}
-
 	public void scrolltoElement(WebElement ScrolltoThisElement) {
 		Coordinates coordinate = ((Locatable) ScrolltoThisElement).getCoordinates();
 		coordinate.onPage();
 		coordinate.inViewPort();
 	}
-
 	public void checkbox_Checking(WebElement checkbox) {
 		boolean checkstatus;
 		checkstatus = checkbox.isSelected();
@@ -186,7 +165,6 @@ public class GenericMethods extends Base {
 			System.out.println("Checked the checkbox");
 		}
 	}
-
 	public void radiobutton_Select(WebElement Radio) {
 		boolean checkstatus;
 		checkstatus = Radio.isSelected();
@@ -197,7 +175,6 @@ public class GenericMethods extends Base {
 			System.out.println("Selected the Radiobutton");
 		}
 	}
-
 	// Unchecking
 	public void checkbox_Unchecking(WebElement checkbox) {
 		boolean checkstatus;
@@ -209,7 +186,6 @@ public class GenericMethods extends Base {
 			System.out.println("Checkbox is already unchecked");
 		}
 	}
-
 	public void radioButton_Deselect(WebElement Radio) {
 		boolean checkstatus;
 		checkstatus = Radio.isSelected();
@@ -220,27 +196,23 @@ public class GenericMethods extends Base {
 			System.out.println("Radio Button was already Deselected");
 		}
 	}
-
 	public void switchToNewWindow() {
-		Set s = driver.getWindowHandles();
+		Set s = getDriver().getWindowHandles();
 		Iterator itr = s.iterator();
 		String w1 = (String) itr.next();
 		String w2 = (String) itr.next();
-		driver.switchTo().window(w2);
+		getDriver().switchTo().window(w2);
 	}
-
 	public void switchToOldWindow() {
-		Set s = driver.getWindowHandles();
+		Set s = getDriver().getWindowHandles();
 		Iterator itr = s.iterator();
 		String w1 = (String) itr.next();
 		String w2 = (String) itr.next();
-		driver.switchTo().window(w1);
+		getDriver().switchTo().window(w1);
 	}
-
 	public void switchToParentWindow() {
-		driver.switchTo().defaultContent();
+		getDriver().switchTo().defaultContent();
 	}
-
 	public void hoverOverElement(WebElement element,WebDriver driver)
 	{
 		Actions action=new Actions(driver);
