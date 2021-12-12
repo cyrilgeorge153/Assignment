@@ -3,7 +3,6 @@ package com.tests;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
-
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;

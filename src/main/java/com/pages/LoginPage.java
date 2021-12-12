@@ -1,7 +1,6 @@
 package com.pages;
 
 import java.io.IOException;
-
 import org.openqa.selenium.By;
 import com.utilities.Utilities;
 
