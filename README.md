@@ -42,10 +42,11 @@ To execute in opera->mvn test -Dbrowsername=opera
 
 4.Verify orange hrm logo is displayed in homepage after login
 
+**Test execution gif->**![wUTWSgniC5](https://user-images.githubusercontent.com/52770689/145929474-97723a6f-fc8a-4ab2-aee4-00620c7dfb63.gif)
+
 **Extent Report Screenshots**
 ![Extent Report 1](https://user-images.githubusercontent.com/52770689/87049243-5d641600-c21a-11ea-8d66-f00a47185d70.png)
 ![Extent Report 2](https://user-images.githubusercontent.com/52770689/87049270-63f28d80-c21a-11ea-9aaa-28cd344686e3.png)
-
 
 **Prerequisites**
 
