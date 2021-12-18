@@ -2,7 +2,7 @@ package com.configuration;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.time.Duration; 
+import java.time.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -30,7 +30,8 @@ public class Base {
 	@BeforeClass
 	public void generateLog() throws URISyntaxException {
 		logger = LogManager.getLogger(Base.class);
-		
+//		logger = Logger.getLogger("Utility");
+//		PropertyConfigurator.configure("./src/main/resources/log4j.properties");
 	}
 	public void initialisation() throws IOException {
 		String browser = System.getProperty("browsername","chrome"); // To take browser value

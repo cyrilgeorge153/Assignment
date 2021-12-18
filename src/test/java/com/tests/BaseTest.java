@@ -19,6 +19,7 @@ public class BaseTest extends Base {
 	LoginPage login;
 	HomePage home;
 	Logger logger = LogManager.getLogger(Base.class);
+//	Logger logger = Logger.getLogger(Base.class);
 
 	@BeforeMethod()
 	public void setUp() throws IOException, IOException {
