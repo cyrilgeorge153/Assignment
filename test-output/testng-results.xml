@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12149" started-at="2021-12-18T21:32:12 IST" finished-at="2021-12-18T21:32:24 IST">
+  <suite name="Default suite" duration-ms="28006" started-at="2021-12-19T13:23:36 IST" finished-at="2021-12-19T13:24:04 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12149" started-at="2021-12-18T21:32:12 IST" finished-at="2021-12-18T21:32:24 IST">
-      <class name="com.tests.LoginTest">
-        <test-method status="PASS" signature="generateLog()[pri:0, instance:com.tests.LoginTest@33990a0c]" name="generateLog" is-config="true" duration-ms="22" started-at="2021-12-18T21:32:12 IST" finished-at="2021-12-18T21:32:12 IST">
+    <test name="Default test" duration-ms="28006" started-at="2021-12-19T13:23:36 IST" finished-at="2021-12-19T13:24:04 IST">
+      <class name="com.tests.HomeTest">
+        <test-method status="PASS" signature="generateLog()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="generateLog" is-config="true" duration-ms="1231" started-at="2021-12-19T13:23:36 IST" finished-at="2021-12-19T13:23:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateLog -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.LoginTest@33990a0c]" name="setUp" is-config="true" duration-ms="11711" started-at="2021-12-18T21:32:12 IST" finished-at="2021-12-18T21:32:24 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="setUp" is-config="true" duration-ms="16736" started-at="2021-12-19T13:23:37 IST" finished-at="2021-12-19T13:23:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyForgotPasswordButtonTest()[pri:0, instance:com.tests.LoginTest@33990a0c]" name="verifyForgotPasswordButtonTest" duration-ms="113" started-at="2021-12-18T21:32:24 IST" description="To check forgot password button is displayed or not" finished-at="2021-12-18T21:32:24 IST">
+        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="homePageTitleTest" duration-ms="9859" started-at="2021-12-19T13:23:54 IST" description="To verify orange hrm home page title" finished-at="2021-12-19T13:24:03 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyForgotPasswordButtonTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.LoginTest@33990a0c]" name="tearDown" is-config="true" duration-ms="219" started-at="2021-12-18T21:32:24 IST" finished-at="2021-12-18T21:32:24 IST">
+        </test-method> <!-- homePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="tearDown" is-config="true" duration-ms="117" started-at="2021-12-19T13:24:03 IST" finished-at="2021-12-19T13:24:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="sendEmailWithExtentReport(org.testng.ITestContext)[pri:0, instance:com.tests.LoginTest@33990a0c]" name="sendEmailWithExtentReport" is-config="true" duration-ms="5" started-at="2021-12-18T21:32:24 IST" finished-at="2021-12-18T21:32:24 IST">
+        <test-method status="PASS" signature="sendEmailWithExtentReport(org.testng.ITestContext)[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="sendEmailWithExtentReport" is-config="true" duration-ms="5" started-at="2021-12-19T13:24:04 IST" finished-at="2021-12-19T13:24:04 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1cbb3d3b]]>
+                <![CDATA[org.testng.TestRunner@2b8d084]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendEmailWithExtentReport -->
-      </class> <!-- com.tests.LoginTest -->
+      </class> <!-- com.tests.HomeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

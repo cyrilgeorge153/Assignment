@@ -3,8 +3,6 @@ package com.tests;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -18,7 +16,7 @@ public class BaseTest extends Base {
 
 	LoginPage login;
 	HomePage home;
-	Logger logger = LogManager.getLogger(Base.class);
+//	Logger logger = LogManager.getLogger(Base.class);
 //	Logger logger = Logger.getLogger(Base.class);
 
 	@BeforeMethod()
