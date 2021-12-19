@@ -42,3 +42,11 @@
 2021-12-19T20:12:07,364 [TestNG-test=Test-3] INFO  (BaseTest.java:35) - ending tearDown
 2021-12-19T20:12:08,073 [main] INFO  (BaseTest.java:40) - starting sendEmailWithExtentReport
 2021-12-19T20:12:15,876 [main] INFO  (BaseTest.java:51) - ending sendEmailWithExtentReport
+2021-12-19T20:14:51,672 [main] INFO  (BaseTest.java:24) - starting setUp
+2021-12-19T20:15:06,153 [main] INFO  (Base.java:92) - ending initialisation
+2021-12-19T20:15:06,158 [main] INFO  (BaseTest.java:28) - ending setUp
+2021-12-19T20:15:06,175 [main] INFO  (HomeTest.java:11) - starting homePageTitleTest
+2021-12-19T20:15:13,798 [main] INFO  (HomeTest.java:15) - ending homePageTitleTest
+2021-12-19T20:15:13,805 [main] INFO  (BaseTest.java:33) - starting tearDown
+2021-12-19T20:15:14,179 [main] INFO  (BaseTest.java:35) - ending tearDown
+2021-12-19T20:15:14,225 [main] INFO  (BaseTest.java:40) - starting sendEmailWithExtentReport

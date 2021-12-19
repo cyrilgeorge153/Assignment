@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28006" started-at="2021-12-19T13:23:36 IST" finished-at="2021-12-19T13:24:04 IST">
+  <suite name="Default suite" duration-ms="24133" started-at="2021-12-19T20:14:50 IST" finished-at="2021-12-19T20:15:14 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28006" started-at="2021-12-19T13:23:36 IST" finished-at="2021-12-19T13:24:04 IST">
+    <test name="Default test" duration-ms="24133" started-at="2021-12-19T20:14:50 IST" finished-at="2021-12-19T20:15:14 IST">
       <class name="com.tests.HomeTest">
-        <test-method status="PASS" signature="generateLog()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="generateLog" is-config="true" duration-ms="1231" started-at="2021-12-19T13:23:36 IST" finished-at="2021-12-19T13:23:37 IST">
+        <test-method status="PASS" signature="generateLog()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="generateLog" is-config="true" duration-ms="1560" started-at="2021-12-19T20:14:50 IST" finished-at="2021-12-19T20:14:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateLog -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="setUp" is-config="true" duration-ms="16736" started-at="2021-12-19T13:23:37 IST" finished-at="2021-12-19T13:23:54 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="setUp" is-config="true" duration-ms="14495" started-at="2021-12-19T20:14:51 IST" finished-at="2021-12-19T20:15:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="homePageTitleTest" duration-ms="9859" started-at="2021-12-19T13:23:54 IST" description="To verify orange hrm home page title" finished-at="2021-12-19T13:24:03 IST">
+        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="homePageTitleTest" duration-ms="7638" started-at="2021-12-19T20:15:06 IST" description="To verify orange hrm home page title" finished-at="2021-12-19T20:15:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="tearDown" is-config="true" duration-ms="117" started-at="2021-12-19T13:24:03 IST" finished-at="2021-12-19T13:24:04 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="tearDown" is-config="true" duration-ms="376" started-at="2021-12-19T20:15:13 IST" finished-at="2021-12-19T20:15:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="sendEmailWithExtentReport(org.testng.ITestContext)[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="sendEmailWithExtentReport" is-config="true" duration-ms="5" started-at="2021-12-19T13:24:04 IST" finished-at="2021-12-19T13:24:04 IST">
+        <test-method status="PASS" signature="sendEmailWithExtentReport(org.testng.ITestContext)[pri:0, instance:com.tests.HomeTest@22eeefeb]" name="sendEmailWithExtentReport" is-config="true" duration-ms="3" started-at="2021-12-19T20:15:14 IST" finished-at="2021-12-19T20:15:14 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2b8d084]]>
+                <![CDATA[org.testng.TestRunner@61f3fbb8]]>
               </value>
             </param>
           </params>
