@@ -30,7 +30,7 @@ To execute in opera->mvn test -Dbrowsername=opera
 
 **Extent Reports(Testng.xml):Assignment/TestReport**
 
-**Log File location:Assignment/log4j2-sample.log**
+**Log File location:Assignment/trace.log
 
 **Test cases covered-Orange HRM-https://opensource-demo.orangehrmlive.com/**
 
