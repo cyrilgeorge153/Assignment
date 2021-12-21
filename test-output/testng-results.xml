@@ -2,58 +2,62 @@
 <testng-results skipped="0" failed="0" ignored="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29638" started-at="2021-12-20T20:43:11 IST" finished-at="2021-12-20T20:43:40 IST">
+  <suite name="Suite" duration-ms="36982" started-at="2021-12-21T09:56:12 IST" finished-at="2021-12-21T09:56:49 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29638" started-at="2021-12-20T20:43:11 IST" finished-at="2021-12-20T20:43:40 IST">
+    <test name="Test" duration-ms="36982" started-at="2021-12-21T09:56:12 IST" finished-at="2021-12-21T09:56:49 IST">
       <class name="com.tests.HomeTest">
-        <test-method status="PASS" signature="generateLog()[pri:0, instance:com.tests.HomeTest@48524010]" name="generateLog" is-config="true" duration-ms="1124" started-at="2021-12-20T20:43:11 IST" finished-at="2021-12-20T20:43:12 IST">
+        <test-method status="PASS" signature="generateLog()[pri:0, instance:com.tests.HomeTest@48524010]" name="generateLog" is-config="true" duration-ms="631" started-at="2021-12-21T09:56:12 IST" finished-at="2021-12-21T09:56:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateLog -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.HomeTest@48524010]" name="setUp" is-config="true" duration-ms="19522" started-at="2021-12-20T20:43:12 IST" finished-at="2021-12-20T20:43:31 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.HomeTest@48524010]" name="setUp" is-config="true" duration-ms="23187" started-at="2021-12-21T09:56:12 IST" finished-at="2021-12-21T09:56:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.HomeTest@48524010]" name="setUp" is-config="true" duration-ms="19520" started-at="2021-12-20T20:43:12 IST" finished-at="2021-12-20T20:43:31 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.HomeTest@48524010]" name="setUp" is-config="true" duration-ms="22087" started-at="2021-12-21T09:56:12 IST" finished-at="2021-12-21T09:56:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.tests.HomeTest@48524010]" name="homePageTitleTest" duration-ms="8592" started-at="2021-12-20T20:43:31 IST" description="To verify orange hrm home page title" finished-at="2021-12-20T20:43:40 IST">
+        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.tests.HomeTest@48524010]" name="homePageTitleTest" duration-ms="9515" started-at="2021-12-21T09:56:34 IST" description="To verify orange hrm home page title" finished-at="2021-12-21T09:56:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method status="PASS" signature="homePageLogoTest()[pri:0, instance:com.tests.HomeTest@48524010]" name="homePageLogoTest" duration-ms="8337" started-at="2021-12-20T20:43:31 IST" description="To verify orange hrm home page logo" finished-at="2021-12-20T20:43:40 IST">
+        <test-method status="PASS" signature="homePageLogoTest()[pri:0, instance:com.tests.HomeTest@48524010]" name="homePageLogoTest" duration-ms="8730" started-at="2021-12-21T09:56:36 IST" description="To verify orange hrm home page logo" finished-at="2021-12-21T09:56:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageLogoTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.HomeTest@48524010]" name="tearDown" is-config="true" duration-ms="610" started-at="2021-12-20T20:43:40 IST" finished-at="2021-12-20T20:43:40 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.HomeTest@48524010]" name="tearDown" is-config="true" duration-ms="4665" started-at="2021-12-21T09:56:44 IST" finished-at="2021-12-21T09:56:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.HomeTest@48524010]" name="tearDown" is-config="true" duration-ms="230" started-at="2021-12-20T20:43:40 IST" finished-at="2021-12-20T20:43:40 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.HomeTest@48524010]" name="tearDown" is-config="true" duration-ms="243" started-at="2021-12-21T09:56:44 IST" finished-at="2021-12-21T09:56:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.HomeTest -->
       <class name="com.tests.LoginTest">
-        <test-method status="PASS" signature="generateLog()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="generateLog" is-config="true" duration-ms="583" started-at="2021-12-20T20:43:11 IST" finished-at="2021-12-20T20:43:11 IST">
+        <test-method status="PASS" signature="generateLog()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="generateLog" is-config="true" duration-ms="1286" started-at="2021-12-21T09:56:12 IST" finished-at="2021-12-21T09:56:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateLog -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="setUp" is-config="true" duration-ms="20092" started-at="2021-12-20T20:43:11 IST" finished-at="2021-12-20T20:43:31 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="setUp" is-config="true" duration-ms="23431" started-at="2021-12-21T09:56:13 IST" finished-at="2021-12-21T09:56:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="setUp" is-config="true" duration-ms="22121" started-at="2021-12-20T20:43:11 IST" finished-at="2021-12-20T20:43:33 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="setUp" is-config="true" duration-ms="24879" started-at="2021-12-21T09:56:13 IST" finished-at="2021-12-21T09:56:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyForgotPasswordButtonTest()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="verifyForgotPasswordButtonTest" duration-ms="2134" started-at="2021-12-20T20:43:31 IST" description="To check forgot password button is displayed or not" finished-at="2021-12-20T20:43:34 IST">
+        <test-method status="PASS" signature="verifyForgotPasswordButtonTest()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="verifyForgotPasswordButtonTest" duration-ms="373" started-at="2021-12-21T09:56:36 IST" description="To check forgot password button is displayed or not" finished-at="2021-12-21T09:56:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyForgotPasswordButtonTest -->
-        <test-method status="PASS" signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="verifyLoginTest" duration-ms="2871" started-at="2021-12-20T20:43:33 IST" description="To check login with invalid data" data-provider="loginData1" finished-at="2021-12-20T20:43:36 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="tearDown" is-config="true" duration-ms="5390" started-at="2021-12-21T09:56:37 IST" finished-at="2021-12-21T09:56:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="verifyLoginTest" duration-ms="3239" started-at="2021-12-21T09:56:38 IST" description="To check login with invalid data" data-provider="loginData1" finished-at="2021-12-21T09:56:41 IST">
           <params>
             <param index="0">
               <value>
@@ -69,15 +73,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="tearDown" is-config="true" duration-ms="1005" started-at="2021-12-20T20:43:34 IST" finished-at="2021-12-20T20:43:35 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="tearDown" is-config="true" duration-ms="1559" started-at="2021-12-21T09:56:41 IST" finished-at="2021-12-21T09:56:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="tearDown" is-config="true" duration-ms="638" started-at="2021-12-20T20:43:36 IST" finished-at="2021-12-20T20:43:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="sendEmailWithExtentReport(org.testng.ITestContext)[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="sendEmailWithExtentReport" is-config="true" duration-ms="8058" started-at="2021-12-20T20:43:41 IST" finished-at="2021-12-20T20:43:49 IST">
+        <test-method status="PASS" signature="sendEmailWithExtentReport(org.testng.ITestContext)[pri:0, instance:com.tests.LoginTest@2d9d4f9d]" name="sendEmailWithExtentReport" is-config="true" duration-ms="7256" started-at="2021-12-21T09:56:49 IST" finished-at="2021-12-21T09:56:57 IST">
           <params>
             <param index="0">
               <value>
