@@ -34,3 +34,11 @@
 2021-12-21 09:56:49,101 [TestNG-test=Test-4] INFO  com.configuration.Base (BaseTest.java:35)- ending tearDown
 2021-12-21 09:56:49,866 [main] INFO  com.configuration.Base (BaseTest.java:40)- starting sendEmailWithExtentReport
 2021-12-21 09:56:57,119 [main] INFO  com.configuration.Base (BaseTest.java:51)- ending sendEmailWithExtentReport
+2022-01-04 22:36:38,136 [main] INFO  com.configuration.Base (BaseTest.java:24)- starting setUp
+2022-01-04 22:36:54,137 [main] INFO  com.configuration.Base (Base.java:92)- ending initialisation
+2022-01-04 22:36:54,144 [main] INFO  com.configuration.Base (BaseTest.java:28)- ending setUp
+2022-01-04 22:36:54,160 [main] INFO  com.configuration.Base (LoginTest.java:11)- starting verifyForgotPasswordButtonTest
+2022-01-04 22:36:54,263 [main] INFO  com.configuration.Base (LoginTest.java:14)- ending verifyForgotPasswordButtonTest
+2022-01-04 22:36:54,271 [main] INFO  com.configuration.Base (BaseTest.java:33)- starting tearDown
+2022-01-04 22:36:54,492 [main] INFO  com.configuration.Base (BaseTest.java:35)- ending tearDown
+2022-01-04 22:36:54,590 [main] INFO  com.configuration.Base (BaseTest.java:40)- starting sendEmailWithExtentReport
