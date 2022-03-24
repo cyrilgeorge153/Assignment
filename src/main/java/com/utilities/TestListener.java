@@ -1,9 +1,14 @@
 package com.utilities;
 
+import java.io.File;
 import java.io.IOException;
+
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.io.FileUtils;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.configuration.Base;
@@ -15,11 +20,11 @@ public class TestListener implements ITestListener {
 
 	@Override
 	public synchronized void onStart(ITestContext context) {
-		System.out.println("Extent Reports Version 3 Test Suite started!");
+		System.out.println("Extent Reports Version 5 Test Suite started!");
 	}
 	@Override
 	public synchronized void onFinish(ITestContext context) {
-		System.out.println(("Extent Reports Version 3  Test Suite is ending!"));
+		System.out.println(("Extent Reports Version 5  Test Suite is ending!"));
 		extent.flush();
 	}
 	@Override
@@ -41,12 +46,14 @@ public class TestListener implements ITestListener {
 		test.get().fail(result.getThrowable());
 		if (result.getStatus() == ITestResult.FAILURE) {
 			try {
-
 				String imgPath = Utilities.getScreenshot(Base.getDriver(), result.getName());
-				test.get().addScreenCaptureFromPath(imgPath);
-
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
+				byte[] file=FileUtils.readFileToByteArray(new File(imgPath));
+				String base64Img=Base64.encodeBase64String(file);
+				test.get().addScreenCaptureFromBase64String(base64Img);
+//				test.get().addScreenCaptureFromPath(imgPath);	
+			} 
+			catch (IOException e) 
+			{
 				e.printStackTrace();
 			}
 		}
