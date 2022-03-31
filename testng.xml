@@ -5,7 +5,7 @@
 		<listener class-name="com.analyzer.MyTransformer" />
 		<listener class-name="com.utilities.TestListener"></listener>
 	</listeners>
-	<test thread-count="4" name="Test">
+	<test name="Test">
 		<classes>
 			<class name="com.tests.LoginTest" />
 			<class name="com.tests.HomeTest" />
