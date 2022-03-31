@@ -46,8 +46,8 @@ public class BaseTest extends Base {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			Runtime.getRuntime().exec("TASKKILL /F /IM chromedriver.exe /T");
-			Runtime.getRuntime().exec("TASKKILL /F /IM geckodriver.exe /T");
+//			Runtime.getRuntime().exec("TASKKILL /F /IM chromedriver.exe /T");
+//			Runtime.getRuntime().exec("TASKKILL /F /IM geckodriver.exe /T");
 			logger.info("ending sendEmailWithExtentReport");
 		}
 	}

@@ -85,10 +85,10 @@ public class Base {
 			break;
 		}
 		getDriver().manage().window().maximize();
-		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(45));
 		getDriver().manage().deleteAllCookies();
 		getDriver().get(Utilities.getPropertiesFileValue("url"));
-		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
 		logger.info("ending initialisation");
 	}
 	public static WebDriver getDriver() {
