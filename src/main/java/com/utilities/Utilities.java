@@ -75,6 +75,7 @@ public class Utilities {
 		Base.getDriver().findElement(byLocator).click();
 	}
 	public static void enterValuesWebElement(By byLocator, String value) {
+		Base.getDriver().findElement(byLocator).clear();
 		Base.getDriver().findElement(byLocator).sendKeys(value);
 	}
 	public static String getText(By byLocator) {
