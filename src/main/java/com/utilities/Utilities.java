@@ -1,5 +1,6 @@
 package com.utilities;
 
+import java.awt.Desktop;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -122,6 +123,10 @@ public class Utilities {
 	        }
 	    }
 	    return chosenFile;
+	}
+	public static void openAnyFile(File fileName) throws IOException
+	{
+		Desktop.getDesktop().browse((fileName).toURI());
 	}
 	public static void sendJavaMailAfterExecution() throws IOException {
 		final String username = Utilities.getPropertiesFileValue("email");

@@ -1,6 +1,5 @@
 package com.tests;
 
-import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import org.testng.ITestContext;
@@ -42,7 +41,7 @@ public class BaseTest extends Base {
 			Utilities.sendJavaMailAfterExecution();
 			File fileName = Utilities.getLastModified(System.getProperty("user.dir") + "/TestReport/");
 			try {
-				Desktop.getDesktop().browse((fileName).toURI());
+				Utilities.openAnyFile(fileName);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
