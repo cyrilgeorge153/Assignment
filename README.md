@@ -38,7 +38,7 @@ To execute in opera->mvn test -Dbrowsername=opera
 
 2.Verify login with invalid data
 
-3.Verify home page title
+3.Verify home page dashboard menu
 
 4.Verify orange hrm logo is displayed in homepage after login
 
