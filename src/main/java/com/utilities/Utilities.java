@@ -33,7 +33,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import com.configuration.Base;
+import static com.configuration.Base.*;
 
 public class Utilities {
 	
@@ -73,20 +73,20 @@ public class Utilities {
 		chromeOptions.setExperimentalOption("prefs", prefs);
 	}
 	public static void clickWebElement(By byLocator) {
-		Base.getDriver().findElement(byLocator).click();
+		getDriver().findElement(byLocator).click();
 	}
 	public static void enterValuesWebElement(By byLocator, String value) {
-		Base.getDriver().findElement(byLocator).clear();
-		Base.getDriver().findElement(byLocator).sendKeys(value);
+		getDriver().findElement(byLocator).clear();
+		getDriver().findElement(byLocator).sendKeys(value);
 	}
 	public static String getText(By byLocator) {
-		return Base.getDriver().findElement(byLocator).getText();
+		return getDriver().findElement(byLocator).getText();
 	}
 	public static String getTitleOfPage() {
-		return Base.getDriver().getTitle();
+		return getDriver().getTitle();
 	}
     public static boolean isElementDisplayed(By byLocator) {
-    	return Base.getDriver().findElement(byLocator).isDisplayed();
+    	return getDriver().findElement(byLocator).isDisplayed();
 	}
     public static String createCurrentTimeStamp()
 	{
@@ -95,12 +95,12 @@ public class Utilities {
 		return timeStamp;
 	}
     public static String getBrowser() {
-        Capabilities cap = ((RemoteWebDriver) Base.getDriver()).getCapabilities();
+        Capabilities cap = ((RemoteWebDriver) getDriver()).getCapabilities();
         String browserName = cap.getBrowserName().toLowerCase();
         return StringUtils.capitalize(browserName);
     }
 	public static String getVersion() {
-        Capabilities cap = ((RemoteWebDriver) Base.getDriver()).getCapabilities();
+        Capabilities cap = ((RemoteWebDriver) getDriver()).getCapabilities();
         String version = cap.getBrowserVersion().toString();
         return version;
     }

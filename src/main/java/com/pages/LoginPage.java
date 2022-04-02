@@ -2,7 +2,7 @@ package com.pages;
 
 import java.io.IOException;
 import org.openqa.selenium.By;
-import com.utilities.Utilities;
+import static com.utilities.Utilities.*;
 
 public final class LoginPage {
 
@@ -13,24 +13,24 @@ public final class LoginPage {
 	By errorMsg = By.id("spanMessage");
 
 	public String verifyForgotPasswordButtonText() {
-		return Utilities.getText(forgotPwdButton);
+		return getText(forgotPwdButton);
 	}
 	public void enterUsername(String email) {
-		Utilities.enterValuesWebElement(uname, email);
+		enterValuesWebElement(uname, email);
 	}
 	public void enterPassword(String password) {
-		Utilities.enterValuesWebElement(pwd, password);
+		enterValuesWebElement(pwd, password);
 	}
 	public void clickLogin() {
-		Utilities.clickWebElement(lgnBtn);
+		clickWebElement(lgnBtn);
 	}
 	public String verifyErrorMsg() {
-		return Utilities.getText(errorMsg);
+		return getText(errorMsg);
 	}
 	public HomePage validLogin() throws IOException {
-		Utilities.enterValuesWebElement(uname, Utilities.getPropertiesFileValue("username"));
-		Utilities.enterValuesWebElement(pwd, Utilities.getPropertiesFileValue("password"));
-		Utilities.clickWebElement(lgnBtn);
+		enterValuesWebElement(uname, getPropertiesFileValue("username"));
+		enterValuesWebElement(pwd, getPropertiesFileValue("password"));
+		clickWebElement(lgnBtn);
 		return new HomePage();
 	}
 }

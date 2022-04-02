@@ -16,9 +16,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeClass;
-import com.utilities.Utilities;
+import static com.utilities.Utilities.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+@SuppressWarnings("deprecation")
 public class Base {
 //	protected WebDriver driver;
 	protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
@@ -34,16 +35,16 @@ public class Base {
 //		PropertyConfigurator.configure("./src/main/resources/log4j.properties");
 	}
 	public void initialisation() throws IOException {
-		String browser = System.getProperty("browsername","chrome"); // To take browser value
+		String browser = System.getProperty("browsername", getPropertiesFileValue("browser")); // To take browser value
 		switch (browser) // using maven from cmd using command
 		{
 		case "chrome":
-			Utilities.supressConsoleLogsChrome();
+			supressConsoleLogsChrome();
 			WebDriverManager.chromedriver().setup();
 			driver.set(new ChromeDriver());
 			break;
 		case "firefox":
-			Utilities.supressConsoleLogsFirefox();
+			supressConsoleLogsFirefox();
 			WebDriverManager.firefoxdriver().setup();
 			driver.set(new FirefoxDriver());
 			break;
@@ -60,7 +61,7 @@ public class Base {
 			driver.set(new OperaDriver());
 			break;
 		case "headlesschrome":
-			Utilities.supressConsoleLogsChrome();
+			supressConsoleLogsChrome();
 			WebDriverManager.chromedriver().setup();
 			options = new ChromeOptions();
 			options.addArguments("window-size=1400,800");// to drive headless mode
@@ -68,7 +69,7 @@ public class Base {
 			driver.set(new ChromeDriver(options));
 			break;
 		case "headlessfirefox":
-			Utilities.supressConsoleLogsFirefox();
+			supressConsoleLogsFirefox();
 			WebDriverManager.firefoxdriver().setup();
 			option = new FirefoxOptions();
 			option.setHeadless(true);
@@ -76,7 +77,7 @@ public class Base {
 			break;
 		case "headlessedge":
 			WebDriverManager.edgedriver().setup();
-			opt=new EdgeOptions();
+			opt = new EdgeOptions();
 			opt.addArguments("headless");
 			driver.set(new EdgeDriver(opt));
 			break;
@@ -87,7 +88,7 @@ public class Base {
 		getDriver().manage().window().maximize();
 		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(45));
 		getDriver().manage().deleteAllCookies();
-		getDriver().get(Utilities.getPropertiesFileValue("url"));
+		getDriver().get(getPropertiesFileValue("url"));
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
 		logger.info("ending initialisation");
 	}

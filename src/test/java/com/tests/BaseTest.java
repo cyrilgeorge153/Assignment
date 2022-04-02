@@ -9,14 +9,12 @@ import org.testng.annotations.BeforeMethod;
 import com.configuration.Base;
 import com.pages.HomePage;
 import com.pages.LoginPage;
-import com.utilities.Utilities;
+import static com.utilities.Utilities.*;
 
 public class BaseTest extends Base {
 
 	LoginPage login;
 	HomePage home;
-//	Logger logger = LogManager.getLogger(Base.class);
-//	Logger logger = Logger.getLogger(Base.class);
 
 	@BeforeMethod()
 	public void setUp() throws IOException, IOException {
@@ -26,22 +24,20 @@ public class BaseTest extends Base {
 		home = new HomePage();
 		logger.info("ending setUp");
 	}
-
 	@AfterMethod
 	public void tearDown() {
 		logger.info("starting tearDown");
-		Base.getDriver().close();
+		getDriver().close();
 		logger.info("ending tearDown");
 	}
-
 	@AfterSuite
 	public void sendEmailWithExtentReport(ITestContext testContext) throws IOException {
 		logger.info("starting sendEmailWithExtentReport");
 		if (!testContext.getSuite().getName().equalsIgnoreCase("Default Suite")) {
-			Utilities.sendJavaMailAfterExecution();
-			File fileName = Utilities.getLastModified(System.getProperty("user.dir") + "/TestReport/");
+			sendJavaMailAfterExecution();
+			File fileName = getLastModified(System.getProperty("user.dir") + "/TestReport/");
 			try {
-				Utilities.openAnyFile(fileName);
+				openAnyFile(fileName);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

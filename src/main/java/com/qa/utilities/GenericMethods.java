@@ -20,7 +20,6 @@ import org.openqa.selenium.interactions.Locatable;
 import org.openqa.selenium.support.ui.Select;
 import com.configuration.Base;
 
-
 /**
  * @author CYRIL
  *

@@ -1,16 +1,17 @@
 package com.pages;
 
 import org.openqa.selenium.By;
-import com.utilities.Utilities;
+import static com.utilities.Utilities.*;
 
 public class HomePage {
 
+	By dashboardMenu = By.xpath("//b[text()='Dashboard']");
 	By orangehrmLogo = By.cssSelector("img[alt='OrangeHRM']");
 
-	public String verifyHomePageTitle() {
-		return Utilities.getTitleOfPage();
+	public boolean verifyDashboardMenu() {
+		return isElementDisplayed(dashboardMenu);
 	}
 	public boolean verifyHomePageLogo() {
-		return Utilities.isElementDisplayed(orangehrmLogo);
+		return isElementDisplayed(orangehrmLogo);
 	}
 }
