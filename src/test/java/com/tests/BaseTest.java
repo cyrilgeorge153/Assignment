@@ -48,8 +48,7 @@ public class BaseTest extends Base {
 				e.printStackTrace();
 			}
 //			Runtime.getRuntime().exec("TASKKILL /F /IM chromedriver.exe /T");
-//			Runtime.getRuntime().exec("TASKKILL /F /IM geckodriver.exe /T");
-			
+//			Runtime.getRuntime().exec("TASKKILL /F /IM geckodriver.exe /T");		
 		}
 	}
 }
