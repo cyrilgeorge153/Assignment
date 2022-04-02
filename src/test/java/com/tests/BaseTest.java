@@ -1,6 +1,5 @@
 package com.tests;
 
-import java.io.File;
 import java.io.IOException;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
@@ -31,19 +30,26 @@ public class BaseTest extends Base {
 		logger.info("ending tearDown");
 	}
 	@AfterSuite
-	public void sendEmailWithExtentReport(ITestContext testContext) throws IOException {
+	public void sendEmailWithExtentReport(ITestContext testContext) {
 		logger.info("starting sendEmailWithExtentReport");
 		if (!testContext.getSuite().getName().equalsIgnoreCase("Default Suite")) {
-			sendJavaMailAfterExecution();
-			File fileName = getLastModified(System.getProperty("user.dir") + "/TestReport/");
 			try {
-				openAnyFile(fileName);
+				sendJavaMailAfterExecution();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			logger.info("ending sendEmailWithExtentReport");
+			try {
+				logger.info("starting openAnyFile");
+				openAnyFile(getLastModified(System.getProperty("user.dir") + "/TestReport/"));
+				logger.info("ending openAnyFile");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 //			Runtime.getRuntime().exec("TASKKILL /F /IM chromedriver.exe /T");
 //			Runtime.getRuntime().exec("TASKKILL /F /IM geckodriver.exe /T");
-			logger.info("ending sendEmailWithExtentReport");
+			
 		}
 	}
 }

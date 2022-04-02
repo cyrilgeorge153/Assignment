@@ -64,8 +64,9 @@ public class Base {
 			supressConsoleLogsChrome();
 			WebDriverManager.chromedriver().setup();
 			options = new ChromeOptions();
-			options.addArguments("window-size=1400,800");// to drive headless mode
-			options.addArguments("headless");// to drive headless mode
+			options.addArguments("--headless");     
+	        options.addArguments("--disable-gpu");
+	        options.addArguments("--window-size=1400,800");
 			driver.set(new ChromeDriver(options));
 			break;
 		case "headlessfirefox":
