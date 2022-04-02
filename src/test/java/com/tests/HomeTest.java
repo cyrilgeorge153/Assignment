@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class HomeTest extends BaseTest{
 	
-	@Test(description = "To verify orange hrm home page title")
+	@Test(description = "To verify orange hrm home page Dashboard menu")
 	public void homePageDashboardMenuTest() throws IOException {
 		logger.info("starting homePageDashboardMenuTest");
 		login.validLogin();
