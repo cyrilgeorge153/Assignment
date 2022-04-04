@@ -23,14 +23,12 @@ public class BaseTest extends Base {
 		home = new HomePage();
 		logger.info("ending setUp");
 	}
-
 	@AfterMethod
 	public void tearDown() {
 		logger.info("starting tearDown");
 		getDriver().close();
 		logger.info("ending tearDown");
 	}
-
 	@AfterSuite
 	public void sendEmailWithExtentReport(ITestContext testContext) {
 		logger.info("starting sendEmailWithExtentReport");
