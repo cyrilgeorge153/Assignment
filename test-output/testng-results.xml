@@ -2,54 +2,62 @@
 <testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-02T13:18:49 IST" name="Suite" finished-at="2022-04-02T13:19:15 IST" duration-ms="26921">
+  <suite started-at="2022-04-04T13:49:54 IST" name="Suite" finished-at="2022-04-04T13:50:16 IST" duration-ms="22228">
     <groups>
     </groups>
-    <test started-at="2022-04-02T13:18:49 IST" name="Test" finished-at="2022-04-02T13:19:15 IST" duration-ms="26921">
+    <test started-at="2022-04-04T13:49:54 IST" name="Test" finished-at="2022-04-04T13:50:16 IST" duration-ms="22228">
       <class name="com.tests.HomeTest">
-        <test-method is-config="true" signature="generateLog()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-02T13:18:49 IST" name="generateLog" finished-at="2022-04-02T13:18:49 IST" duration-ms="290" status="PASS">
+        <test-method is-config="true" signature="generateLog()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-04T13:49:54 IST" name="generateLog" finished-at="2022-04-04T13:49:54 IST" duration-ms="468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateLog -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-02T13:18:49 IST" name="setUp" finished-at="2022-04-02T13:19:05 IST" duration-ms="16107" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-04T13:49:54 IST" name="setUp" finished-at="2022-04-04T13:50:09 IST" duration-ms="15207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-02T13:18:49 IST" name="setUp" finished-at="2022-04-02T13:19:03 IST" duration-ms="14384" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-04T13:49:54 IST" name="setUp" finished-at="2022-04-04T13:50:05 IST" duration-ms="10413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="homePageDashboardMenuTest()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-02T13:19:03 IST" name="homePageDashboardMenuTest" description="To verify orange hrm home page Dashboard menu" finished-at="2022-04-02T13:19:11 IST" duration-ms="8179" status="PASS">
+        <test-method signature="homePageDashboardMenuTest()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-04T13:50:05 IST" name="homePageDashboardMenuTest" description="To verify orange hrm home page Dashboard menu" finished-at="2022-04-04T13:50:10 IST" duration-ms="5943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageDashboardMenuTest -->
-        <test-method signature="homePageLogoTest()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-02T13:19:05 IST" name="homePageLogoTest" description="To verify orange hrm home page logo" finished-at="2022-04-02T13:19:15 IST" duration-ms="10405" status="PASS">
+        <test-method signature="homePageLogoTest()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-04T13:50:09 IST" name="homePageLogoTest" description="To verify orange hrm home page logo" finished-at="2022-04-04T13:50:16 IST" duration-ms="6448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-02T13:19:11 IST" name="tearDown" finished-at="2022-04-02T13:19:11 IST" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-04T13:50:10 IST" name="tearDown" finished-at="2022-04-04T13:50:11 IST" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-02T13:19:15 IST" name="tearDown" finished-at="2022-04-02T13:19:15 IST" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.HomeTest@5460cf3a]" started-at="2022-04-04T13:50:16 IST" name="tearDown" finished-at="2022-04-04T13:50:16 IST" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.HomeTest -->
       <class name="com.tests.LoginTest">
-        <test-method is-config="true" signature="generateLog()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-02T13:18:49 IST" name="generateLog" finished-at="2022-04-02T13:18:49 IST" duration-ms="496" status="PASS">
+        <test-method is-config="true" signature="generateLog()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-04T13:49:54 IST" name="generateLog" finished-at="2022-04-04T13:49:54 IST" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateLog -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-02T13:18:49 IST" name="setUp" finished-at="2022-04-02T13:19:04 IST" duration-ms="14731" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-04T13:49:54 IST" name="setUp" finished-at="2022-04-04T13:50:10 IST" duration-ms="16434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-02T13:18:49 IST" name="setUp" finished-at="2022-04-02T13:19:03 IST" duration-ms="13867" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-04T13:49:54 IST" name="setUp" finished-at="2022-04-04T13:50:10 IST" duration-ms="16154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-02T13:19:03 IST" name="verifyLoginTest" description="To check login with invalid data" data-provider="loginData1" finished-at="2022-04-02T13:19:07 IST" duration-ms="4102" status="PASS">
+        <test-method signature="verifyForgotPasswordButtonTest()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-04T13:50:10 IST" name="verifyForgotPasswordButtonTest" description="To check forgot password button is displayed or not" finished-at="2022-04-04T13:50:10 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordButtonTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-04T13:50:10 IST" name="tearDown" finished-at="2022-04-04T13:50:10 IST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-04T13:50:10 IST" name="verifyLoginTest" description="To check login with invalid data" data-provider="loginData1" finished-at="2022-04-04T13:50:12 IST" duration-ms="2127" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,23 +73,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method signature="verifyForgotPasswordButtonTest()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-02T13:19:04 IST" name="verifyForgotPasswordButtonTest" description="To check forgot password button is displayed or not" finished-at="2022-04-02T13:19:04 IST" duration-ms="63" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordButtonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-02T13:19:04 IST" name="tearDown" finished-at="2022-04-02T13:19:04 IST" duration-ms="90" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-04T13:50:12 IST" name="tearDown" finished-at="2022-04-04T13:50:13 IST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-02T13:19:07 IST" name="tearDown" finished-at="2022-04-02T13:19:07 IST" duration-ms="78" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="sendEmailWithExtentReport(org.testng.ITestContext)[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-02T13:19:16 IST" name="sendEmailWithExtentReport" finished-at="2022-04-02T13:19:22 IST" duration-ms="6053" status="PASS">
+        <test-method is-config="true" signature="sendEmailWithExtentReport(org.testng.ITestContext)[pri:0, instance:com.tests.LoginTest@2f16c6b3]" started-at="2022-04-04T13:50:16 IST" name="sendEmailWithExtentReport" finished-at="2022-04-04T13:50:25 IST" duration-ms="8445" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@d0ec63]]>
+                <![CDATA[org.testng.TestRunner@6b530eb9]]>
               </value>
             </param>
           </params>

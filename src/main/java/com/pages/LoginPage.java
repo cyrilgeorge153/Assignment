@@ -6,11 +6,11 @@ import static com.utilities.Utilities.*;
 
 public final class LoginPage {
 
-	By forgotPwdButton = By.cssSelector("[href='/index.php/auth/requestPasswordResetCode']");
-	By uname = By.id("txtUsername");
-	By pwd = By.id("txtPassword");
-	By lgnBtn = By.id("btnLogin");
-	By errorMsg = By.id("spanMessage");
+	private By forgotPwdButton = By.cssSelector("[href='/index.php/auth/requestPasswordResetCode']");
+	private By uname = By.id("txtUsername");
+	private By pwd = By.id("txtPassword");
+	private By lgnBtn = By.id("btnLogin");
+	private By errorMsg = By.id("spanMessage");
 
 	public String verifyForgotPasswordButtonText() {
 		return getText(forgotPwdButton);

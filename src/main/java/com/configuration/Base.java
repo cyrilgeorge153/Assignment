@@ -23,10 +23,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base {
 //	protected WebDriver driver;
 	protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
-	ChromeOptions options;
-	FirefoxOptions option;
-	EdgeOptions opt;
-	public static Logger logger;
+	private ChromeOptions options;
+	private FirefoxOptions option;
+	private EdgeOptions opt;
+	protected static Logger logger;
 
 	@BeforeClass
 	public void generateLog() throws URISyntaxException {

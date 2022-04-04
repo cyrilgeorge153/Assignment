@@ -5,8 +5,8 @@ import static com.utilities.Utilities.*;
 
 public class HomePage {
 
-	By dashboardMenu = By.xpath("//b[text()='Dashboard']");
-	By orangehrmLogo = By.cssSelector("img[alt='OrangeHRM']");
+	private By dashboardMenu = By.xpath("//b[text()='Dashboard']");
+	private By orangehrmLogo = By.cssSelector("img[alt='OrangeHRM']");
 
 	public boolean verifyDashboardMenu() {
 		return isElementDisplayed(dashboardMenu);

@@ -110,7 +110,6 @@ public class Utilities {
 	    File[] files = directory.listFiles(File::isFile);
 	    long lastModifiedTime = Long.MIN_VALUE;
 	    File chosenFile = null;
-
 	    if (files != null)
 	    {
 	        for (File file : files)
