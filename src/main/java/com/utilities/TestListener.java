@@ -9,7 +9,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.configuration.Base;
+import static com.configuration.Base.*;
 import static com.utilities.Utilities.*;
 
 public class TestListener implements ITestListener {
@@ -45,7 +45,7 @@ public class TestListener implements ITestListener {
 		test.get().fail(result.getThrowable());
 		if (result.getStatus() == ITestResult.FAILURE) {
 			try {
-				String imgPath = getScreenshot(Base.getDriver(), result.getName());
+				String imgPath = getScreenshot(getDriver(), result.getName());
 				byte[] file=FileUtils.readFileToByteArray(new File(imgPath));
 				String base64Img=Base64.encodeBase64String(file);
 				test.get().addScreenCaptureFromBase64String(base64Img);

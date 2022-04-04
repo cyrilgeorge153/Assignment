@@ -23,9 +23,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base {
 //	protected WebDriver driver;
 	protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
-	private ChromeOptions options;
-	private FirefoxOptions option;
-	private EdgeOptions opt;
+	private static ChromeOptions options;
+	private static FirefoxOptions option;
+	private static EdgeOptions opt;
 	protected static Logger logger;
 
 	@BeforeClass
@@ -34,7 +34,7 @@ public class Base {
 //		logger = Logger.getLogger("Utility");
 //		PropertyConfigurator.configure("./src/main/resources/log4j.properties");
 	}
-	public void initialisation() throws IOException {
+	public static void initialisation() throws IOException {
 		String browser = System.getProperty("browsername", getPropertiesFileValue("browser")); // To take browser value
 		switch (browser) // using maven from cmd using command
 		{
@@ -64,9 +64,7 @@ public class Base {
 			supressConsoleLogsChrome();
 			WebDriverManager.chromedriver().setup();
 			options = new ChromeOptions();
-			options.addArguments("--headless");     
-	        options.addArguments("--disable-gpu");
-	        options.addArguments("--window-size=1400,800");
+			options.setHeadless(true);
 			driver.set(new ChromeDriver(options));
 			break;
 		case "headlessfirefox":

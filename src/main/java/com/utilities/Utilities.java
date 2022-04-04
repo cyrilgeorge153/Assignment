@@ -128,9 +128,9 @@ public class Utilities {
 		Desktop.getDesktop().browse((fileName).toURI());
 	}
 	public static void sendJavaMailAfterExecution() throws IOException {
-		final String username = Utilities.getPropertiesFileValue("email");
-		final String password = getDecodedString(Utilities.getPropertiesFileValue("pwd"));
-		final String email = Utilities.getPropertiesFileValue("recipient1");
+		final String username = getPropertiesFileValue("email");
+		final String password = getDecodedString(getPropertiesFileValue("pwd"));
+		final String email = getPropertiesFileValue("recipient1");
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", true);
 		props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
@@ -144,10 +144,10 @@ public class Utilities {
 		});
 		Message msg = new MimeMessage(session);
 		try {
-			msg.setFrom(new InternetAddress(Utilities.getPropertiesFileValue("email")));
-			msg.setRecipient(Message.RecipientType.TO, new InternetAddress(Utilities.getPropertiesFileValue("recipient1")));
+			msg.setFrom(new InternetAddress(getPropertiesFileValue("email")));
+			msg.setRecipient(Message.RecipientType.TO, new InternetAddress(getPropertiesFileValue("recipient1")));
 			msg.addRecipients(Message.RecipientType.CC, 
-                    InternetAddress.parse(Utilities.getPropertiesFileValue("recipient2")));
+                    InternetAddress.parse(getPropertiesFileValue("recipient2")));
 			msg.setSubject("Automation Results");
 			Multipart multipart = new MimeMultipart();
 			MimeBodyPart textBodyPart = new MimeBodyPart();
@@ -155,7 +155,7 @@ public class Utilities {
 			textBodyPart.setHeader("Content-Type", "text/html");
 			textBodyPart.setText("Please find the attachment");
 			MimeBodyPart attachmentBodyPart = new MimeBodyPart();
-			File fileName=Utilities.getLastModified(System.getProperty("user.dir")+"/TestReport/");
+			File fileName=getLastModified(System.getProperty("user.dir")+"/TestReport/");
 			DataSource source = new FileDataSource(fileName); // ex																											// :																											// "C:\\test.pdf"
 			attachmentBodyPart.setDataHandler(new DataHandler(source));
 			attachmentBodyPart.setFileName("ExtentReport.html"); 
