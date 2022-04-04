@@ -5,12 +5,13 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.Platform;
+import static com.utilities.Utilities.*;
 
 public class ExtentManager {
 
 	private static ExtentReports extent;
 	private static Platform platform;
-	private static String reportFileName = "ExtentReports-Version5-Test-Automaton-Report-"+Utilities.createCurrentTimeStamp()+".html";
+	private static String reportFileName = "ExtentReports-Version5-Test-Automaton-Report-"+createCurrentTimeStamp()+".html";
 	private static String macPath = System.getProperty("user.dir") + "/TestReport";
 	private static String windowsPath = System.getProperty("user.dir") + "/TestReport";
 	private static String linuxPath = System.getProperty("user.dir") + "/TestReport";
