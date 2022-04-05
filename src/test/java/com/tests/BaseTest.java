@@ -5,11 +5,14 @@ import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+
 import com.configuration.Base;
 import com.pages.HomePage;
 import com.pages.LoginPage;
 import static com.utilities.Utilities.*;
 
+@Listeners(com.utilities.TestListener.class)
 public class BaseTest extends Base {
 
 	protected LoginPage login;
@@ -31,8 +34,8 @@ public class BaseTest extends Base {
 	}
 	@AfterSuite
 	public void sendEmailWithExtentReport(ITestContext testContext) {
+//		if (!testContext.getSuite().getName().equalsIgnoreCase("Default Suite")) {
 		logger.info("starting sendEmailWithExtentReport");
-		if (!testContext.getSuite().getName().equalsIgnoreCase("Default Suite")) {
 			try {
 				sendJavaMailAfterExecution();
 			} catch (IOException e1) {
@@ -50,5 +53,5 @@ public class BaseTest extends Base {
 //			Runtime.getRuntime().exec("TASKKILL /F /IM chromedriver.exe /T");
 //			Runtime.getRuntime().exec("TASKKILL /F /IM geckodriver.exe /T");		
 		}
-	}
+//	}
 }

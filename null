@@ -1,22 +1,17 @@
-1648880335923	geckodriver	INFO	Listening on 127.0.0.1:53310
-1648880336094	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "38608" "-no-remote" "-profile" "/tmp/rust_mozprofileHi3WHl"
+1649091422890	geckodriver	INFO	Listening on 127.0.0.1:51480
+1649091423106	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41936" "-no-remote" "-profile" "/tmp/rust_mozprofile1hVtPS"
 *** You are running in headless mode.
-1648880336603	Marionette	INFO	Marionette enabled
+1649091423700	Marionette	INFO	Marionette enabled
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemfMGc2/search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:35318/devtools/browser/b374b6f0-8f8c-4bfd-afc5-c853dfbc786a
-1648880338343	Marionette	INFO	Listening on port 36121
-1648880338432	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1648880356396	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
-1648880356398	Marionette	INFO	Stopped listening on port 39613
-
-###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, mess1648880362649	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
-1648880362650	Marionette	INFO	Stopped listening on port 36121
-
-###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
-
-Firefox starts.
-1648880354864	Marionette	INFO	Stopped listening on port 38607
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileamFsqN/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38795/devtools/browser/28be989f-c869-4e74-aeb8-a9cb545038fa
+1649091425646	Marionette	INFO	Listening on port 45067
+1649091425734	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1649091453936	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1649091453938	Marionette	INFO	Stopped listening on port 36249
 
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
