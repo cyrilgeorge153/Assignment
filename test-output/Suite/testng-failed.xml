@@ -10,12 +10,22 @@
       <class name="com.tests.HomeTest">
         <methods>
           <include name="tearDown"/>
-          <include name="homePageTitleTest"/>
+          <include name="homePageDashboardMenuTest"/>
           <include name="generateLog"/>
           <include name="setUp"/>
+          <include name="homePageLogoTest"/>
           <include name="sendEmailWithExtentReport"/>
         </methods>
       </class> <!-- com.tests.HomeTest -->
+      <class name="com.tests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="generateLog"/>
+          <include name="setUp"/>
+          <include name="verifyForgotPasswordButtonTest"/>
+          <include name="sendEmailWithExtentReport"/>
+        </methods>
+      </class> <!-- com.tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
