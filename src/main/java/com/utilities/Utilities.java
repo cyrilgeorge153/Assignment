@@ -130,7 +130,7 @@ public class Utilities {
 	public static void sendJavaMailAfterExecution() throws IOException {
 		final String username = getPropertiesFileValue("email");
 		final String password = getDecodedString(getPropertiesFileValue("pwd"));
-		final String email = getPropertiesFileValue("recipient1");
+//		final String email = getPropertiesFileValue("recipient1");
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", true);
 		props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
@@ -146,12 +146,12 @@ public class Utilities {
 		try {
 			msg.setFrom(new InternetAddress(getPropertiesFileValue("email")));
 			msg.setRecipient(Message.RecipientType.TO, new InternetAddress(getPropertiesFileValue("recipient1")));
-			msg.addRecipients(Message.RecipientType.CC, 
-                    InternetAddress.parse(getPropertiesFileValue("recipient2")));
+//			msg.addRecipients(Message.RecipientType.CC, 
+//                    InternetAddress.parse(getPropertiesFileValue("recipient2")));
 			msg.setSubject("Automation Results");
 			Multipart multipart = new MimeMultipart();
 			MimeBodyPart textBodyPart = new MimeBodyPart();
-			textBodyPart.setContent(email.getBytes(), "text/html; charset=ISO-8859-1");
+//			textBodyPart.setContent(email.getBytes(), "text/html; charset=ISO-8859-1");
 			textBodyPart.setHeader("Content-Type", "text/html");
 			textBodyPart.setText("Please find the attachment");
 			MimeBodyPart attachmentBodyPart = new MimeBodyPart();
