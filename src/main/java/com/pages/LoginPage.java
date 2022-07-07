@@ -15,14 +15,17 @@ public final class LoginPage {
 	public String verifyForgotPasswordButtonText() {
 		return getText(forgotPwdButton);
 	}
-	public void enterUsername(String email) {
+	public LoginPage enterUsername(String email) {
 		enterValuesWebElement(uname, email);
+		return this;
 	}
-	public void enterPassword(String password) {
+	public LoginPage enterPassword(String password) {
 		enterValuesWebElement(pwd, password);
+		return this;
 	}
-	public void clickLogin() {
+	public LoginPage clickLogin() {
 		clickWebElement(lgnBtn);
+		return this;
 	}
 	public String verifyErrorMsg() {
 		return getText(errorMsg);

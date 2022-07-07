@@ -15,9 +15,7 @@ public class LoginTest extends BaseTest {
 	@Test(dataProvider = "loginData1", dataProviderClass = com.testdata.TestData.class, description = "To check login with invalid data",retryAnalyzer = com.analyzer.RetryAnalyzer.class)
 	public void verifyLoginTest(String email, String password) throws IOException, InterruptedException {
 		logger.info("starting verifyLoginTest");
-		login.enterUsername(email);
-		login.enterPassword(password);
-		login.clickLogin();
+		login.enterUsername(email).enterPassword(password).clickLogin();
 		Assert.assertEquals(login.verifyErrorMsg(), "Invalid credentials");
 		logger.info("ending verifyLoginTest");
 	}

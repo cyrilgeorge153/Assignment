@@ -1,17 +1,22 @@
-1649091422890	geckodriver	INFO	Listening on 127.0.0.1:51480
-1649091423106	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41936" "-no-remote" "-profile" "/tmp/rust_mozprofile1hVtPS"
+1657203255483	geckodriver	INFO	Listening on 127.0.0.1:51382
+1657203255719	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "58429" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile7hxEUH"
 *** You are running in headless mode.
-1649091423700	Marionette	INFO	Marionette enabled
+1657203256253	Marionette	INFO	Marionette enabled
+1657203256258	Marionette	INFO	Listening on port 35775
+WebDriver BiDi listening on ws://localhost:38203
+Read port: 35775
+1657203256468	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileamFsqN/search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:38795/devtools/browser/28be989f-c869-4e74-aeb8-a9cb545038fa
-1649091425646	Marionette	INFO	Listening on port 45067
-1649091425734	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
-JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
-1649091453936	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
-1649091453938	Marionette	INFO	Stopped listening on port 36249
-
-###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
-
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoAzg5j/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:41522/devtools/browser/29e37d2a-d0e0-48eb-ad33-91425993a706
+JavaScript error: chrome://remote/content/server/WebSocketHandshake.jsm, line 174: Error: The handshake request has incorrect Origin header http://localhost:41026
+1657203266597	Marionette	INFO	Stopped listening on port 41365
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Misscionngs oclher.oemrer oorr:  r"eEsroruorrc ed uUring qRuLi:t -raJavaScript error: chrome://remote/content/server/WebSocketHandshake.jsm, line 174: Error: The handshake request has incorrect Origin header http://localhost:38203
+1657203269994	Marionette	INFO	Stopped listening on port 35775
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://grec/omnosdoullee.se/rUrpodra:t e"LEirsrtoern edru.rsiynsg. mqjusi
+t-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
