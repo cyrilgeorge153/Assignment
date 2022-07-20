@@ -54,6 +54,8 @@ To execute in opera->mvn test -Dbrowsername=opera
 2. Maven should be present and environment variable should be set in the local system.
 3. All browsers mentioned above should be present in the local system.
 
+If you find this repo useful, don't forget to give it a ⭐ on GitHub.
+
 
 
 
