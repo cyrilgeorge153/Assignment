@@ -7,8 +7,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="generateLog"/>
+          <include name="verifyLoginTest" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="verifyForgotPasswordButtonTest"/>
           <include name="sendEmailWithExtentReport"/>
         </methods>
       </class> <!-- com.tests.LoginTest -->
